@@ -7,38 +7,132 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Prototype your service using GOV.UK Prototype Kit (test 3) 
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+<!-- Body starts here -->
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
 
-      <h2 class="govuk-heading-m">About this page</h2>
+<div class="govuk-width-container">
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
+  <!--
+  <a href="#" class="govuk-back-link" style="padding-top: 0px;">Back</a>
+  -->
 
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+  <main class="govuk-main-wrapper" style="padding-top: 0px;">
 
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
+    <!-- Content starts here -->
 
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="/docs/tutorials-and-examples">Tutorials and templates</a>
-        </li>
-        <li>
-          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
-        </li>
-      </ul>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Design prototypes</h1>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Family Public Law</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="450">Prototypes</th>
+              <th scope="col" class="govuk-table__header">Last changes</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">tbd</td>
+              <td class="govuk-table__cell">tbd</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br><br>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Probate</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="450">Prototypes</th>
+              <th scope="col" class="govuk-table__header">Last changes</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="probate/new_header/header_1.html" style="text-decoration: none;color:#1d70b8;">New service's header</a>
+              </td>
+              <td class="govuk-table__cell">29 July 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="probate/new_dashboard/dashboard.html" style="text-decoration: none;color:#1d70b8;">New dashboard page</a>
+              </td>
+              <td class="govuk-table__cell">29 July 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="probate/new_dashboard/dashboard.html" style="text-decoration: none;color:#1d70b8;">New application status page</a>
+              </td>
+              <td class="govuk-table__cell">29 July 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="probate/condition_of_will/application_1.html" style="text-decoration: none;color:#1d70b8;">New probate application journey &nbsp;(condition of will) </a>
+              </td>
+              <td class="govuk-table__cell">29 July 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">General inclusivility and content improvements</td>
+              <td class="govuk-table__cell">29 July 2022</td>
+            </tr>
+          </tbody>
+        </table>
+      
+      </div>
     </div>
-  </div> 
+
+    <br><br>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Usability testing</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="400">Prototype</th>
+              <th scope="col" class="govuk-table__header" width="80">Team</th>
+              <th scope="col" class="govuk-table__header" width="60">Sprint</th>
+              <th scope="col" class="govuk-table__header" width="100">Start date</th>
+              <th scope="col" class="govuk-table__header" width="100">End date</th>
+              <th scope="col" class="govuk-table__header" width="200">User</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Application dashboard</td>
+              <td class="govuk-table__cell">Probate</td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">8 Aug 22</td>
+              <td class="govuk-table__cell">12 Aug 22</td>
+              <td class="govuk-table__cell">Members of public</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Condition of will</td>
+              <td class="govuk-table__cell">Probate</td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">8 Aug 22</td>
+              <td class="govuk-table__cell">12 Aug 22</td>
+              <td class="govuk-table__cell">Members of public</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
 
 {% endblock %}
