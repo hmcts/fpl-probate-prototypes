@@ -25,19 +25,48 @@
 
         <span class="govuk-caption-l" style="padding-bottom: 5px;">Details about the person who died</span>
 
-        <h1 class="govuk-heading-xl" style="margin-bottom: 50px;">Do you have a death certificate or an interim death certificate? </h1>
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Do you have a death certificate or an interim death certificate? </h1>
 
-        
+        <div class="govuk-inset-text">
+          A death certificate is printed double-sided on green paper and is given to you by a register from the births, deaths and marriages registry. <br>An <a href="#0">interim death certificate (opens in a new window)</a> is only issued by the coroner if there is an inquest to find out the cause of death.
+        </div>
 
-        <br><br>
+        <!--
 
-        <form action="application_12.html">
+        <p>A death certificate is printed double-sided on green paper and is given to you by a registrar from the births, deaths and marriages registry.</p>
+
+        <p>An <a href="#0">interim death certificate (opens in a new window)</a> is only issued by the coroner if there is an inquest to find out the cause of death.</p>
+
+        -->
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  Death certificate
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  Interim death certificate
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>    
+
+        <br>
+
+        <form action="application_15.html">
           <div class="govuk-button-group">
             <button class="govuk-button" data-module="govuk-button">
               Save and continue
             </button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="govuk-link" href="application_6.html" style="color: #1d70b8">Save and return to application overview</a>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Save and return to application overview</a>
           </div>
         </form>
 

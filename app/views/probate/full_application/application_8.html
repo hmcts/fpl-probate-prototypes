@@ -25,11 +25,47 @@
 
         <span class="govuk-caption-l" style="padding-bottom: 5px;">Details about the person who died</span>
 
-        <h1 class="govuk-heading-xl" style="margin-bottom: 50px;">What was the date that they died? </h1>
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">What was the date they died? </h1>
 
-        
+        <div class="govuk-inset-text">
+          Use the date from the death certificate.
+        </div>
 
-        <br><br>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+            <div id="passport-issued-hint" class="govuk-hint">
+              For example, 30 06 2016
+            </div>
+            <div class="govuk-date-input" id="passport-issued">
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                    Day
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                    Month
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                </div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                    Year
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <br>
 
         <form action="application_9.html">
           <div class="govuk-button-group">
@@ -37,7 +73,7 @@
               Save and continue
             </button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="govuk-link" href="application_6.html" style="color: #1d70b8">Save and return to application overview</a>
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Save and return to application overview</a>
           </div>
         </form>
 
