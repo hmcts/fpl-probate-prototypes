@@ -23,11 +23,11 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Apply for probate</h1>
+        <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Application overview</h1>
 
         <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Application incomplete</h2>
 
-        <p class="govuk-body" style="margin-bottom: 10px;">You have completed 0 of 10 sections.</p>
+        <p class="govuk-body" style="margin-bottom: 10px;">You have completed 2 of 10 sections.</p>
 
         <table class="govuk-table">
           <thead class="govuk-table__head">
@@ -38,15 +38,15 @@
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">1. Details about the applicant</a></th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong></td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green app-task-list__tag" id="read-declaration-status">Completed</strong></td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">2. Details about the person who died</a></th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong></td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green app-task-list__tag" id="read-declaration-status">Completed</strong></td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">3. Details about the will</a></th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Not started</strong></td>
+              <th scope="row" class="govuk-table__header"><a href="application_4.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">3. Details about the will</a></th>
+              <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="financial-evidence-status">In progress</strong></td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">4. Details about the codicils</a></th>
@@ -69,7 +69,7 @@
               <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">Not started</strong></td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">9. Supporting documents</a></th>
+              <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">9. Confirm legal statement</a></th>
               <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">Not started</strong></td>
             </tr>
             <tr class="govuk-table__row">
@@ -85,14 +85,16 @@
 
         <p class="govuk-body">By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
 
+        <!--
         <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="padding-bottom: 50px;">
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
             <label class="govuk-label govuk-checkboxes__label" for="organisation">
-              I confirm that...
+              I confirm that I will administer the estate of the person who died according to law, and that my application is truthful.
             </label>
           </div>
         </div>
+        -->s
 
         <br>
 
@@ -101,7 +103,9 @@
             <button class="govuk-button" data-module="govuk-button" disabled="disabled">
               Send application
             </button>
-            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel application</a>
+            <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+              Delete application
+            </button>
           </div>
         </form>
 
