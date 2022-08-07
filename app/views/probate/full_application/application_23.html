@@ -23,94 +23,46 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Application overview</h1>
+        <span class="govuk-caption-l" style="padding-bottom: 5px;">Details about the will</span>
 
-        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Application incomplete</h2>
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Are you submitting the will with all its pages bound together?</h1>
 
-        <p class="govuk-body" style="margin-bottom: 10px;">You have completed 3 of 10 sections.</p>
-
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header" colspan="2"> </th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">1. Details about the applicant</a></th>
-              <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400"><a href="application_2c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">2. Details about the person who died</a></th>
-              <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400"><a href="application_3c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">3. Details about the will</a></th>
-              <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">4. Details about the codicils</a></th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">NOT STARTED</strong></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400">5. Details about the Inheritance tax</th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">CAN’T START YET</strong></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400">6. Details about the Executors</th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">CAN’T START YET</strong></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400">7. Copies of the grant of probate</th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">CAN’T START YET</strong></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400">8. Supporting documents</th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">CAN’T START YET</strong></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400">9. Confirm legal statement</th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">CAN’T START YET</strong></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400">10. Payment</th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">CAN’T START YET</strong></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <!--
+            <div id="contact-hint" class="govuk-hint">
+              Select one option.
+            </div>
+            -->
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="yes" name="option" type="radio" value="yes" data-aria-controls="conditional-yes">
+                <label class="govuk-label govuk-radios__label" for="yes">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="no" name="option" type="radio" value="no" data-aria-controls="conditional-no">
+                <label class="govuk-label govuk-radios__label" for="no">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
 
         <br>
 
-        <h2 class="govuk-heading-m">Send your application</h2>
-
-        <p class="govuk-body">By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-
-        <!--
-        <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="padding-bottom: 50px;">
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
-            <label class="govuk-label govuk-checkboxes__label" for="organisation">
-              I confirm that I will administer the estate of the person who died according to law, and that my application is truthful.
-            </label>
+        <form action="application_24.html">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Save and return to application overview</a>
           </div>
-        </div>
-        -->
-
-        <br>
-
-        <div class="govuk-button-group">
-          <a class="button button-start" href="#0" role="button">
-            <button class="govuk-button" data-module="govuk-button" disabled="disabled">
-              Send application
-            </button>
-          </a>
-
-          <a class="button button-start" href="#0" role="button">
-            <button class="govuk-button govuk-button--warning" data-module="govuk-button">
-              Delete application
-            </button>
-          </a>
-        </div>
+        </form>
 
       </div>
     </div>
