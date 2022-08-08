@@ -45,11 +45,11 @@
                   First name
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  John
+                  Mo
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#0" style="color:#1d70b8;">
-                    Change<span class="govuk-visually-hidden"> name</span>
+                    Change<span class="govuk-visually-hidden"> first name</span>
                   </a>
                 </dd>
               </div>
@@ -77,7 +77,7 @@
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#0" style="color:#1d70b8;">
-                    Change<span class="govuk-visually-hidden"> name</span>
+                    Change<span class="govuk-visually-hidden"> last name</span>
                   </a>
                 </dd>
               </div>
@@ -116,7 +116,7 @@
                   Email
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  john.smith@example.com
+                  mo.smith@example.com
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="#0" style="color:#1d70b8;">
@@ -269,13 +269,13 @@
                       <label class="govuk-label" for="address-town">
                         Town or city
                       </label>
-                      <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
                     </div>
                     <div class="govuk-form-group">
                       <label class="govuk-label" for="address-county">
                         County (optional)
                       </label>
-                      <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
                     </div>
                     <div class="govuk-form-group">
                       <label class="govuk-label" for="address-postcode">
@@ -294,6 +294,52 @@
                     Enter an international address
                   </span>
                 </summary>
+                <div class="govuk-details__text">
+                  <fieldset class="govuk-fieldset">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-line-1">
+                        Address line 1
+                      </label>
+                      <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-line-2">
+                        Address line 2 (optional)
+                      </label>
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-line-2">
+                        Address line 3 (optional)
+                      </label>
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-town">
+                        Town or city
+                      </label>
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-county">
+                        County (optional)
+                      </label>
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-postcode">
+                        Postcode (optional)
+                      </label>
+                      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+                    </div>
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-postcode">
+                        Country
+                      </label>
+                      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+                    </div>
+                  </fieldset>
+                </div>
               </details>
             </li>
           </ul>
