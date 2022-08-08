@@ -1,0 +1,100 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+
+<div class="govuk-width-container">
+
+  <!--
+  <a href="#" class="govuk-back-link" style="padding-top: 0px;">Back</a>
+  -->
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px;">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl">Probate prototypes</h1>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 10px;">Apply to probate</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="600">Prototypes</th>
+              <th scope="col" class="govuk-table__header">Version</th>
+              <th scope="col" class="govuk-table__header">Last changes</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="v1/proposed_header/header_1.html" style="text-decoration: none;color:#1d70b8;">Proposed service's header</a>
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">01 August 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="v1/proposed_applications_landingpage/landingpage_1.html" style="text-decoration: none;color:#1d70b8;">Proposed applications landingpage</a>
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">01 August 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="v1/proposed_application_dashboard/dashboard_1.html" style="text-decoration: none;color:#1d70b8;">Proposed application dashboard</a>
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">03 August 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="v1/proposed_dashboard_first_time/application_1.html" style="text-decoration: none;color:#1d70b8;">Proposed journey for first time </a>
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">03 August 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="v1/proposed_dashboard_in_progress/application_1.html" style="text-decoration: none;color:#1d70b8;">Proposed journey in progress </a>
+                <!--<a href="v1/proposed_dashoard_in_progress/application_1.html" style="text-decoration: none;color:#1d70b8;">Proposed journey in progress </a>-->
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">03 August 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="v1/full_application/application_1.html" style="text-decoration: none;color:#1d70b8;">Improvements in end-to-end journey until Condition of Will</a>
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">08 August 2022</td>
+            </tr>
+          </tbody>
+        </table>
+      
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}
