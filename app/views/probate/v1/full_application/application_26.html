@@ -33,11 +33,13 @@
 
         <h2 class="govuk-heading-m">Contact details for witness 1</h2>
 
+        <h4 class="govuk-heading-s">Personal details</h4>
+
         <div class="govuk-form-group">
           <div class="govuk-label" style="padding-bottom: 5px;">
             Full name
           </div>
-          <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+          <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
         </div>
 
         <div class="govuk-form-group">
@@ -51,8 +53,10 @@
           <div class="govuk-label" style="padding-bottom: 5px;">
             Email address
           </div>
-          <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+          <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
         </div> 
+
+        <h4 class="govuk-heading-s">Address</h4>
 
         <div class="govuk-form-group">
           <label class="govuk-label" style="padding-bottom: 5px;">
@@ -84,16 +88,23 @@
 
         <div class="govuk-form-group">
           <label class="govuk-label" style="padding-bottom: 5px;">
-            County (optional)
+            County, distric, estate or area (optional)
           </label>
           <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
         </div>
 
         <div class="govuk-form-group">
           <label class="govuk-label" style="padding-bottom: 5px;">
-            Postcode
+            Postcode (optional)
           </label>
           <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" style="padding-bottom: 5px;">
+            Country
+          </label>
+          <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
         </div>
 
         <br>
