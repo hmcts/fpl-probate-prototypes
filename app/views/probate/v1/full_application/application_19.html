@@ -25,14 +25,92 @@
 
         <span class="govuk-caption-l" style="padding-bottom: 5px;">Details about the will</span>
 
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Check the will for any marks or damages</h1>
+
+        <div class="govuk-inset-text">
+          We’ll check the will for any marks or damage as part of your application. Your application may be delayed by up to 4 weeks if you do not tell us about any marks or damage now.
+        </div>
+
+
+        <div class="govuk-form-group">
+          <div id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="1" name="tick" type="checkbox" value="1">
+              <label class="govuk-label govuk-checkboxes__label" for="1">
+                Holes from staples being removed
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="2" name="tick" type="checkbox" value="2">
+              <label class="govuk-label govuk-checkboxes__label" for="2">
+                Punch holes
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="w3" name="tick" type="checkbox" value="3">
+              <label class="govuk-label govuk-checkboxes__label" for="3">
+                Rust marks
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="4" name="tick" type="checkbox" value="4">
+              <label class="govuk-label govuk-checkboxes__label" for="4">
+                Paper clip marks
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="5" name="tick" type="checkbox" value="5">
+              <label class="govuk-label govuk-checkboxes__label" for="5">
+                Torn edges
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="6" name="tick" type="checkbox" value="6">
+              <label class="govuk-label govuk-checkboxes__label" for="6">
+                Water damage
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="7" name="tick" type="checkbox" value="text message" data-aria-controls="conditional-7">
+              <label class="govuk-label govuk-checkboxes__label" for="7">
+                Other
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-7">
+              <div class="govuk-form-group">
+                <div id="more-detail-hint" class="govuk-hint">
+                  Describe the other marks or damage
+                </div>
+                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" style="width: 400px;"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>or</p>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
+                <label class="govuk-label govuk-checkboxes__label" for="contact">
+                  None of above
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <!--
+
         <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Does the will have any marks or damages?</h1>
 
         <div class="govuk-inset-text">
-          Examine the will and check if any of the pages have: <br>
-           &#8226;  staple or paper clip marks <br>
-          &#8226; tear <br>
-          &#8226; punch holes <br>
-          &#8226; water damage <br>
+          We’ll check the will for any marks or damage as part of your application. Your application may be delayed by up to 4 weeks if you do not tell us about any marks or damage now.
         </div>
 
         <div class="govuk-warning-text" style="margin-bottom: 20px;">
@@ -45,12 +123,6 @@
 
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-            <!--
-            <div id="contact-hint" class="govuk-hint">
-              Select one option.
-            </div>
-            -->
             <div class="govuk-radios" data-module="govuk-radios">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="yes" name="option" type="radio" value="yes" data-aria-controls="conditional-yes">
@@ -101,7 +173,6 @@
                       </label>
                     </div>
                     <div class="govuk-checkboxes__item">
-                      <!--<input class="govuk-checkboxes__input" id="7" name="tick" type="checkbox" value="6">-->
                       <input class="govuk-checkboxes__input" id="7" name="tick" type="checkbox" value="text message" data-aria-controls="conditional-7">
                       <label class="govuk-label govuk-checkboxes__label" for="7">
                         Other
@@ -124,19 +195,11 @@
                   No
                 </label>
               </div>
-              <!--
-              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-no">
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="no">
-                    Phone number
-                  </label>
-                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
-                </div>
-              </div>
-              -->
             </div>
           </fieldset>
         </div> 
+
+        -->
 
         <br>
 
