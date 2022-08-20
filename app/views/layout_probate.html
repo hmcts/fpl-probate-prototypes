@@ -49,21 +49,36 @@
 
 {% if useAutoStoreData %}
   {% block footer %}
+
+    {% from "govuk/components/footer/macro.njk" import govukFooter %}
+
     {{ govukFooter({
       meta: {
         items: [
           {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
-            text: "GOV.UK Prototype Kit " + releaseVersion
+            href: "#0",
+            text: "Cookies"
           },
           {
-            href: "/prototype-admin/clear-data",
-            text: "Clear data"
+            href: "#0",
+            text: "Privacy policy"
+          },
+          {
+            href: "#0",
+            text: "Accesibility statement"
+          },
+          {
+            href: "#0",
+            text: "Terms and conditions"
+          },
+          {
+            href: "#0",
+            text: "Contact us"
           }
-        ],
-        visuallyHiddenTitle: "Footer links"
+        ]
       }
     }) }}
+
   {% endblock %}
 {% endif %}
 
