@@ -1,0 +1,131 @@
+
+{% extends "layout_probate.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../../includes/new_phase.html" %}
+  {% include "../../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-l" style="padding-bottom: 5px;">Check the codicil</span>
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Does the second codicil have any marks?</h1>
+
+        <!--
+        <div class="govuk-inset-text">
+          We’ll check the will for any marks or damage as part of your application. Your application may be delayed by up to 4 weeks if you do not tell us about any marks or damage now.
+        </div>
+        -->
+
+        <div class="govuk-form-group" style="margin-bottom:0px;">
+          <div id="waste-hint" class="govuk-hint">
+            Select all that apply to tell us about any marks on the codicil.
+          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="1" name="tick" type="checkbox" value="1">
+              <label class="govuk-label govuk-checkboxes__label" for="1">
+                Holes from staples being removed
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="2" name="tick" type="checkbox" value="2">
+              <label class="govuk-label govuk-checkboxes__label" for="2">
+                Punch holes
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="w3" name="tick" type="checkbox" value="3">
+              <label class="govuk-label govuk-checkboxes__label" for="3">
+                Rust marks
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="4" name="tick" type="checkbox" value="4">
+              <label class="govuk-label govuk-checkboxes__label" for="4">
+                Paper clip marks
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="5" name="tick" type="checkbox" value="5">
+              <label class="govuk-label govuk-checkboxes__label" for="5">
+                Torn pages
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="6" name="tick" type="checkbox" value="6">
+              <label class="govuk-label govuk-checkboxes__label" for="6">
+                Water damage
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="7" name="tick" type="checkbox" value="text message" data-aria-controls="conditional-7">
+              <label class="govuk-label govuk-checkboxes__label" for="7">
+                Other
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-7">
+              <div class="govuk-form-group">
+                <div id="more-detail-hint" class="govuk-hint">
+                  Describe the other marks, include how and why it happened if you know.
+                </div>
+                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" style="width: 400px;"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p style="padding-bottom: 20px;padding-top: 10px;margin-top: 0px;margin-bottom: 0px;">Or</p>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
+                <label class="govuk-label govuk-checkboxes__label" for="contact">
+                  No, none of the above. I confirm the codicil has no marks or damage
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <br>
+
+        <form action="application_74.html">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Save and return to application overview</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}
