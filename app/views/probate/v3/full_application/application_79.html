@@ -27,7 +27,7 @@
 
         <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Application incomplete</h2>
 
-        <p class="govuk-body" style="margin-bottom: 10px;">You have completed 8 of 10 sections.</p>
+        <p class="govuk-body" style="margin-bottom: 10px;">You have completed 10 of 10 sections.</p>
 
         <table class="govuk-table">
           <thead class="govuk-table__head">
@@ -69,12 +69,12 @@
               <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="financial-evidence-status">Completed</strong></td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400"><a href="application_77.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">9. Confirm legal statement</a></th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">Not started</strong></td>
+              <th scope="row" class="govuk-table__header" style="font-weight: 400"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">9. Confirm legal statement</a></th>
+              <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="financial-evidence-status">Completed</strong></td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header" style="font-weight: 400">10. Payment</th>
-              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="medical-information-status">CAN’T START YET</strong></td>
+              <th scope="row" class="govuk-table__header" style="font-weight: 400"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">10. Payment</a></th>
+              <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="financial-evidence-status">Completed</strong></td>
             </tr>
           </tbody>
         </table>
@@ -83,7 +83,7 @@
 
         <h2 class="govuk-heading-m">Send your application</h2>
 
-        <p class="govuk-body">By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+        <p class="govuk-body" style="margin-bottom: 25px;">By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
 
         <!--
         <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes" style="padding-bottom: 50px;">
@@ -96,11 +96,21 @@
         </div>
         -->
 
+        <div class="govuk-panel" style="background-color: #f3f2f1;text-align: left;padding-top: 10px;padding-bottom: 10px;padding-left: 20px;">
+          <div class="govuk-warning-text" style="margin-bottom: 0px;">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              Once you click “Send application”, you cannot change any details in your application.
+            </strong>
+          </div>
+        </div>
+
         <br>
 
         <div class="govuk-button-group">
           <a class="button button-start" href="#0" role="button">
-            <button class="govuk-button" data-module="govuk-button" disabled="disabled">
+            <button class="govuk-button" data-module="govuk-button">
               Send application
             </button>
           </a>
