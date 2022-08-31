@@ -1,0 +1,76 @@
+
+{% extends "layout_probate.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../../includes/new_phase.html" %}
+  {% include "../../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-l" style="padding-bottom: 5px;">Provide estate values</span>
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Did David Smith get married or enter into a civil partnership after the will was signed?</h1>
+
+        <div class="govuk-form-group" style="margin-bottom:30px;">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <!--
+            <div id="contact-hint" class="govuk-hint">
+              Select one option.
+            </div>
+            -->
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="option1" name="option" type="radio" data-aria-controls="conditional-yes">
+                <label class="govuk-label govuk-radios__label" for="option1">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="option2" name="option" type="radio" data-aria-controls="conditional-no">
+                <label class="govuk-label govuk-radios__label" for="option2">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <form action="application_64.html">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Save and return to application overview</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+
+{% endblock %}

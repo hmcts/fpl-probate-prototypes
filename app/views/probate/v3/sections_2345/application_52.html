@@ -1,0 +1,83 @@
+
+{% extends "layout_probate.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../../includes/new_phase.html" %}
+  {% include "../../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <span class="govuk-caption-l" style="padding-bottom: 5px;">Details about the codicils</span>
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Check the list of marks or damages for the first codicil</h1>
+
+        <table class="govuk-table" style="margin-bottom:40px;">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header app-custom-class" width="900">Water damage</th>
+              <td scope="col" class="govuk-table__cell"><a class="govuk-link" href="#0" style="font-size:400">Remove</a></td>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Do you know why the codicil has water damage? No</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href="#0">Change<span class="govuk-visually-hidden"> name</span></a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Do you know who’s responsible for the water damage? No</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href="#0">Change<span class="govuk-visually-hidden"> name</span></a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Do you know roughly when the water damage appeared on the codicil? No</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href="#0">Change<span class="govuk-visually-hidden"> name</span></a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <form action="#0">
+          <div class="govuk-button-group">
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Add another mark or damage
+            </button>
+          </div>
+        </form>
+
+        <br>
+
+        <form action="application_53.html">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Save and return to application overview</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}
