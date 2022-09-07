@@ -1,0 +1,132 @@
+
+{% extends "layout_probate.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../../includes/new_phase.html" %}
+  <!--{% include "../../../includes/new_back.html" %}-->
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <!--
+  <a href="#" class="govuk-back-link" style="padding-top: 0px;">Back</a>
+  -->
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-xl govuk-!-margin-bottom-4" style="margin-bottom: 10px!important;">Case overview </h1>
+          <h3 class="govuk-heading-m govuk-!-margin-bottom-4">Reference number: 1618-8333-9985-7404 <br>Person who died: David Smith </h3>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+          <img src="../public/images/banners/notstarted.png" width="100%" alt="Progress stage: Response submitted">
+          
+          <div class="govuk-!-padding-bottom-4"></div>
+
+          <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                Important
+              </h2>
+            </div>
+            <div class="govuk-notification-banner__content">
+              <p class="govuk-notification-banner__heading">Your application has been stopped </p>
+              <p class="govuk-body">We need to contact the witnesses to find out if the will was ever bound together. This could take upto 4 weeks.</p>
+            </div>
+          </div>
+
+          <ol class="app-task-list">
+            <li>
+              <h2 class="app-task-list__section">About you</h2>
+              <ul class="app-task-list__items">
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../c100/start" aria-describedby="company-information-status">
+                      View and edit your personal details
+                    </a>
+                  </span>
+                  <strong class="govuk-tag app-task-list__tag govuk-tag--red" id="company-information-status">Not started yet</strong>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2 class="app-task-list__section">Your application</h2>
+              <ul class="app-task-list__items">
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="#0" aria-describedby="upload-document">
+                      View and download your application
+                    </a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">Optional</strong>
+                </li>
+                <!--
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="#0" aria-describedby="risk-of-harm-or-violence">
+                      View all documents
+                    </a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag govuk-tag--grey" id="submit-pay-status">Not available yet</strong>
+                </li>
+                -->
+             </ul>
+            </li>
+          </ol>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!">
+        <h2 class="govuk-heading-m">I want to... </h2>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="#">Send a message to the probate team about my application</a>
+            <div class="govuk-!-padding-bottom-2"></div>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Read applying for probate guidance (opens in a new tab)</a>
+            <div class="govuk-!-padding-bottom-2"></div>
+          </li>
+        </ul>
+        <details class="govuk-details" data-module="govuk-details">
+           <summary class="govuk-details__summary">
+             <span class="govuk-details__summary-text">
+              Contacts us
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <p>Call the customer contact centre if you have any questions about your application. They cannot give you any legal advice or process any updates to your application.</p>
+              <p>You can also send a message to the probate team about your application. .</p>
+              <p><strong>Telephone</strong><br>0300 303 0648</p>
+              <p><strong>Email</strong><br>Email us at <a href="#0">contactprobate@justice.gov.uk</a></p>
+              <p><strong>Opening times (webchat and telephone)</strong><br>Monday to Friday, 8am to 6pm. <br>Closed on Saturdays, Sundays and bank holidays.</p>
+            </div>
+        </details>
+      </div>
+
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}
