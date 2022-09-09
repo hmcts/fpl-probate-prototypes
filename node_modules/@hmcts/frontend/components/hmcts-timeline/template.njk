@@ -1,0 +1,42 @@
+
+{% set headingLevel = 2 %}
+{% if params.headingLevel %}
+{% set headingLevel = params.headingLevel %}
+{% endif %}
+
+<div class="hmcts-timeline {{- ' ' + params.classes if params.classes}}">
+
+  {% for event in params.events %}
+  <div class="hmcts-timeline__item">
+
+    <div class="hmcts-timeline__header">
+      <h{{headingLevel}} class="hmcts-timeline__title">
+        {{ event.title.html | safe if event.title.html else event.title.text }}
+      </h{{headingLevel}}>
+      {% if event.by %}
+        <p class="hmcts-timeline__by">by {{event.by}}</p>
+      {% endif %}
+    </div>
+
+    <p class="hmcts-timeline__date"><time datetime="{{event.dateUtc}}">{{event.date}} at {{event.time }}</time></p>
+
+    {% if event.description %}
+      {% if event.description.html %}
+        {{ event.description.html | safe }}
+      {% else %}
+        <p class="hmcts-timeline__description">{{ event.description.text }}</p>
+      {% endif %}
+    {% endif %}
+
+    {% if event.documents %}
+      <ul class="hmcts-timeline__documents">
+        {% for document in event.documents %}
+          <li class="hmcts-timeline__document-item"><a class="hmcts-timeline__document-link" href="{{document.href}}">{{document.name}}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+  </div>
+  {% endfor %}
+
+</div>

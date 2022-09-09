@@ -25,101 +25,220 @@
     <!-- Content starts here -->
 
     <div class="govuk-grid-row">
-
       <div class="govuk-grid-column-full">
-          <h1 class="govuk-heading-xl govuk-!-margin-bottom-4" style="margin-bottom: 10px!important;">Case overview </h1>
-          <h3 class="govuk-heading-m govuk-!-margin-bottom-4">Reference number: 1618-8333-9985-7404 <br>Person who died: David Smith </h3>
-      </div>
 
-      <div class="govuk-grid-column-two-thirds">
-
-          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-          <img src="../public/images/banners/notstarted.png" width="100%" alt="Progress stage: Response submitted">
-          
-          <div class="govuk-!-padding-bottom-4"></div>
-
-          <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-            <div class="govuk-notification-banner__header">
-              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                Important
-              </h2>
-            </div>
-            <div class="govuk-notification-banner__content">
-              <p class="govuk-notification-banner__heading">Your application has been stopped </p>
-              <p class="govuk-body">We need to contact the witnesses to find out if the will was ever bound together. This could take upto 4 weeks.</p>
-            </div>
+        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Important
+            </h2>
           </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-notification-banner__heading" style="max-width: 800px">Your application has not started yet waiting to receive the documents. </p>
+            <p class="govuk-body" style="max-width: 800px">You need to send your documents to start the 8 weeks process to review and issue your grant.</p>
+          </div>
+        </div>
 
-          <ol class="app-task-list">
-            <li>
-              <h2 class="app-task-list__section">About you</h2>
-              <ul class="app-task-list__items">
-                <li class="app-task-list__item">
-                  <span class="app-task-list__task-name">
-                    <a href="../c100/start" aria-describedby="company-information-status">
-                      View and edit your personal details
-                    </a>
-                  </span>
-                  <strong class="govuk-tag app-task-list__tag govuk-tag--red" id="company-information-status">Not started yet</strong>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h2 class="app-task-list__section">Your application</h2>
-              <ul class="app-task-list__items">
-                <li class="app-task-list__item">
-                  <span class="app-task-list__task-name">
-                    <a href="#0" aria-describedby="upload-document">
-                      View and download your application
-                    </a>
-                  </span>
-                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">Optional</strong>
-                </li>
-                <!--
-                <li class="app-task-list__item">
-                  <span class="app-task-list__task-name">
-                    <a href="#0" aria-describedby="risk-of-harm-or-violence">
-                      View all documents
-                    </a>
-                  </span>
-                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag govuk-tag--grey" id="submit-pay-status">Not available yet</strong>
-                </li>
-                -->
-             </ul>
-            </li>
-          </ol>
-      </div>
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-4" style="margin-bottom: 10px!important;">Case overview - David Smith</h1>
 
-      <div class="govuk-grid-column-one-third">
-        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!">
-        <h2 class="govuk-heading-m">I want to... </h2>
-        <ul class="govuk-list">
-          <li>
-            <a class="govuk-link" href="#">Send a message to the probate team about my application</a>
-            <div class="govuk-!-padding-bottom-2"></div>
-          </li>
-          <li>
-            <a class="govuk-link" href="#">Read applying for probate guidance (opens in a new tab)</a>
-            <div class="govuk-!-padding-bottom-2"></div>
-          </li>
-        </ul>
-        <details class="govuk-details" data-module="govuk-details">
-           <summary class="govuk-details__summary">
-             <span class="govuk-details__summary-text">
-              Contacts us
-              </span>
-            </summary>
-            <div class="govuk-details__text">
-              <p>Call the customer contact centre if you have any questions about your application. They cannot give you any legal advice or process any updates to your application.</p>
-              <p>You can also send a message to the probate team about your application. .</p>
-              <p><strong>Telephone</strong><br>0300 303 0648</p>
-              <p><strong>Email</strong><br>Email us at <a href="#0">contactprobate@justice.gov.uk</a></p>
-              <p><strong>Opening times (webchat and telephone)</strong><br>Monday to Friday, 8am to 6pm. <br>Closed on Saturdays, Sundays and bank holidays.</p>
+        <p class="govuk-body"><strong>Reference number:</strong> 1618-8333-9985-7404</p>
+        
+        <div class="govuk-grid-column-two-thirds">
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" style="height: 4px;background: #1E6FB8;border: none;">
+
+            <!--
+            <img src="../public/images/banners/notstarted.png" width="100%" alt="Progress stage: Response submitted">
+            -->
+
+            <br>
+
+            <div class="hmcts-progress-bar-vertical" role="progressbar">
+              <ol class="hmcts-progress-bar__list">
+                <li class="hmcts-progress-bar__list-item">
+                  <span class="hmcts-progress-bar__icon hmcts-progress-bar__icon--complete"></span>
+                  <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 1: </span>Application submitted</span>
+                </li>
+                <li class="hmcts-progress-bar__list-item" aria-current="step">
+                  <span class="hmcts-progress-bar__icon"></span>
+                  <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Current Step 2: </span>Documents received</span>
+                </li>
+                <li class="hmcts-progress-bar__list-item">
+                  <span class="hmcts-progress-bar__icon"></span>
+                  <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 3: </span>Application review</span>
+                </li>
+                <li class="hmcts-progress-bar__list-item">
+                  <span class="hmcts-progress-bar__icon"></span>
+                  <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 4: </span>Grant issued</span>
+                </li>
+              </ol>
             </div>
-        </details>
-      </div>
+            
+            <br><br><br>
 
+            <h2 class="govuk-heading-m" style="margin-bottom: 0px;">Documents received</h2>
+
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header" colspan="2"> </th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Application coversheet or paper with reference number</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="list-convictions-status">Received</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Original Will</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="list-convictions-status">Received</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Codicil 1</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="list-convictions-status">Received</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Codicil 2</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red app-task-list__tag" id="medical-information-status">Not received</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2 class="govuk-heading-m" style="padding-top: 20px;margin-bottom: 0px;">Application review status</h2>
+
+            <label class="govuk-label" for="event-name" style="padding-top:10px;">Estimated time for approval and issue your grant: <strong>8 weeks</strong></label>
+
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header" colspan="2"> </th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">1. Lorum</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Pending to receive all documents</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">2. Colabra</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Pending to receive all documents</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">3. Senatus</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Pending to receive all documents</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">4. Ipsum</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Pending to receive all documents</strong></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="#0" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">5. Issue grant</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Pending to receive all documents</strong></td>
+                </tr>
+                <!--
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Application coversheet or paper with reference number</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="list-convictions-status">Received</strong></td>
+                </tr>
+                -->
+              </tbody>
+            </table>
+
+            <h2 class="govuk-heading-m" style="padding-top: 20px;margin-bottom: 0px;">Inquiries</h2>
+
+              <table class="govuk-table" style="margin-bottom: 20px;">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header" colspan="2"> </th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><span style="font-weight: 400;">You do not have enquiries</span></th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <!--
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Application coversheet or paper with reference number</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="list-convictions-status">Received</strong></td>
+                </tr>
+                -->
+              </tbody>
+            </table>
+
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Send an enquiry
+            </button>
+
+            <h2 class="govuk-heading-m" style="padding-top: 20px;margin-bottom: 0px;">Your application</h2>
+
+              <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header" colspan="2"> </th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">View and download your application</a></th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <!--
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Application coversheet or paper with reference number</a></th>
+                  <td class="govuk-table__cell"><strong class="govuk-tag app-task-list__tag" id="list-convictions-status">Received</strong></td>
+                </tr>
+                -->
+              </tbody>
+            </table>
+
+        </div>
+
+        <!--
+        <div class="govuk-grid-column-one-third">
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!">
+          <h2 class="govuk-heading-m">I want to... </h2>
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#">Send a message to the probate team about my application</a>
+              <div class="govuk-!-padding-bottom-2"></div>
+            </li>
+            <li>
+              <a class="govuk-link" href="#">Read applying for probate guidance (opens in a new tab)</a>
+              <div class="govuk-!-padding-bottom-2"></div>
+            </li>
+          </ul>
+          <details class="govuk-details" data-module="govuk-details">
+             <summary class="govuk-details__summary">
+               <span class="govuk-details__summary-text">
+                Contacts us
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                <p>Call the customer contact centre if you have any questions about your application. They cannot give you any legal advice or process any updates to your application.</p>
+                <p>You can also send a message to the probate team about your application. .</p>
+                <p><strong>Telephone</strong><br>0300 303 0648</p>
+                <p><strong>Email</strong><br>Email us at <a href="#0">contactprobate@justice.gov.uk</a></p>
+                <p><strong>Opening times (webchat and telephone)</strong><br>Monday to Friday, 8am to 6pm. <br>Closed on Saturdays, Sundays and bank holidays.</p>
+              </div>
+          </details>
+        </div>
+        -->
+
+        <div class="govuk-grid-column-one-third">
+
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!" style="height: 4px;background: #1E6FB8;border: none;">
+
+          <h2 class="govuk-heading-m">Contact us </h2>
+
+          <p>Call the customer contact centre if you have any questions about your application. They cannot give you any legal advice or process any updates to your application.</p>
+          <p><strong>Webchat</strong><br>Sorry, we’re having technical difficulties. Try email or telephone instead.</p>
+          <p><strong>Telephone</strong><br>0300 303 0648</p>
+          <p><strong>Email</strong><br>Email us at <a href="#0">contactprobate@justice.gov.uk</a></p>
+          <p><strong>Opening times</strong><br>Monday to Friday, 8am to 6pm. <br>Closed on Saturdays, Sundays and bank holidays.</p>
+        </div>
+
+      </div>
     </div>
 
     <!-- Content ends here -->

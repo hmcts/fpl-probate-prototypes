@@ -1,0 +1,15 @@
+{
+  "assets": [
+    "/hmcts-assets/images"
+  ],
+  "nunjucksPaths": [
+    "/components"
+  ],
+  "sass": [
+    "/all.scss"
+  ],
+  "scripts": [
+    "/vendor/jquery.js",
+    "/all.js"
+  ]
+}
