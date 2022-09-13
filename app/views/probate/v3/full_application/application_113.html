@@ -43,7 +43,7 @@
 
         <p class="govuk-body"><strong>Reference number: 1618-8333-9985-7404 </strong></p>
         
-        <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-grid-column-two-thirds" style="padding-left: 0px;">
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" style="height: 4px;background: #1E6FB8;border: none;">
 
@@ -153,7 +153,7 @@
               </tbody>
             </table>
 
-            <h2 class="govuk-heading-m" style="padding-top: 20px;margin-bottom: 10px;">Inquiries</h2>
+            <h2 class="govuk-heading-m" style="padding-top: 20px;margin-bottom: 10px;">Review enquiries</h2>
 
             <label class="govuk-hint" for="event-name">Select an enquiry link to view the details and respond the enquiry. The application review process stops until you respond the enquiries.</label>
 
@@ -177,11 +177,7 @@
               </tbody>
             </table>
 
-            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-              Make an enquiry
-            </button>
-
-            <h2 class="govuk-heading-m" style="padding-top: 20px;margin-bottom: 0px;">Your probate application</h2>
+            <h2 class="govuk-heading-m" style="padding-top: 30px;margin-bottom: 0px;">Your probate application</h2>
 
               <table class="govuk-table">
               <thead class="govuk-table__head">
@@ -206,6 +202,10 @@
                 -->
               </tbody>
             </table>
+
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Update application
+            </button>
 
         </div>
 
@@ -240,17 +240,24 @@
         </div>
         -->
 
-        <div class="govuk-grid-column-one-third">
-
+        <div class="govuk-grid-column-one-third" style="padding-right: 0px;">
           <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!" style="height: 4px;background: #1E6FB8;border: none;">
-
-          <h2 class="govuk-heading-m">Contact us </h2>
-
-          <p>Call the customer contact centre if you have any questions about your application. They cannot give you any legal advice or process any updates to your application.</p>
-          <p><strong>Webchat</strong><br>Sorry, we’re having technical difficulties. Try email or telephone instead.</p>
-          <p><strong>Telephone</strong><br>0300 303 0648</p>
-          <p><strong>Email</strong><br>Email us at <a href="#0">contactprobate@justice.gov.uk</a></p>
-          <p><strong>Opening times</strong><br>Monday to Friday, 8am to 6pm. <br>Closed on Saturdays, Sundays and bank holidays.</p>
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Contact us
+              </span>
+            </summary>
+            <!--
+            <h2 class="govuk-heading-m">Contact us </h2>
+            -->
+            <br><br>
+            <p>Call the customer contact centre if you have any questions about your application. They cannot give you any legal advice or process any updates to your application.</p>
+            <p><strong>Webchat</strong><br>Sorry, we’re having technical difficulties. Try email or telephone instead.</p>
+            <p><strong>Telephone</strong><br>0300 303 0648</p>
+            <p><strong>Email</strong><br>Email us at <a href="#0">contactprobate@justice.gov.uk</a></p>
+            <p><strong>Opening times</strong><br>Monday to Friday, 8am to 6pm. <br>Closed on Saturdays, Sundays and bank holidays.</p>
+          </details>
         </div>
 
       </div>
