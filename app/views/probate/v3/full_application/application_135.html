@@ -1,0 +1,131 @@
+
+{% extends "layout_probate.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../../includes/new_phase.html" %}
+  <!--{% include "../../../includes/new_back.html" %}-->
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-4" style="margin-bottom: 10px!important;">Probate applications</h1>
+
+        <p class="govuk-body" style="margin-bottom: 0px;">You have 1 application </p>
+        
+        <div class="govuk-grid-column-two-thirds" style="padding-left: 0px;">
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" style="height: 4px;background: #1E6FB8;border: none;margin-bottom: 26px;">
+
+            <div style="background-color: #f9f9f9;">
+              <div style="padding:20px;">
+                <h3 class="govuk-heading-m" style="padding-top: 10px;margin-bottom: 10px;">Application 1618-8333-9985-7405 
+                  <a href="#0" style="float:right;font-size: 19px;font-weight: 400;">Hide details</a>
+                </h3>
+                <!--
+                <p class="govuk-body" style="margin-bottom: 10px;"><strong>Person who died: David Smith</strong></p>
+                <br>
+                -->
+                <p class="govuk-body" style="padding-top: 0px;margin-bottom: 0px;"><strong>Probate progress </strong></p>
+                <table class="govuk-table" style="margin-bottom:20px;">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header" colspan="2"> </th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header" style="font-weight: 400">1. Probate application </th>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow app-task-list__tag" id="list-convictions-status">In progress</strong></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header" style="font-weight: 400">2. Supporting documents</th>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red app-task-list__tag" id="list-convictions-status">NOT RECEIVED YET</strong></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header" style="font-weight: 400">3. Review application </th>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red app-task-list__tag" id="financial-evidence-status">Not started</strong></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header" style="font-weight: 400">4. Issue grant</th>
+                      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red app-task-list__tag" id="financial-evidence-status">Not started</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="govuk-body" style="padding-top: 20px;margin-bottom: 0px;"><strong>Your application </strong></p>
+                <table class="govuk-table" style="margin-bottom:20px;">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header" colspan="2"> </th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header"><a href="application_1c.html" aria-describedby="company-information-status" style="text-decoration: none;color:#1d70b8;font-weight: 400;">Continue with your probate application</a></th>
+                      <td class="govuk-table__cell"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+            <button class="govuk-button govuk-button" data-module="govuk-button">
+              Start a new probate application
+            </button>
+
+            <br>
+            <br>
+
+        </div>
+
+        <div class="govuk-grid-column-one-third" style="padding-right: 0px;">
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!" style="height: 4px;background: #1E6FB8;border: none;">
+          <h2 class="govuk-heading-m">I want to... </h2>
+          <p><a href="#0">Send a message to HMCTS Probate about my application</a></p>
+          <p><a href="#0">Read applying for probate guidance (opens in a new tab)</a></p>
+          <p><a href="#0">View and edit your personal details</a></p>
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Contact
+              </span>
+            </summary>
+            <div class="govuk-inset-text">
+              <p>Call the customer contact centre if you have any questions about your application. They cannot give you any legal advice or process any updates to your application.</p>
+              <p><strong>Webchat</strong><br>Sorry, we’re having technical difficulties. Try email or telephone instead.</p>
+              <p><strong>Telephone</strong><br>0300 303 0648</p>
+              <p><strong>Email</strong><br>Email us at <a href="#0">contactprobate@justice.gov.uk</a></p>
+              <p><strong>Opening times</strong><br>Monday to Friday, 8am to 6pm. <br>Closed on Saturdays, Sundays and bank holidays.</p>
+              <p><a href="#0">Find out about call charges (opens in a new tab)</a>.</p>
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

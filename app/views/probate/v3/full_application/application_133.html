@@ -1,0 +1,86 @@
+
+{% extends "layout_probate.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../../includes/new_phase.html" %}
+  <!--{% include "../../../includes/new_back.html" %}-->
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-4" style="margin-bottom: 10px!important;">Probate applications</h1>
+
+        <p class="govuk-body" style="margin-bottom: 0px;">You have 0 applications </p>
+        
+        <div class="govuk-grid-column-two-thirds" style="padding-left: 0px;">
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" style="height: 4px;background: #1E6FB8;border: none;margin-bottom: 26px;">
+
+            <div style="background-color: #f9f9f9;">
+              <div style="padding:20px;">
+                <h3 class="govuk-heading-s" style="padding-top: 10px;margin-bottom: 10px;">Lorum ipsum est 
+                  <!--
+                  <a href="#0" style="float:right;font-size: 19px;font-weight: 400;">Hide details</a>
+                  -->
+                </h3>
+                <p>Vinculas roman senatus sumus et dolore provocas sempre. Illas supra tertulias referas estias dolori columpia est sentire aliqua, picilas satiras alindrae permuta contares.</p>
+                <button class="govuk-button govuk-button" data-module="govuk-button" style="margin-bottom:20px;margin-top: 10px;">
+                  Start a new probate application
+                </button>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+        </div>
+
+        <div class="govuk-grid-column-one-third" style="padding-right: 0px;">
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!" style="height: 4px;background: #1E6FB8;border: none;">
+          <h2 class="govuk-heading-m">I want to... </h2>
+          <p><a href="#0">Send a message to HMCTS Probate about my application</a></p>
+          <p><a href="#0">Read applying for probate guidance (opens in a new tab)</a></p>
+          <p><a href="#0">View and edit your personal details</a></p>
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Contact
+              </span>
+            </summary>
+            <div class="govuk-inset-text">
+              <p>Call the customer contact centre if you have any questions about your application. They cannot give you any legal advice or process any updates to your application.</p>
+              <p><strong>Webchat</strong><br>Sorry, we’re having technical difficulties. Try email or telephone instead.</p>
+              <p><strong>Telephone</strong><br>0300 303 0648</p>
+              <p><strong>Email</strong><br>Email us at <a href="#0">contactprobate@justice.gov.uk</a></p>
+              <p><strong>Opening times</strong><br>Monday to Friday, 8am to 6pm. <br>Closed on Saturdays, Sundays and bank holidays.</p>
+              <p><a href="#0">Find out about call charges (opens in a new tab)</a>.</p>
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

@@ -35,14 +35,14 @@
           <fieldset class="govuk-fieldset">
             <div class="govuk-radios" data-module="govuk-radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                <input class="govuk-radios__input" id="option1" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="option1">
                   Yes
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                <input class="govuk-radios__input" id="option2" name="where-do-you-live" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="option2">
                   No
                 </label>
               </div>
@@ -52,15 +52,11 @@
 
         <br>
 
-        <form action="application_41.html">
-          <div class="govuk-button-group">
-            <button class="govuk-button" data-module="govuk-button">
-              Save and continue
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="govuk-link" href="#0" style="color: #1d70b8">Save and return to application overview</a>
-          </div>
-        </form>
+        <div class="govuk-button-group">
+          <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="govuk-link" href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Save and return to application overview</a>
+        </div>
 
       </div>
     </div>
@@ -71,5 +67,19 @@
 </div>
 
 <!-- Body finish here -->
+
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('option1').checked) {
+            document.getElementById('link').href = "application_41.html";
+        }
+        if(document.getElementById('option2').checked) {
+            document.getElementById('link').href = "application_53.html";
+        }
+    }
+</script>
+
 
 {% endblock %}
