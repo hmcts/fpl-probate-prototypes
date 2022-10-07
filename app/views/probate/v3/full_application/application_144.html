@@ -1,0 +1,142 @@
+
+{% extends "layout_probate.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../../includes/new_phase.html" %}
+  {% include "../../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">You need to tell us about an executor</h1>
+
+        <p class="govuk-body">Mary Smith, an executor named in the will of David Smith, was not included in your application for probate. </p>
+
+        <h3 class="govuk-heading-m">Tell us about the executor </h3>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="1" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  They died in the lifetime of the deceased
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="2" name="where-do-you-live" type="radio" value="scotland" data-aria-controls="conditional-2">
+                <label class="govuk-label govuk-radios__label" for="2">
+                  They died after the deceased
+                </label>
+              </div>
+
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-2">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <p class="govuk-body" style="margin-bottom:0px;"><strong>Date of death</strong></p>
+                    </legend>
+                    <div id="passport-issued-hint" class="govuk-hint">
+                      For example, 27 3 2007
+                    </div>
+                    <div class="govuk-date-input" id="passport-issued">
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Day
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Month
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                            Year
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="3" name="where-do-you-live" type="radio" value="wales">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                  They set aside their right as an executor 'power reserved' and you've given them notice of this application in writing
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="4" name="where-do-you-live" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                  They have not reserved their right to apply for probate and do not want to be an executor of the estate
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="5" name="where-do-you-live" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                  They are not capable of managing their affairs within the meaning of the Mental Capacity Act 2005 and are unable to act 
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <h3 class="govuk-heading-m">Statement of truth</h3>
+
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+            The information I have provided in this statement is correct to the best of my knowledge and understand that it will be stored as a public record. I understand that proceedings for contempt of court may be brought against me if I am found to have been deliberately untruthful or dishonest.
+          </label>
+        </div>
+
+        <br>
+
+        <form action="application_145.html" style="padding-top:10px;">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Submit
+            </button>
+            &nbsp;&nbsp;
+            <a class="govuk-link" href="javascript:history.back()" style="color: #1d70b8">Return to application overview</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}
