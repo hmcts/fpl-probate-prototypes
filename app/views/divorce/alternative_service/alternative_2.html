@@ -23,37 +23,60 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <span class="govuk-caption-l" style="padding-bottom: 5px;">Alternative Service</span>
-
         <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">How do you want to serve (send) the documents to your husband?</h1>
 
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
             <div class="govuk-radios" data-module="govuk-radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="yes" name="option" type="radio" value="yes" data-aria-controls="conditional-yes">
-                <label class="govuk-label govuk-radios__label" for="yes">
+                <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                <label class="govuk-label govuk-radios__label" for="contact">
                   Social media 
                 </label>
               </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-email">
+                    Enter your husband’s mobile phone number 
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email">
+                </div>
+              </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="no" name="option" type="radio" value="no" data-aria-controls="conditional-no">
-                <label class="govuk-label govuk-radios__label" for="no">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
                   Text message
                 </label>
               </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-phone">
+                    Enter a link to their social media profile
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+                </div>
+              </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="opss" name="option" type="radio" value="opss" data-aria-controls="conditional-opss">
-                <label class="govuk-label govuk-radios__label" for="opss">
+                <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+                <label class="govuk-label govuk-radios__label" for="contact-3">
                   Another way
                 </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-text">
+                    Explain how you want the application to be served to your husband. 
+                  </label>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+                </div>
               </div>
             </div>
           </fieldset>
         </div>
 
         <div class="govuk-form-group">
-          <label class="govuk-label" for="more-detail">
+          <!--
+          s<label class="govuk-label" for="more-detail">
             <strong>Explain how you want to serve the documents </strong>
           </label>
           <div id="more-detail-hint" class="govuk-hint">
@@ -61,18 +84,20 @@
           </div>
           <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="10"></textarea>
         </div>
+        -->
 
-        <br>
-
-        <form action="alternative_4.html">
+        <form action="alternative_6.html">
           <div class="govuk-button-group">
             <button class="govuk-button" data-module="govuk-button">
               Continue
             </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--
             <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+            -->
           </div>
         </form>
+
+        <p class="govuk-body"><a href="#" class="govuk-link">Save and sign out</a></p>
 
       </div>
     </div>

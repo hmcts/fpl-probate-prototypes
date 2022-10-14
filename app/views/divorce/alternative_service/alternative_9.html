@@ -23,8 +23,6 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <span class="govuk-caption-l" style="padding-bottom: 5px;">Alternative Service</span>
-
         <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Check your answers </h1>
 
         <!--
@@ -34,40 +32,27 @@
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              How do you want to serve?
+              Explain why the application cannot be served (sent) to their postal address
             </dt>
             <dd class="govuk-summary-list__value">
-              Text
+              They do not live at that address anymore. I don’t know where they live anymore.
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> How do you want to serve?</span>
+                Change<span class="govuk-visually-hidden">  </span>
               </a>
             </dd>
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Explain why you cannot serve
+              How do you want to serve (send) the documents to your husband?
             </dt>
             <dd class="govuk-summary-list__value">
-              Text
+              Text message to 07948 575846
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> Explain why you cannot serve</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              To their postal address 
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Text
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> To their postal address </span>
+                Change<span class="govuk-visually-hidden">  </span>
               </a>
             </dd>
           </div>
@@ -76,34 +61,56 @@
               Do you want to upload additional evidence?  
             </dt>
             <dd class="govuk-summary-list__value">
-              Text
+              Yes, Screenshot.png
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> Do you want to upload additional evidence?   </span>
+                Change<span class="govuk-visually-hidden">  </span>
               </a>
             </dd>
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Do you need Help With Fees? 
+              Do you need help paying the fee for this application?
             </dt>
             <dd class="govuk-summary-list__value">
-              Text
+              I do not need help paying the fee
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> Do you need Help With Fees?    </span>
+                Change<span class="govuk-visually-hidden">   </span>
               </a>
             </dd>
           </div>
         </dl>
 
-        <h2 class="govuk-heading-m">Before you pay and submit your application</h2>
+        <h2 class="govuk-heading-m">Confirm before continuing </h2>
 
-        <p class="govuk-body">By submitting this application you are confirming that, you are applying to the court to for [application type]. This confirms what you are asking the court to do. It’s known as ‘the prayer’. </p>
+        <div class="govuk-form-group" style="margin-bottom: 10px;">
+          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  I confirm that I’m applying to the court to for [application type]. This confirms what you are asking the court to do. It’s known as ‘the prayer’.
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
 
-        <p class="govuk-body">By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+        <div class="govuk-form-group" style="margin-bottom: 10px;">
+          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                  I believe that the facts stated in this application are true. This confirms that the information you are submitting is true and accurate, to the best of your knowledge. It’s known as your ‘statement of truth’. 
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
 
         <div class="govuk-warning-text">
           <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -113,15 +120,18 @@
           </strong>
         </div>
 
-        <form action="alternative_13">
+        <form action="alternative_13.html">
           <div class="govuk-button-group">
             <button class="govuk-button" data-module="govuk-button">
-              Continue
+              Continue to payment
             </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--
             <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+            -->
           </div>
         </form>
+
+        <p class="govuk-body"><a href="#" class="govuk-link">Save and sign out</a></p>
 
       </div>
     </div>

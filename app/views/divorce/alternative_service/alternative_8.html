@@ -23,8 +23,6 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <span class="govuk-caption-l" style="padding-bottom: 5px;">Alternative Service</span>
-
         <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Do you need help paying the fee for this application?</h1>
 
         <p class="govuk-body">This application costs £53. You may be able to get help paying the fee if you (one or more of the following):</p>
@@ -60,9 +58,13 @@
 
         <div class="govuk-button-group">
           <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="govuk-link" href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel</a>
-        </div>
+          <!--
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+            -->
+          </div>
+        </form>
+
+        <p class="govuk-body"><a href="#" class="govuk-link">Save and sign out</a></p>
 
       </div>
     </div>
@@ -79,10 +81,10 @@
     function myFunction() {
    
         if(document.getElementById('option1').checked) {
-            document.getElementById('link').href = "alternative_11";
+            document.getElementById('link').href = "alternative_11.html";
         }
         if(document.getElementById('option2').checked) {
-            document.getElementById('link').href = "alternative_9";
+            document.getElementById('link').href = "alternative_9.html";
         }
     }
 </script>
