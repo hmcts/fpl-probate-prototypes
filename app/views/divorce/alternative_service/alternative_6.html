@@ -1,0 +1,88 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-l" style="padding-bottom: 5px;">Alternative Service</span>
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Do you want to upload any additional evidence? </h1>
+
+        <div class="govuk-inset-text">
+          You can provide additional evidence to support your application for alternative service, if you want. Useful evidence will help the court make a decision on your application. 
+        </div>
+
+        <div id="more-detail-hint" class="govuk-hint">
+          You do not have to upload evidence.
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="option1" name="option" type="radio" value="yes" data-aria-controls="conditional-yes">
+                <label class="govuk-label govuk-radios__label" for="yes">
+                  Yes, I want to upload evidence  
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="option2" name="option" type="radio" value="no" data-aria-controls="conditional-no">
+                <label class="govuk-label govuk-radios__label" for="no">
+                  No, I do not want to upload evidence 
+                </label>
+              </div>
+          </fieldset>
+        </div>
+
+        <br>
+
+        <div class="govuk-button-group">
+          <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="govuk-link" href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('option1').checked) {
+            document.getElementById('link').href = "alternative_7";
+        }
+        if(document.getElementById('option2').checked) {
+            document.getElementById('link').href = "alternative_8";
+        }
+    }
+</script>
+
+
+{% endblock %}

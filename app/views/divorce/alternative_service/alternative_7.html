@@ -1,0 +1,166 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-l" style="padding-bottom: 5px;">Alternative Service</span>
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Upload your documents</h1>
+
+        <p class="govuk-body">
+        You need to upload a digital colour photo or scan of the following documents:
+        </p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your original marriage certificate </li>
+        </ul>
+
+
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Make sure the photo or scan is in colour. It has to show the whole document, from edge to edge. All the text has to be readable, blurred images will be rejected.
+          </strong>
+        </div>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              You can take a picture with your phone and upload it
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <ol class="govuk-list govuk-list--number">
+              <li>Place your document on a flat service in a well-lit room. Use a flash if you need to.</li>
+              <li>Take a picture of the whole document. You should be able to see its edges.</li>
+              <li>Email or send the photo or scan to the device you are using now.</li>
+              <li>Upload it using the link below.</li>
+            </ol>
+          </div>
+        </details>
+
+        <p class="govuk-body">
+          You should upload at least one clear image which shows the whole document. If you think it will help court staff read the details you can upload more images. If your document has more than one page then you should upload at least one image of each page.
+        </p>
+
+        <h2 class="govuk-heading-s">Uploaded files</h2>
+
+        <p class="govuk-body">No files uploaded</p>
+
+        <hr class="govuk-section-break govuk-section-break--visible">
+
+        <div class="govuk-!-padding-bottom-6"></div>
+
+        <p class="govuk-body">The file must be in jpg, bmp, tiff, png or pdf format. <br> Maximum file size 10MB.</p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-panel govuk-panel--confirmation" style="background-color: white; border: 2px dashed grey;">
+            <img src="upload.png" alt="User icon">
+            <div class="govuk-!-padding-bottom-6"></div>
+            <div class="govuk-form-group">
+              <a href="#" class="govuk-link">Choose a file</a>
+              <div class="govuk-body">
+                  <strong>or</strong><br>Drag and drop files here
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-form-group">
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
+                <label class="govuk-label govuk-checkboxes__label" for="contact">
+                  I cannot upload some or all of my documents
+                </label>
+              </div>
+              <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact">
+                <div class="govuk-form-group">
+                  <div class="govuk-!-padding-bottom-2"></div>
+                  <h2 class="govuk-heading-m">Which document can you not upload? </h2>
+                  <div id="other-cases" class="govuk-hint">
+                    Select all that apply
+                  </div>
+                  <div class="govuk-form-group">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="cant-upload" name="cant-upload" type="checkbox" value="My marriage certificate">
+                      <label class="govuk-label govuk-checkboxes__label" for="cant-upload">
+                        My marriage certificate
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="cant-upload-2" name="cant-upload" type="checkbox" value="My original foreign marriage certificate" >
+                      <label class="govuk-label govuk-checkboxes__label" for="cant-upload-2">
+                        My original foreign marriage certificate
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="cant-upload-3" name="cant-upload" type="checkbox" value="A certified translation of my foreign marriage certificate" >
+                      <label class="govuk-label govuk-checkboxes__label" for="cant-upload-3">
+                        A certified translation of my foreign marriage certificate
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="cant-upload-4" name="cant-upload" type="checkbox" value="Proof that I changed my name" >
+                      <label class="govuk-label govuk-checkboxes__label" for="cant-upload-4">
+                        Proof that I changed my name
+                      </label>
+                    </div>
+                  <div>
+                  <p class="govuk-body">
+                  <br>  You can post or email your documents to the court. If you post them you must send the original documents or certified copies. You will not receive them back. You’ll receive details of how to send them after you have submitted your application.
+                  </p>
+                  <br>
+                  <p class="govuk-body">
+                    Continue with your application.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <form action="alternative_8.html">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

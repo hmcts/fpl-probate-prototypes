@@ -1,0 +1,64 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+
+<div class="govuk-width-container">
+
+  <!--
+  <a href="#" class="govuk-back-link" style="padding-top: 0px;">Back</a>
+  -->
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px;">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl">Divorce prototypes</h1>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 10px;">Alternative Service</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="600">Prototypes</th>
+              <th scope="col" class="govuk-table__header">Version</th>
+              <th scope="col" class="govuk-table__header">Last changes</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="alternative_service/alternative_1.html" style="text-decoration: none;color:#1d70b8;">Draft</a>
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">13 October 2022</td>
+            </tr>
+          </tbody>
+        </table>
+      
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

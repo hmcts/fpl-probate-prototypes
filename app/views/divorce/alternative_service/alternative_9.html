@@ -1,0 +1,136 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-l" style="padding-bottom: 5px;">Alternative Service</span>
+
+        <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Check your answers </h1>
+
+        <!--
+        <h2 class="govuk-heading-m">Personal details</h2>
+        -->
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              How do you want to serve?
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Text
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> How do you want to serve?</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Explain why you cannot serve
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Text
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> Explain why you cannot serve</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              To their postal address 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Text
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> To their postal address </span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Do you want to upload additional evidence?  
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Text
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> Do you want to upload additional evidence?   </span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Do you need Help With Fees? 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Text
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> Do you need Help With Fees?    </span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Before you pay and submit your application</h2>
+
+        <p class="govuk-body">By submitting this application you are confirming that, you are applying to the court to for [application type]. This confirms what you are asking the court to do. It’s known as ‘the prayer’. </p>
+
+        <p class="govuk-body">By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Proceedings for contempt of court may be brought against anyone who makes, or causes to be made, a false statement verified by a statement of truth without an honest belief in its truth.
+          </strong>
+        </div>
+
+        <form action="alternative_13">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}
