@@ -1,0 +1,67 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            Application submitted
+          </h1>
+          <!--
+          <div class="govuk-panel__body">
+            Your reference number<br><strong>HDJ2123F</strong>
+          </div>
+          -->
+        </div>
+
+        <p class="govuk-body">Your application for alternative service has been submitted. You have been sent an email confirmation. </p>
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+
+        <p class="govuk-body">
+          Your application will be reviewed by the court. If they accept your application then you will be able to serve the divorce application to your husband in the way you have requested. 
+        </p>
+
+        <p class="govuk-body">
+          If the court refuses your application then you will be told what you can do next to progress your divorce. 
+        </p>
+
+        <p class="govuk-body">
+          You will receive an email with the court’s decision within 4 weeks. You do not need to do anything further or contact the court until you receive the decision.
+        </p>
+
+        <p class="govuk-body">
+          <a href="#0" class="govuk-link">Save and sign out</a> 
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}
