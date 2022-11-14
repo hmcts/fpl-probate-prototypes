@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+    {% include "../../../includes/as_it_is_header.html" %}
+
+    <main class="govuk-main-wrapper " id="main-content" role="main"> 
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">  
+
+                <!-- Content -->
+                        
+                <div class="govuk-form-group">
+
+                    <fieldset class="govuk-fieldset">
+  
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      
+                            <h1 class="govuk-fieldset__heading">
+                              Which executors will be dealing with the estate?
+                            </h1>
+                      
+                        </legend>
+                      
+                        <p class="govuk-body">Up to 4 executors can be named on the grant of probate.</p>
+                            
+                        <ul class="govuk-list govuk-list--bullet">
+                            <li>collect the estate’s assets (property, money and possessions)</li>
+                            <li>pay any taxes and debts</li>
+                            <li>distribute what’s left to the people entitled to it (the ‘beneficiaries’)</li>
+                        </ul>
+
+                        <p class="govuk-body">You’ll be asked about executors who won’t be dealing with the estate later in the application.</p>
+
+                        <div class="govuk-form-group">
+
+                            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+ 
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="executorsApplying" name="executorsApplying[]" type="checkbox" value="Name" checked="" disabled="">
+                                    <label class="govuk-label govuk-checkboxes__label" for="executorsApplying">
+                                      Name
+                                    </label>
+                                </div>
+
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="executorsApplying-2" name="executorsApplying[]" type="checkbox" value="Maria Calas">
+                                    <label class="govuk-label govuk-checkboxes__label" for="executorsApplying-2">
+                                      Maria Calas
+                                    </label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+                </div>
+
+                <form action="page_40.html">
+                    <div class="govuk-form-group">
+                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+                            Save and continue
+                        </button>
+                    </div>
+                </form>
+
+                <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
+
+                <!-- End content -->
+
+                <br><br>
+
+                <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Contact us for help
+                      </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                        <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                            <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                        </div>
+
+                        <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                        <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                        <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                        <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                        <p class="govuk-body"> 0300 303 0648</p>
+                        <p class="govuk-heading-s"> Email </p>
+                        <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                        <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                        <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                        <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                    </div>
+
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    </div>
+
+    {% include "../../../includes/as_it_is_footer.html" %}
+
+    {% include "../../../includes/as_it_is_scripts.html" %}
+
+    <script>
+        function myFunction() {
+            if(document.getElementById('executorNotified').checked) {
+                document.getElementById('link').href = "page_40.html";
+            }
+            if(document.getElementById('executorNotified-2').checked) {
+                document.getElementById('link').href = "page_40.html";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
