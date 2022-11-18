@@ -1,0 +1,54 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 40px;">Applying to ‘dispense with service’ </h1>
+
+        <p class="govuk-body">If there is no way of serving (sending) the [divorce application / application to end your civil partnership] to your [husband / wife / civil partner] then you can apply to ‘dispense with service’. </p>
+
+        <p class="govuk-body">If your application is successful then the court will allow your [divorce / application to end your civil partnership] to continue without ‘serving’ (sending) the application to your [husband / wife / civil partner]. </p>
+
+        <p class="govuk-body">You will have to show that there is no way of ‘serving’ (sending) the [divorce application / application to end your civil partnership] to your [husband / wife / civil partner]. If you have any contact details for them at all, then you should provide these to the court instead. For example, their mobile phone number, email address or social media profile. You can <a href="#0">apply to serve them by one of these ways here</a>.   </p>
+
+        <p class="govuk-body">If you are sure you cannot provide any details for them, then you can start the application to dispense with service. It costs £53, unless you are eligible for <a href="#0">Help With Fees</a>.</p>
+
+        <br>
+
+        <a href="#0" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+          Start application 
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+          </svg></a>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

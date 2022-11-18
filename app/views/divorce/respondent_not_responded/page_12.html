@@ -1,0 +1,62 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 40px;">Enter your husband or wife’s new email address</h1>
+
+        <div class="govuk-inset-text">
+          Enter the email address which they actively use for personal emails. You should avoid using their work email address because it may not be private. 
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            Your husband or wife’s new email address
+          </label>
+          <input class="govuk-input govuk-!-width-three-quarters" id="event-name" name="event-name" type="text">
+        </div>
+
+        <form action="page_13.html">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
+            <!--
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+            -->
+          </div>
+        </form>
+
+        <p class="govuk-body"><a href="#0" class="govuk-link">Save and sign out</a></p>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

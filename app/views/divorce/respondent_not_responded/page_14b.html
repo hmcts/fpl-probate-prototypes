@@ -1,0 +1,105 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#passport-issued-day">You have provided a postal address that is not recognised or is outside of the United Kingdom.</a>
+                </li>
+                <br>
+                <li>
+                  <p class="govuk-body">If outside of the United Kingdom, you will have to arrange to ‘serve’ (send) the application to your husband or wife yourself. This is because there are different rules for serving court documents outside of the UK. </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 40px;">Enter your husband or wife's postal address</h1>
+
+        <form action="page_15" method="post">
+
+          <div class="govuk-form-group govuk-form-group--error">
+            <label class="govuk-label" for="national-insurance-number">
+              Enter a UK postcode
+            </label>
+            <p id="national-insurance-number-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> You have provided a postal address that is not recognised or is outside of the United Kingdom.
+            </p>
+            <input class="govuk-input govuk-input--width-10 govuk-input--error" id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint national-insurance-number-error">
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Find address
+          </button>
+
+          <p class="govuk-body">
+            <a href="#0" class="govuk-link">I cannot enter a UK postcode</a>
+          </p>
+
+        </form>
+
+        <p class="govuk-body"><a href="#0" class="govuk-link">Save and sign out</a></p>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Contact us for help
+            </span>
+          </summary>
+            <div class="govuk-details__text">
+              <h2 class="govuk-heading-m">Web chat</h2>
+              <ul class="govuk-list">
+                    
+              </ul>
+              <h2 class="govuk-heading-m">Send us a message</h2>
+              <ul class="govuk-list">
+                <li><a class="govuk-link" href="#">Send us a message</a></li>
+                <li>We aim to get back to you within 5 working days</li>
+              </ul>
+              <h2 class="govuk-heading-m">Telephone</h2>
+              <ul class="govuk-list">
+                <li>0300 303 0742</li>
+                <li>Monday to Friday, 8am to 8pm, Saturday, 8am to 2pm</li>
+              </ul>
+            </div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

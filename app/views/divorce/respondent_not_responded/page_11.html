@@ -1,0 +1,88 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 40px;">What do you need to update? </h1>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="option1" name="option" type="radio" value="1" data-aria-controls="conditional-1">
+                <label class="govuk-label govuk-radios__label" for="1">
+                  Their email address 
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="option2" name="option" type="radio" value="2" data-aria-controls="conditional-2">
+                <label class="govuk-label govuk-radios__label" for="2">
+                  Their postal address
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="option3" name="option" type="radio" value="3" data-aria-controls="conditional-3">
+                <label class="govuk-label govuk-radios__label" for="3">
+                   Their email address and postal address
+                </label>
+              </div>
+          </fieldset>
+        </div>
+
+        <br>
+
+        <div class="govuk-button-group">
+          <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+            <!--
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+            -->
+        </div>
+
+        <p class="govuk-body"><a href="#0" class="govuk-link">Save and sign out</a></p>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('option1').checked) {
+            document.getElementById('link').href = "page_12.html";
+        }
+        if(document.getElementById('option2').checked) {
+            document.getElementById('link').href = "page_14.html";
+        }
+        if(document.getElementById('option3').checked) {
+            document.getElementById('link').href = "page_x.html";
+        }
+    }
+</script>
+
+{% endblock %}

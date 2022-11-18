@@ -1,0 +1,59 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 40px;">Applying for ‘deemed service’ </h1>
+
+        <p class="govuk-body">If you have evidence that your husband or wife has received the divorce application by email or post, then you can apply for ‘deemed service’.</p>
+
+        <p class="govuk-body">If your application is successful then the court will accept your husband or wife has been served with the application. The court will then allow your application to continue without a response from them. </p>
+
+        <div class="govuk-inset-text">
+          You should only apply for deemed service if you have evidence they received all the divorce papers. For example, a ‘certificate of service’, a proof of delivery or a message from them saying they have received all the documents.
+        </div>
+
+        <p class="govuk-body">The application for deemed service costs £53, unless you are eligible for <a href="#0">Help With Fees</a>. </p>
+
+        <br>
+
+        <a href="#0" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+          Start application
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+          </svg>
+        </a>
+
+        <p class="govuk-body"><a href="#" class="govuk-link">Save and sign out</a></p>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

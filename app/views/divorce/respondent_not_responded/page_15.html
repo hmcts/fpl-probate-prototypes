@@ -1,0 +1,103 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 40px;">Enter your husband or wife's postal address</h1>
+
+        <form action="page_13" method="post">
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m"> Postcode
+              </legend>
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-!-font-weight-bold" for="change-postcode"></label>
+                  <p class="postcode_change"><a class="govuk-link" href="respondent_postal_address.html" aria-label="change postcode">Change</a></p>
+                </div>
+
+              <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-select">
+                  Select an address
+                  </label>
+                  <select class="govuk-select govuk-!-width-three-quarters" id="address-select" name="address-select">
+                    <option>5 addresses found</option>
+                    <option>1 Main Street, London,  </option>
+                    <option>2 Main Street, London,  </option>
+                    <option>3 Main Street, London,  </option>
+                    <option>4 Main Street, London,  </option>
+                    <option>5 Main Street, London,  </option>
+                  </select>
+              </div>
+
+              <div class="govuk-form-group">
+                <p>
+                  <a class="govuk-link" href="/divorce/respondent_address_manual.html">I cannot find the address in the list</a>
+                </p>
+              </div>
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </form>
+
+        <p class="govuk-body"><a href="#0" class="govuk-link">Save and sign out</a> <br><br></p>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Contact us for help
+            </span>
+          </summary>
+            <div class="govuk-details__text">
+              <h2 class="govuk-heading-m">Web chat</h2>
+              <ul class="govuk-list">
+                    
+              </ul>
+              <h2 class="govuk-heading-m">Send us a message</h2>
+              <ul class="govuk-list">
+                <li><a class="govuk-link" href="#">Send us a message</a></li>
+                <li>We aim to get back to you within 5 working days</li>
+              </ul>
+              <h2 class="govuk-heading-m">Telephone</h2>
+              <ul class="govuk-list">
+                <li>0300 303 0742</li>
+                <li>Monday to Friday, 8am to 8pm, Saturday, 8am to 2pm</li>
+              </ul>
+            </div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}
