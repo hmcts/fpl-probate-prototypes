@@ -1,0 +1,125 @@
+
+{% block header %}
+  {% include "includes/query_new_header.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                                <div>
+
+                                    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                    <!--
+                                    <span class="govuk-caption-l" style="padding-top: 20px;">View query</span>
+                                    -->
+
+                                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Query details</h1>
+                                    
+                                    <dl class="govuk-summary-list" style="margin-bottom: 40px;">
+                                      <div class="govuk-summary-list__row">
+                                        <dt class="govuk-summary-list__key"></dt>
+                                        <dd class="govuk-summary-list__value"></dd>
+                                      </div>
+                                      <div class="govuk-summary-list__row">
+                                        <dt class="govuk-summary-list__key">
+                                          Query subject
+                                        </dt>
+                                        <dd class="govuk-summary-list__value">
+                                          Food
+                                        </dd>
+                                      </div>
+                                      <div class="govuk-summary-list__row">
+                                        <dt class="govuk-summary-list__key">
+                                          Query body
+                                        </dt>
+                                        <dd class="govuk-summary-list__value">
+                                          Can I have donuts in the hearings?
+                                        </dd>
+                                      </div>
+                                      <div class="govuk-summary-list__row">
+                                        <dt class="govuk-summary-list__key">
+                                          Submission date
+                                        </dt>
+                                        <dd class="govuk-summary-list__value">
+                                          9 Sep 2022
+                                        </dd>
+                                      </div>
+                                      <div class="govuk-summary-list__row">
+                                        <dt class="govuk-summary-list__key">
+                                          Response status
+                                        </dt>
+                                        <dd class="govuk-summary-list__value">
+                                          <strong class="govuk-tag govuk-tag--orange">WAITING RESPONSE</strong>
+                                        </dd>
+                                      </div>
+                                    </dl>
+
+                                    <form action="page_5.html">
+                                      <div class="govuk-button-group">
+                                        <button class="govuk-button" data-module="govuk-button">
+                                          Update query
+                                        </button>
+                                        <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+                                          Delete query
+                                        </button>
+                                        <a class="govuk-link" href="page_6.html" style="color: #1d70b8">Return to case queries</a>
+                                      </div>
+                                    </form>
+
+                                    <p style="padding: 0 0 2em 0;"></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('option1').checked) {
+            document.getElementById('link').href = "page_4.html";
+        }
+        if(document.getElementById('option2').checked) {
+            document.getElementById('link').href = "page_4.html";
+        }
+      }
+</script>
+
+
+{% block footer %}
+  {% include "includes/query_new_footer.html" %}
+{% endblock %}
+        

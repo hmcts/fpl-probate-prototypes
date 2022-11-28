@@ -1,0 +1,122 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+
+<div class="govuk-width-container">
+
+  <!--
+  <a href="#" class="govuk-back-link" style="padding-top: 0px;">Back</a>
+  -->
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px;">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl">Queries prototypes</h1>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 10px;">Professional user</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="600">Prototypes</th>
+              <th scope="col" class="govuk-table__header">Version</th>
+              <th scope="col" class="govuk-table__header">Last changes</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="raise_query/page_1.html" style="text-decoration: none;color:#1d70b8;">Raise a new query</a>
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">25 November 2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="view_responded_query/page_10.html" style="text-decoration: none;color:#1d70b8;">View a responded query</a>
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">25 November 2022</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br><br>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 10px;">Caseworker</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="600">Prototypes</th>
+              <th scope="col" class="govuk-table__header">Version</th>
+              <th scope="col" class="govuk-table__header">Last changes</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <a href="respond_query/page_13.html" style="text-decoration: none;color:#1d70b8;">Respond a query</a>
+              </td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">25 November 2022</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br><br>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 10px;">Citizen</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" width="600">Prototypes</th>
+              <th scope="col" class="govuk-table__header">Version</th>
+              <th scope="col" class="govuk-table__header">Last changes</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Raise a new query</a>
+              </td>
+              <td class="govuk-table__cell">-</td>
+              <td class="govuk-table__cell">-</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                View a responded query</a>
+              </td>
+              <td class="govuk-table__cell">-</td>
+              <td class="govuk-table__cell">-</td>
+            </tr>
+          </tbody>
+        </table>
+      
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

@@ -1,0 +1,151 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Joe Bloggs &amp; Joanne Bloggs</h1>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <p class="govuk-body">Reference Number: EZ111456</p>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible" style="height:1px;color:#1d70b8;background-color:#1d70b8;" "="">
+
+        <div class="govuk-!-padding-bottom-8"></div>
+
+        <div class="hmcts-progress-bar">
+          <ol class="hmcts-progress-bar__list">
+            <li class="hmcts-progress-bar__list-item">
+              <span class="hmcts-progress-bar__icon hmcts-progress-bar__icon--complete"></span>
+              <span class="hmcts-progress-bar__label govuk-body govuk-!-font-size-14">Submitted</span>
+            </li>
+
+            <li class="hmcts-progress-bar__list-item" aria-current="step">
+              <span class="hmcts-progress-bar__icon"></span>
+              <span class="hmcts-progress-bar__label govuk-body govuk-!-font-size-14">Response</span>
+            </li>
+
+            <li class="hmcts-progress-bar__list-item">
+              <span class="hmcts-progress-bar__icon"></span>
+              <span class="hmcts-progress-bar__label govuk-body govuk-!-font-size-14">Conditional order</span>
+            </li>
+
+            <li class="hmcts-progress-bar__list-item">
+              <span class="hmcts-progress-bar__icon"></span>
+              <span class="hmcts-progress-bar__label govuk-body govuk-!-font-size-14">Final order (Divorced)</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="margin-bottom:30px;">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Important
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-notification-banner__heading" style="max-width: 600px">Application received</p>
+            <p class="govuk-body">Your application for [alternative / deemed / dispensed / bailiff] service has been received and will be reviewed by the court.</p>
+            <p class="govuk-body">You will receive an email with the court’s decision by [date plus 8 weeks]. You do not need to do anything or contact the court until you receive the decision.  </p>
+          </div>
+        </div>
+
+        <h2 class="govuk-heading-m">Latest update</h2>
+
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #F2F8F5; text-align: left;">
+
+          <p>Your [husband / wife / civil partner] has not responded to your [divorce application / application to end your civil partnership]. The court usually needs to hear from them before the [divorce / application] can proceed. </p>
+
+          <p>The simplest way to progress your application is for your [husband / wife / civil partner]  to respond, by following the instructions in the email or letter they were sent. They can still respond, even though it’s past the date when they should have responded. Save and sign out and remind them to respond, if it’s safe to do so. </p>
+
+          <p>If the application has been sent to the wrong place, then you can <a href="#0">update their email or postal address</a>. The court will ‘serve’ (send) the application to them again. This does not cost any additional fees. </p>
+
+          <p>If you want to send it to them another way, or if there is another reason for them not responding, then you can <a href="page_3.html">find out how to progress your application</a>.</p>
+
+          <script>
+
+            var targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() - 1);
+
+            var dd = targetDate.getDate();
+            var mm = targetDate.getMonth(); // 0 is January, so we must add 1
+            var yyyy = targetDate.getFullYear();
+
+            const months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var dateString = dd + " " + months[mm]  + " " + yyyy;
+            document.getElementById('date-time').innerHTML=dateString;
+
+          </script>
+
+          <!--
+
+          <h3 class="govuk-heading-s">Helpful Information</h3>
+
+          <p><a href="hub_2">Find out about dividing money and property </a></p>
+
+          -->
+        
+        </div>
+
+        <br>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+
+        <div class="govuk-!-padding-bottom-5"></div>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible" style="height:5px;color:#1d70b8;background-color:#1d70b8;">
+
+        <h2 class="govuk-heading-s">I want to...</h2>
+
+        <p><a href="">View the divorce application (PDF)</a></p>
+
+        <p><a href="check_contact_details">Review your contact details</a></p>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-s">Contact us for help</h2>
+
+        <p class="govuk-body">Ask a question or get help in your language.</p>
+
+        <p class="govuk-body">Telephone<br>0300 123 1711</p>
+
+        <p class="govuk-body">Monday to Friday, 8:30am to 5pm<br><a href="#0" class="govuk-link">Find out about call charges </a> <br>(opens in a new window)</p>
+
+        <p class="govuk-body">Email<br><a href="#0" class="govuk-link">contactia@justice.gov.uk</a></p>
+
+        <p class="govuk-body">We aim to get back to you within 5 days.</p>
+
+      </div>
+
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

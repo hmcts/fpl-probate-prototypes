@@ -1,0 +1,115 @@
+
+{% block header %}
+  {% include "includes/query_new_header.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                                <div>
+
+                                    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                    <span class="govuk-caption-l" style="padding-top: 20px;">Raise a query</span>
+
+                                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">When is the next hearing?</h1>
+
+                                    <div class="govuk-form-group">
+                                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                                        <div id="passport-issued-hint" class="govuk-hint">
+                                          For example, 27 3 2007
+                                        </div>
+                                        <div class="govuk-date-input" id="passport-issued">
+                                          <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                                Day
+                                              </label>
+                                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                                            </div>
+                                          </div>
+                                          <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                                Month
+                                              </label>
+                                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                                            </div>
+                                          </div>
+                                          <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                                Year
+                                              </label>
+                                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                    </div>
+
+                                    <form action="page_5.html" style="padding-top: 10px;">
+                                      <div class="govuk-button-group">
+                                        <button class="govuk-button" data-module="govuk-button">
+                                          Continue
+                                        </button>
+                                        <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return to case</a>
+                                      </div>
+                                    </form>
+
+                                    <p style="padding: 0 0 2em 0;"></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('option1').checked) {
+            document.getElementById('link').href = "page_4.html";
+        }
+        if(document.getElementById('option2').checked) {
+            document.getElementById('link').href = "page_4.html";
+        }
+      }
+</script>
+
+
+{% block footer %}
+  {% include "includes/query_new_footer.html" %}
+{% endblock %}
+        

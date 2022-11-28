@@ -1,0 +1,144 @@
+
+{% extends "layout_divorce.html" %}
+
+{% block pageTitle %}
+  Apply for probate
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../includes/new_phase.html" %}
+  {% include "../../includes/new_back.html" %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Body starts here -->
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 0px">
+
+    <!-- Content starts here -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l" style="margin-bottom: 40px;">How did they receive the [divorce papers / papers to end your civil partnership]? </h1>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-phone">
+             The court needs to know how they were ‘served’ (sent) the [divorce papers / papers to end your civil partnership].
+          </label>
+          <br>
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-1" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-1">
+                <label class="govuk-label govuk-radios__label" for="contact-1">
+                  By post 
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-1">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-phone">
+                    Enter the postal address 
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+                  By email address 
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-phone">
+                    Enter the email address 
+                  </label>
+                  <input class="govuk-input govuk-!-width-three-quarters" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+                <label class="govuk-label govuk-radios__label" for="contact-3">
+                  By text message or WhatsApp
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-text">
+                    Enter the mobile phone number  
+                  </label>
+                  <input class="govuk-input govuk-!-width-three-quarters" id="contact-by-text" name="contact-by-text" type="tel" autocomplete="tel">
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-4" name="contact" type="radio" value="social" data-aria-controls="conditional-contact-4">
+                <label class="govuk-label govuk-radios__label" for="contact-4">
+                  By private message on social media 
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-4">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-email">
+                    Provide a link to their social media profile 
+                  </label>
+                  <input class="govuk-input govuk-!-width-three-quarters" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email">
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-5" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-5">
+                <label class="govuk-label govuk-radios__label" for="contact-5">
+                  By another way
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-5">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-text">
+                    Explain how the application was served (sent) to your husband or wife.
+                  </label>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <!--
+          s<label class="govuk-label" for="more-detail">
+            <strong>Explain how you want to serve the documents </strong>
+          </label>
+          <div id="more-detail-hint" class="govuk-hint">
+            Provide as many details as possible.
+          </div>
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="10"></textarea>
+        </div>
+        -->
+
+        <form action="page_23.html">
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
+            <!--
+            <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
+            -->
+          </div>
+        </form>
+
+        <p class="govuk-body"><a href="#" class="govuk-link">Save and sign out</a></p>
+
+      </div>
+    </div>
+
+    <!-- Content ends here -->
+
+  </main>
+</div>
+
+<!-- Body finish here -->
+
+{% endblock %}

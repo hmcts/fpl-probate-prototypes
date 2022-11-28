@@ -1,0 +1,138 @@
+
+{% block header %}
+  {% include "includes/query_new_header.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 20px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 25px;">
+
+                <div class="govuk-width-container">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row" style="width:1300px; margin-left: -90px;">
+                                    
+                          <div class="hmcts-page-heading">
+                                <div class="hmcts-page-heading__title">
+                                     <h1 class="govuk-heading-xl">My work</h1>
+                                </div>
+                          </div>
+
+                          <p>See your tasks and view tasks available for you to pick up.</p>
+                          
+                          <button type="submit" class="govuk-button govuk-button--secondary">
+                            Filter my work
+                          </button>
+
+                          <div class="hmcts-scrollable-pane">
+                            <div class="hmcts-scrollable-pane__wrapper">
+                              <nav class="hmcts-sub-navigation">
+                                <ul class="hmcts-sub-navigation__list">
+                                  <li class="hmcts-sub-navigation__item">
+                                    <a class="hmcts-sub-navigation__link" href="#0" style="color: #1d70b8">
+                                      My tasks
+                                    </a>
+                                  </li>
+                                  <li class="hmcts-sub-navigation__item">
+                                    <a class="hmcts-sub-navigation__link" aria-current="page" href="#0" style="color: #1d70b8">
+                                      Available tasks
+                                    </a>
+                                  </li>
+                                  <li class="hmcts-sub-navigation__item">
+                                    <a class="hmcts-sub-navigation__link" href="#0" style="color: #1d70b8">
+                                      My cases
+                                    </a>
+                                  </li>
+                                  <li class="hmcts-sub-navigation__item">
+                                    <a class="hmcts-sub-navigation__link" href="#0" style="color: #1d70b8">
+                                      My access
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                              <p class="govuk-body">Displaying <strong>4</strong> of <strong>4</strong> tasks</p>
+                              <table class="govuk-table ">
+                                <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                  </tr><tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header govuk-body govuk-!-font-size-19" style="width: 290px;" aria-sort="ascending"><button type="button" data-index="0">Case name</button></th>
+                                    <th scope="col" class="govuk-table__header govuk-body govuk-!-font-size-19" style="width: 400px;" aria-sort="none"><button type="button" data-index="1">Case category</button></th>
+                                    <th scope="col" class="govuk-table__header govuk-body govuk-!-font-size-19" style="width: 200px;" aria-sort="none"><button type="button" data-index="1">Location</button></th>
+                                    <th scope="col" class="govuk-table__header"></th>
+                                    <th scope="col" class="govuk-table__header govuk-body govuk-!-font-size-19" style="width: 420px;" aria-sort="none"><button type="button" data-index="1">Task</button></th>
+                                    <th scope="col" class="govuk-table__header govuk-body govuk-!-font-size-19" style="width: 200px;" aria-sort="none"><button type="button" data-index="1">Date</button></th>
+                                    <th scope="col" class="govuk-table__header govuk-body govuk-!-font-size-14" style="width: 130px;" aria-sort="none"><a href="#"></a></th>
+                                    </tr>
+                                </thead>
+                                  <tbody class="govuk-table__body">
+                                      <tr class="govuk-table__row">
+
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Amelia Chu</td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Immigration and Asylum</td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Birmingham</td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19"></td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Review specific access request</td>
+                                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">13/04/2021</strong></td>
+                                          <td class="govuk-table__cell">&nbsp;&nbsp;&nbsp;<a href="#0" class="right_m" style="color: #1d70b8">Manage</a><span class="govuk-accordion-wa__icon"></span></td>
+                                      </tr>
+                                      <tr class="govuk-table__row">
+
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Olivia-Rose Olsen</td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Protection</td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Birmingham</td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19"></td>
+                                            <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Review respondent evidence</td>
+                                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">14/04/2021</strong></td>
+                                        <!--  <td class="govuk-table__cell">14 Mar 2021</td> -->
+                                      <td class="govuk-table__cell">&nbsp;&nbsp;&nbsp;<a href="#0" class="right_m" style="color: #1d70b8">Manage</a><span class="govuk-accordion-wa__icon"></span></td>
+                                      </tr>
+                                      <tr class="govuk-table__row">
+
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">John Pickering</td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">EEA</td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Birmingham</td>
+                                          <td class="govuk-table__cell govuk-body govuk-!-font-size-19"><svg class="hmcts-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25" path="" style="fill: black">
+                                          <title>This case has more than one task. Review needed.</title><path d="M13.7,18.5h-2.4v-2.4h2.4V18.5z M12.5,13.7c-0.7,0-1.2-0.5-1.2-1.2V7.7c0-0.7,0.5-1.2,1.2-1.2s1.2,0.5,1.2,1.2v4.8
+                                          C13.7,13.2,13.2,13.7,12.5,13.7z M12.5,0.5c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S19.1,0.5,12.5,0.5z"></path></svg></td>
+                                            <td class="govuk-table__cell govuk-body govuk-!-font-size-19">Create case summary</td>
+                                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">14/04/2021</strong></td>
+                                        <!--  <td class="govuk-table__cell">N/A</td> -->
+                                          <td class="govuk-table__cell">&nbsp;&nbsp;&nbsp;<a href="#0" class="right_m" style="color: #1d70b8">Manage</a><span class="govuk-accordion-wa__icon"></span></td>
+                                      </tr>
+
+                                    </tbody>
+                                </table>
+
+                              </div>
+
+                            </div>
+
+                            <br><br>
+
+                          </div>
+
+                        </main>
+
+                    </div>
+
+              </main>
+
+        </div>
+
+    </div>
+
+  </div>
+    
+</body>
+
+</html>
+
+{% block footer %}
+  {% include "includes/query_new_footer.html" %}
+{% endblock %}

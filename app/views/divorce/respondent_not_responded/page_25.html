@@ -23,27 +23,31 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-l" style="margin-bottom: 40px;">What do you need to update? </h1>
+        <h1 class="govuk-heading-l" style="margin-bottom: 40px;">Do you need help paying the fee for this application [for alternative service / for deemed service / to dispense with service / to withdraw your application]? </h1>
+
+        <p class="govuk-body">This application costs £53. You may be able to get help paying the fee if you (one or more of the following):</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>are on certain benefits </li>
+          <li>have a little or no savings </li>
+          <li>have low income </li>
+        </ul>
+
+        <br>
 
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
             <div class="govuk-radios" data-module="govuk-radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="option1" name="option" type="radio" value="1" data-aria-controls="conditional-1">
-                <label class="govuk-label govuk-radios__label" for="1">
-                  Their email address 
+                <input class="govuk-radios__input" id="option1" name="option" type="radio" value="yes" data-aria-controls="conditional-yes">
+                <label class="govuk-label govuk-radios__label" for="yes">
+                  I need help paying the fee 
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="option2" name="option" type="radio" value="2" data-aria-controls="conditional-2">
-                <label class="govuk-label govuk-radios__label" for="2">
-                  Their postal address
-                </label>
-              </div>
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="option3" name="option" type="radio" value="3" data-aria-controls="conditional-3">
-                <label class="govuk-label govuk-radios__label" for="3">
-                   Their email address and postal address
+                <input class="govuk-radios__input" id="option2" name="option" type="radio" value="no" data-aria-controls="conditional-no">
+                <label class="govuk-label govuk-radios__label" for="no">
+                   I do not need help paying the fee 
                 </label>
               </div>
           </fieldset>
@@ -53,12 +57,13 @@
 
         <div class="govuk-button-group">
           <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
-            <!--
+          <!--
             <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel</a>
             -->
-        </div>
+          </div>
+        </form>
 
-        <p class="govuk-body"><a href="#0" class="govuk-link">Save and sign out</a></p>
+        <p class="govuk-body"><a href="#" class="govuk-link">Save and sign out</a></p>
 
       </div>
     </div>
@@ -70,19 +75,18 @@
 
 <!-- Body finish here -->
 
+
 <script>
     function myFunction() {
    
         if(document.getElementById('option1').checked) {
-            document.getElementById('link').href = "page_12.html";
+            document.getElementById('link').href = "page_26.html";
         }
         if(document.getElementById('option2').checked) {
-            document.getElementById('link').href = "page_14.html";
-        }
-        if(document.getElementById('option3').checked) {
-            document.getElementById('link').href = "#0";
+            document.getElementById('link').href = "page_28.html";
         }
     }
 </script>
+
 
 {% endblock %}

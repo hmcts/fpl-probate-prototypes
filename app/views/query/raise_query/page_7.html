@@ -1,0 +1,83 @@
+
+{% block header %}
+  {% include "includes/query_new_header.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                            <div class="govuk-grid-column-two-thirds">
+
+                                <div class="govuk-panel govuk-panel--confirmation" style="margin-top: 50px;">
+
+                                    <h1 class="govuk-panel__title">
+                                      Query raised
+                                    </h1>
+                                 
+                                    <div class="govuk-panel__body">
+                                      This query has been added to the case
+                                    </div>
+                             
+                                </div>
+
+                                <p class="govuk-body"></p>
+
+                                <br><br>
+
+                                <p class="govuk-body">
+                                  You can <a href="#0" class="govuk-link govuk-link--no-visited-state">create another query</a> or 
+                                  <a href="page_8.html" class="govuk-link govuk-link--no-visited-state">return to the case</a>.
+                                </p>
+
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('option1').checked) {
+            document.getElementById('link').href = "page_4.html";
+        }
+        if(document.getElementById('option2').checked) {
+            document.getElementById('link').href = "page_4.html";
+        }
+      }
+</script>
+
+
+{% block footer %}
+  {% include "includes/query_new_footer.html" %}
+{% endblock %}
+        
