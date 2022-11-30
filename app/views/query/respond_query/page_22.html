@@ -118,13 +118,15 @@
                                       </label>
                                       -->
 
-                                      <a href="" >
+                                      <a href="" onclick='myFunction()' id="link" style="text-decoration: none;">
 
                                         
-                                      <input class="govuk-file-upload" onclick='myFunction()' id="link" style="text-decoration: none;" name="file-upload-1" type="file" style="padding-bottom: 15px;">
+                                      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" style="padding-bottom: 15px;">
+                                      <br>
+                                      <a class="govuk-link" href="#0" style="color: #1d70b8; font-size: 19px;">Add another document</a>
                                     </div>
 
-                                    <form action="page_22.html" style="padding-top: 20px;">
+                                    <form action="page_15.html" style="padding-top: 20px;">
                                       <div class="govuk-button-group">
                                         <button class="govuk-button" data-module="govuk-button">
                                           Save
@@ -162,10 +164,10 @@
     function myFunction() {
    
         if(document.getElementById('option1').checked) {
-            document.getElementById('link').href = "page_22.html";
+            document.getElementById('link').href = "page_4.html";
         }
         if(document.getElementById('option2').checked) {
-            document.getElementById('link').href = "page_22.html";
+            document.getElementById('link').href = "page_4.html";
         }
       }
 </script>
