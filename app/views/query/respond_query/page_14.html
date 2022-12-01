@@ -109,29 +109,32 @@
                                       -->
                                     </div>
 
-                                    <h3 class="govuk-heading-m" style="margin-top: 40px;margin-bottom: 10px;">Attach documents to your response (optional)</h3>
+                                    <h3 class="govuk-heading-m" style="margin-top: 40px;margin-bottom: 20px;">Do you want to attach documents?</h3>
 
                                     <div class="govuk-form-group">
-                                      <!--
-                                      <label class="govuk-label" for="file-upload-1">
-                                        Upload a file
-                                      </label>
-                                      -->
-
-                                      <a href="" >
-
-                                        
-                                      <input class="govuk-file-upload" onclick='myFunction()' id="link" style="text-decoration: none;" name="file-upload-1" type="file" style="padding-bottom: 15px;">
+                                      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                                        <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="option1" name="changed-name" type="radio" value="yes">
+                                            <label class="govuk-label govuk-radios__label" for="option1">
+                                              Yes
+                                            </label>
+                                          </div>
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="option2" name="changed-name" type="radio" value="no">
+                                            <label class="govuk-label govuk-radios__label" for="option2">
+                                              No
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </fieldset>
                                     </div>
 
-                                    <form action="page_22.html" style="padding-top: 20px;">
-                                      <div class="govuk-button-group">
-                                        <button class="govuk-button" data-module="govuk-button">
-                                          Save
-                                        </button>
-                                        <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return to case</a>
-                                      </div>
-                                    </form>
+                                    <div class="govuk-button-group" style="padding-top: 10px;">
+                                      <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <a class="govuk-link" href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to case</a>
+                                    </div>
 
                                     <p style="padding: 0 0 2em 0;"></p>
 
@@ -157,7 +160,6 @@
 
 </html>
 
-
 <script>
     function myFunction() {
    
@@ -165,7 +167,7 @@
             document.getElementById('link').href = "page_22.html";
         }
         if(document.getElementById('option2').checked) {
-            document.getElementById('link').href = "page_22.html";
+            document.getElementById('link').href = "page_15.html";
         }
       }
 </script>
