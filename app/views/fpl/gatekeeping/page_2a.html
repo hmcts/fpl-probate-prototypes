@@ -173,10 +173,48 @@ Hearings management
                         </label>
                       </div>
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="option2" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" onclick="window.location='page_2a.html';">
-                        <label class="govuk-label govuk-radios__label" for="contact">
+                        <input class="govuk-radios__input" id="option2" name="contact" type="radio" value="email" data-aria-controls="conditional-contact-2" checked>
+                        <label class="govuk-label govuk-radios__label" for="contact-2">
                           No
                         </label>
+                      </div>
+                      <div class="govuk-radios__conditional" id="conditional-contact-2">
+                        <legend class="govuk-fieldset__legend">
+                          Which level of judge is needed for this case?
+                        </legend>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                              Circuit Judge
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                              Circuit Judge (Section 9)
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                              District Judge
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                              Magistrate
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-5" name="where-do-you-live" type="radio" value="northern-ireland">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-5">
+                              High Court Judge
+                            </label>
+                          </div>
+                          <br>
+                          <label class="govuk-label" for="more-detail">Give reason</label>
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" style="width:900px"></textarea>
                       </div>
                     </div>
                   </fieldset>
@@ -215,10 +253,10 @@ Hearings management
     function myFunction() {
    
         if(document.getElementById('option1').checked) {
-            document.getElementById('link').href = "#0";
+            document.getElementById('link').href = "page_3.html";
         }
         if(document.getElementById('option2').checked) {
-            document.getElementById('link').href = "#0";
+            document.getElementById('link').href = "page_3.html";
         }
       }
 </script>
