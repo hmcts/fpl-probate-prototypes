@@ -1,0 +1,318 @@
+{#- We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework. -#}
+{%- set assetPath = '/govuk/assets' -%}
+
+{% extends "govuk/template.njk" %}
+
+{% from "govuk/components/accordion/macro.njk"           import govukAccordion %}
+{% from "govuk/components/back-link/macro.njk"           import govukBackLink %}
+{% from "govuk/components/breadcrumbs/macro.njk"         import govukBreadcrumbs %}
+{% from "govuk/components/button/macro.njk"              import govukButton %}
+{% from "govuk/components/character-count/macro.njk"     import govukCharacterCount %}
+{% from "govuk/components/checkboxes/macro.njk"          import govukCheckboxes %}
+{% from "govuk/components/cookie-banner/macro.njk"       import govukCookieBanner %}
+{% from "govuk/components/date-input/macro.njk"          import govukDateInput %}
+{% from "govuk/components/details/macro.njk"             import govukDetails %}
+{% from "govuk/components/error-message/macro.njk"       import govukErrorMessage %}
+{% from "govuk/components/error-summary/macro.njk"       import govukErrorSummary %}
+{% from "govuk/components/fieldset/macro.njk"            import govukFieldset %}
+{% from "govuk/components/file-upload/macro.njk"         import govukFileUpload %}
+{% from "govuk/components/input/macro.njk"               import govukInput %}
+{% from "govuk/components/inset-text/macro.njk"          import govukInsetText %}
+{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
+{% from "govuk/components/panel/macro.njk"               import govukPanel %}
+{% from "govuk/components/phase-banner/macro.njk"        import govukPhaseBanner %}
+{% from "govuk/components/radios/macro.njk"              import govukRadios %}
+{% from "govuk/components/select/macro.njk"              import govukSelect %}
+{% from "govuk/components/skip-link/macro.njk"           import govukSkipLink %}
+{% from "govuk/components/summary-list/macro.njk"        import govukSummaryList %}
+{% from "govuk/components/table/macro.njk"               import govukTable %}
+{% from "govuk/components/tabs/macro.njk"                import govukTabs %}
+{% from "govuk/components/tag/macro.njk"                 import govukTag %}
+{% from "govuk/components/textarea/macro.njk"            import govukTextarea %}
+{% from "govuk/components/warning-text/macro.njk"        import govukWarningText %}
+
+{% block head %}
+{% include "includes/head_gatekeeper.html" %}
+{% endblock %}
+
+{% block pageTitle %}
+Hearings management
+{% endblock %}
+
+{% block header %}
+
+<header class="hmcts-header" role="banner" style="background-color: #8d100e;">
+    <div class="govuk-width-container" style="max-width: 1700px;">
+        <!-- Header - Top row -->
+        <div style="margin: 0 auto;">
+            <div style="display: flex; justify-content: center;">
+                <div style="width: 100px; ">
+                    <img src="/public/images/govlogowhite.png" width="73" height="60" style="margin-top:10px;">
+                </div>
+                <div style="display: flex; flex-grow: 1; flex-direction: column;">
+                    <div style="display: flex; flex-grow: 1;">
+                        <div class="hmcts-header__logo">
+                            <a class="hmcts-header__link" href="/" aria-current="page">Judicial case manager</a>
+                        </div>
+                        <div style="display: flex; flex-grow: 1;">
+                        </div>
+                        <div class="hmcts-header__content">
+                            <nav class="hmcts-header__navigation" aria-label="Account navigation">
+                                <ul class="hmcts-header__navigation-list">
+                                    <li class="hmcts-header__navigation-item">
+                                        <a class="hmcts-header__navigation-link" href="#">
+                                            Sign out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div  style="background-color: #8d100e; display: flex; flex-grow: 1; flex-direction: row; ">
+                        <div>
+                            <nav class="hmcts-primary-navigation" aria-label="Primary navigation" style="background-color: #8d100e; ">
+                                <ul class="hmcts-primary-navigation__list">
+                                    <li class="hmcts-primary-navigation__item" >
+                                        <a class="hmcts-primary-navigation__link" href="#0">
+                                            My work
+                                        </a>
+                                    </li>
+                                    <li class="hmcts-primary-navigation__item">
+                                        <a class="hmcts-primary-navigation__link" href="#0">
+                                            All work
+                                        </a>
+                                    </li>
+                                    <li class="hmcts-primary-navigation__item" style="color:#ffffff;">
+                                            Case list
+                                    </li>
+                                    <li class="hmcts-primary-navigation__item">
+                                        <a class="hmcts-primary-navigation__link" href="#0">
+                                            Search cases
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div style="display: flex; flex-grow: 1;"></div>
+                        <div style="display: flex; flex-direction: row; ">
+                            <p style="color: white; margin-top:8px; margin-bottom: 0px;">16-digit case reference:  &nbsp;</p>
+                            <input class="govuk-input" id="hmctsref" name="hmctsref" type="text" spellcheck="false" style="width:219px;border-color: #8d100e;">
+                            <a href="/opencase" role="button" draggable="false" class="govuk-button govuk-button--secondary"
+                               style="height:36px; margin-left: 4px; margin-top: 2px;  margin-bottom: 0px;">
+                                Find
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- BETA BANNER -->
+
+<div style=" max-width:1700px; margin: 0 auto;">
+    <div class="govuk-phase-banner govuk-width-container" style=" max-width:1700px;  min-width:960px;">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+              beta
+            </strong>
+            <span class="govuk-phase-banner__text">
+              This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+            </span>
+        </p>
+    </div>
+    <!--<a href="javascript:history.back()" class="govuk-back-link">Back</a>-->
+</div>
+
+<!-- BODY -->
+
+<div class="govuk-width-container" style="max-width: 1700px;">
+    <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 50px;">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                
+                <div class="" style="display: flex; justify-content: space-between; ">
+
+                    <div>
+
+                        <h1 class="govuk-heading-xl" style="margin-bottom:30px;">Add the gatekeeping order</h1>
+
+                        <h1 class="govuk-heading-l" style="margin-bottom: 20px;">Smith v Peterson  &nbsp;&nbsp;&nbsp; </h1>
+
+                        <span class="govuk-body-l"s style="padding-top: 0px">FamilyMan ID: mockcaseID 1234-5678-9012-3456</span>
+
+                        <br><br>
+
+                        <span class="govuk-body-l"s style="padding-top: 0px">CCD ID: #1643479764006240</span>
+
+                        <br><br><br>
+
+                    </div>
+
+                </div>
+
+                <p class="govuk-body" style="margin-bottom: 10px;"><strong>Hearing date</strong></p>
+
+                <p class="govuk-body">3 November 2012, 1:34pm</p>
+
+                <p class="govuk-heading-m" style="margin-bottom: 30px;"><strong>Confirm details</strong></p>
+
+                <p class="govuk-heading-l" style="margin-bottom: 30px;"><strong>All parties</strong></p>
+
+                <p class="govuk-heading-m" style="margin-bottom: 10px;"><strong>Attend the pre-hearing and hearing</strong></p>
+
+                <div class="govuk-radios__item" style="padding-left:0px;padding-bottom: 0px;padding-top: 5px;">
+                    <label class="govuk-label" for="more-detail">Description (Optional)</label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" style="width:900px">Parties and their legal representatives must attend the pre-hearing and hearing</textarea>
+                </div>
+
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                    <legend class="govuk-fieldset__legend">
+                      Date and time
+                    </legend>
+                    <div id="passport-issued-hint" class="govuk-hint">
+                      Use 24h format
+                    </div>
+                    <div class="govuk-date-input" id="passport-issued">
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Day
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric" value="03">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Month
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="11">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                            Year
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric" value="2021">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Hour
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="10">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Minute
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="14">
+                        </div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Second
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="35">
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <br><br>
+
+                <p class="govuk-heading-l" style="margin-bottom: 30px;"><strong>Cafcass</strong></p>
+
+                <p class="govuk-heading-m" style="margin-bottom: 10px;"><strong>Appoint a children's guardian</strong></p>
+
+                <div class="govuk-radios__item" style="padding-left:0px;padding-bottom: 0px;padding-top: 5px;">
+                    <label class="govuk-label" for="more-detail">Description (Optional)</label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" style="width:900px"></textarea>
+                </div>
+
+                <br><br>
+
+                <p class="govuk-heading-l" style="margin-bottom: 30px;"><strong>Court</strong></p>
+
+                <p class="govuk-heading-m" style="margin-bottom: 10px;"><strong>Arrange interpreters</strong></p>
+
+                <div class="govuk-form-group" style="margin-bottom: 10px;">
+                  <fieldset class="govuk-fieldset">
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc" checked>
+                        <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                          Arrange interpreter 
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="govuk-radios__item" style="padding-left:0px;padding-bottom: 0px;padding-top: 5px;">
+                    <label class="govuk-label" for="more-detail">Enter the name of the respondent and requested language interpreter</label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" style="width:900px">Respondent: Laura Carrosso and language interpreter: Italian</textarea>
+                </div>
+
+                <br><br>
+
+                <div class="govuk-button-group" style="margin-top: 10px;">
+                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button" style="display:flex;vertical-align:middle;margin-right: 0px;">
+                    Previous
+                  </button>
+                  <a href="" onclick='myFunction()' id="link" style="text-decoration: none;display:flex;vertical-align:middle;">
+                    <button class="govuk-button" data-module="govuk-button">
+                        Continue
+                      </button>
+                    </a>
+                </div>
+
+                <span><a class="govuk-link" href="#0" style="color: #1d70b8;font-size: 19px;">Cancel</a></span>
+
+                <!--
+                <div class="govuk-button-group" style="padding-top: 10px;">
+                  <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="govuk-link" href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to case</a>
+                </div>
+                -->
+
+                <p style="padding: 0 0 2em 0;"></p>
+
+            </div>
+        </div>
+    </main>
+</div>
+
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('option1').checked) {
+            document.getElementById('link').href = "#";
+        }
+        if(document.getElementById('option2').checked) {
+            document.getElementById('link').href = "#";
+        }
+      }
+</script>
+
+
+{% endblock %}
+
+{% block footer %}
+  {% include "includes/gatekeeping_new_footer.html" %}
+{% endblock %}
+
+
+
+
