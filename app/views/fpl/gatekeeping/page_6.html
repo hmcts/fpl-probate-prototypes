@@ -152,11 +152,9 @@ Hearings management
 
                 </div>
 
-                <p class="govuk-body"><strong>Allocation decision</strong></p>
+                <p class="govuk-body"><strong>Send to admin</strong></p>
 
-                <p class="govuk-body">The proposed allocation is District Judge.</p>
-
-                <p class="govuk-body">In this the right level of judge?</p>
+                <p class="govuk-body">Do you want court admin to complete the allocated judges and listing tasks?</p>
 
                 <div class="govuk-form-group">
                   <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
@@ -167,54 +165,22 @@ Hearings management
                     -->
                     <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="option1" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" onclick="window.location='page_2.html';">
+                        <input class="govuk-radios__input" id="conditional-contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked>
                         <label class="govuk-label govuk-radios__label" for="contact">
                           Yes
                         </label>
                       </div>
+                      <div class="govuk-radios__conditional" id="conditional-contact">
+                        <div class="govuk-radios__item" style="padding-left:0px;padding-bottom: 1px;padding-top: 10px;">
+                            <label class="govuk-label" for="more-detail">Enter the listing instructions for court admin</label>
+                            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" style="width:900px"></textarea>
+                        </div>
+                      </div>
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="option2" name="contact" type="radio" value="email" data-aria-controls="conditional-contact-2" checked>
+                        <input class="govuk-radios__input" id="conditional-contact-2" name="contact" type="radio" value="email" data-aria-controls="conditional-contact-2" onclick="window.location='page_7.html';">
                         <label class="govuk-label govuk-radios__label" for="contact-2">
                           No
                         </label>
-                      </div>
-                      <div class="govuk-radios__conditional" id="conditional-contact-2">
-                        <legend class="govuk-fieldset__legend">
-                          <strong>Which level of judge is needed for this case?</strong>
-                        </legend>
-                        <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                              Circuit Judge
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                              Circuit Judge (Section 9)
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-                              District Judge
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-                              Magistrate
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="where-do-you-live-5" name="where-do-you-live" type="radio" value="northern-ireland">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-5">
-                              High Court Judge
-                            </label>
-                          </div>
-                          <br>
-                          <label class="govuk-label" for="more-detail"><strong>Give reason</strong></label>
-                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" style="width:900px"></textarea>
                       </div>
                     </div>
                   </fieldset>
@@ -253,10 +219,10 @@ Hearings management
     function myFunction() {
    
         if(document.getElementById('option1').checked) {
-            document.getElementById('link').href = "page_3.html";
+            document.getElementById('link').href = "#";
         }
         if(document.getElementById('option2').checked) {
-            document.getElementById('link').href = "page_3.html";
+            document.getElementById('link').href = "#";
         }
       }
 </script>
