@@ -67,9 +67,11 @@
 
                 </div>
 
-                <form action="page_23b.html">
+                <p><a href="page_67.html">If the net value of the estate is worth more than £325,000...</a></p>
+
+                <form action="javascript:validateAmount()">
                     <div class="govuk-form-group">
-                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+                        <button data-prevent-double-click="true" id="bigGreen" class="govuk-button" data-module="govuk-button">
                             Save and continue
                         </button>
                     </div>
@@ -121,12 +123,15 @@
     {% include "../../../includes/as_it_is_scripts.html" %}
 
     <script>
-        function myFunction() {
-            if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_25.html";
+        var Base_url = "page_25.html";
+        function validateAmount() {
+            if(document.getElementById('estateNetQualifyingValueField').value > 325000) {
+                var url ="page_67.html";
+                window.location = url;
             }
-            if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_25.html";
+            else {
+                var url ="page_23b.html";
+                window.location = url;
             }
         }
     </script>
