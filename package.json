@@ -7,9 +7,12 @@
   "name": "govuk-prototype-kit",
   "dependencies": {
     "@govuk-prototype-kit/step-by-step": "^2.1.0",
+    "@hmcts/frontend": "^0.0.50-alpha",
+    "govuk_frontend_toolkit": "^9.0.1",
     "govuk-frontend": "^4.4.1",
     "govuk-prototype-kit": "^13.2.1",
     "jquery": "^3.6.3",
-    "notifications-node-client": "^5.2.3"
+    "notifications-node-client": "^5.2.3",
+    "nunjucks": "^3.2.3"
   }
 }
