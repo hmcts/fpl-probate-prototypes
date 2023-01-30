@@ -26,14 +26,71 @@
 
                                     <span class="govuk-caption-l" style="padding-top: 20px;">Raise a query</span>
 
-                                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">If no other other yes question</h1>
+                                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Get help with a technical problem</h1>
 
-                                    <p class="govuk-body govuk-!-font-weight-regular">Text</p>
+                                    <p>Only use this form to report technical problems.</p>
+
+                                     <p>Do not include any personal or financial information. For example, your National Insurance or credit card numbers.</p>
 
                                     <form action="page_3.html" style="padding-top: 10px;">
+                                      <fieldset class="govuk-fieldset">
+                                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                                          <h2 class="govuk-fieldset__heading govuk-heading-m">
+                                            Personal details
+                                          </h2>
+                                        </legend>
+                                        <div class="govuk-form-group">
+                                          <label class="govuk-label" for="address-line-1">
+                                            Full name
+                                          </label>
+                                          <input class="govuk-input govuk-!-width-two-thirds" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
+                                        </div>
+                                        <div class="govuk-form-group">
+                                          <label class="govuk-label" for="address-line-2">
+                                            Email address
+                                          </label>
+                                          <input class="govuk-input govuk-!-width-two-thirds" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+                                        </div>
+                                        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                                          <div class="govuk-form-group">
+                                            <label class="govuk-label" for="what-doing">
+                                              What were you doing?
+                                            </label>
+                                            <textarea class="govuk-textarea govuk-js-character-count govuk-!-width-two-thirds" id="what-doing" name="what-doing" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                                          </div>
+                                          <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+                                            You can enter up to 1000 characters
+                                          </div>
+                                        </div>
+                                        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                                          <div class="govuk-form-group">
+                                            <label class="govuk-label" for="what-help">
+                                              What do you need help with?
+                                            </label>
+                                            <textarea class="govuk-textarea govuk-js-character-count govuk-!-width-two-thirds" id="what-help" name="what-help" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                                          </div>
+                                          <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+                                            You can enter up to 1000 characters
+                                          </div>
+                                        </div>
+                                        <!-- <div class="govuk-form-group">
+                                          <label class="govuk-label" for="more-detail">
+                                            What were you doing?
+                                          </label>
+                                          <textarea class="govuk-textarea govuk-!-width-two-thirds" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                                          <div class="govuk-hint hmrc-character-count__message hmrc-character-count__status" aria-hidden="true">You have 1000 characters remaining</div>
+                                        </div>
+                                        <div class="govuk-form-group">
+                                          <label class="govuk-label" for="help-required">
+                                            What do you need help with?
+                                          </label>
+                                          <textarea class="govuk-textarea govuk-!-width-two-thirds" id="more-detail" name="help-required" rows="5" aria-describedby="more-detail-hint"></textarea>
+                                          <div class="govuk-hint hmrc-character-count__message hmrc-character-count__status" aria-hidden="true">You have 1000 characters remaining</div>
+                                        </div> -->
+                                      </fieldset>
                                       <div class="govuk-button-group">
                                         <button class="govuk-button" data-module="govuk-button">
-                                          Continue
+                                          Send
                                         </button>
                                         <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return to case</a>
                                       </div>
