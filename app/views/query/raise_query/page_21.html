@@ -28,16 +28,31 @@
 
                                     <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Do you wish to upload a document to the case?</h1>
 
-                                    <p class="govuk-body govuk-!-font-weight-regular">Text</p>
+                                    <!-- <p class="govuk-body govuk-!-font-weight-regular">Text</p> -->
+                                    <div class="govuk-form-group">
+                                      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                        <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="option1" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                            <label class="govuk-label govuk-radios__label" for="contact">
+                                              Yes
+                                            </label>
+                                          </div>
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="option2" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                            <label class="govuk-label govuk-radios__label" for="contact">
+                                              No
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                    </div>
 
-                                    <form action="page_3.html" style="padding-top: 10px;">
-                                      <div class="govuk-button-group">
-                                        <button class="govuk-button" data-module="govuk-button">
-                                          Continue
-                                        </button>
-                                        <a class="govuk-link" href="#0" style="color: #1d70b8">Cancel and return to case</a>
-                                      </div>
-                                    </form>
+                                    <div class="govuk-button-group" style="padding-top: 10px;">
+                                      <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <a class="govuk-link" href="page_1.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to case</a>
+                                    </div>
 
                                     <p style="padding: 0 0 2em 0;"></p>
 
@@ -62,6 +77,18 @@
 </body>
 
 </html>
+
+<script>
+  function myFunction() {
+ 
+      if(document.getElementById('option1').checked) {
+          document.getElementById('link').href = "page_22.html";
+      }
+      if(document.getElementById('option2').checked) {
+          document.getElementById('link').href = "page_1.html";
+      }
+    }
+</script>
 
 
 {% block footer %}

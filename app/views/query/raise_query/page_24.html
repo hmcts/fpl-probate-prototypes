@@ -1,0 +1,213 @@
+
+{% block header %}
+  {% include "includes/query_new_header.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 20px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 25px;">
+                        
+                <div class="govuk-width-container">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row" style="width:1300px; margin-left: -90px;">
+
+                            <div class="" style="display: flex; justify-content: space-between; ">
+
+                                <div>
+
+                                    <span class="govuk-caption-l" style="padding-top: 0px">1234-5678-9012-3456</span>
+                                  
+                                    <h1 class="govuk-heading-xl">Smith v Peterson  &nbsp;&nbsp;&nbsp; </h1>
+
+                                </div>
+
+                                <div style="display: flex; align-items:right; padding-top: 10px;">
+                                    <p class="govuk-!-margin-top-2">Next step &nbsp;</p>
+
+                                    <select class="govuk-select" id="sort" name="sort">
+                                        <option value="published" selected="">Select action</option>
+                                        <option value="published">Submit amended application</option>
+                                        <option value="published">Link respondent</option>
+                                        <option value="published">Add Note</option>
+                                        <option value="published">Upload document</option>
+                                        <option value="updated">Stop representing a client</option>
+                                        <option value="updated">Raise a query</option>
+                                        <option value="updated">Print</option>
+                                    </select>
+
+                                    <div>
+                                        <a href="page_17.html">
+                                            <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">Go</button>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                              <div class="govuk-notification-banner__header">
+                                <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                                  Success
+                                </h2>
+                              </div>
+                              <div class="govuk-notification-banner__content">
+                                <h3 class="govuk-notification-banner__heading">
+                                  You uploaded a new document to the query
+                                </h3>
+                                <!-- <p class="govuk-body">Contact <a class="govuk-notification-banner__link" href="#">example@department.gov.uk</a> if you think there’s a problem.</p> -->
+                              </div>
+                            </div>
+                            <!--
+                            <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="border: 5px solid #d4351c; background-color: #d4351c;">
+                                <div class="govuk-notification-banner__header" >
+                                    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                                          Important
+                                    </h2>
+                                </div>
+                                <div class="govuk-notification-banner__content" style="position: relative;">
+                                    <p class="govuk-notification-banner__heading" style="max-width: 1200px;"> 
+                                        <span style="font-family: GDS Transport,arial,sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-weight: 700;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;position: absolute;left: 0;min-width: 35px;min-height: 35px;margin-top: -7px;border: 3px solid #0b0c0c;border-radius: 50%;color: #fff;background: #0b0c0c;font-size: 30px;line-height: 29px;text-align: center;-webkit-user-select: none;-ms-user-select: none;-moz-user-select: none;user-select: none;margin-left: 20px;margin-top: 0px;">!</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        There are 2 queries on this case. <a href="p#0" class="govuk-link govuk-link--no-visited-state">View queries</a>
+                                    </p>
+                                </div>
+                            </div>
+                            -->
+                            <div class="govuk-tabs" data-module="govuk-tabs">
+
+                                  <h2 class="govuk-tabs__title">
+                                    Contents
+                                  </h2>
+
+                                  <ul class="govuk-tabs__list">
+                                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                                      <a class="govuk-tabs__tab" href="#0">
+                                        History
+                                      </a>
+                                    </li>
+                                    
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="page_2">
+                                        Queries
+                                      </a>
+                                    </li>
+
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#0">
+                                        Petition
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#0">
+                                        AOS
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#0">
+                                        Outcome of Decree Nisi
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#0">
+                                        Documents
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#0">
+                                        Marriage Certificate
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#0">
+                                        Hearings
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#0">
+                                        Case file
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  <div class="govuk-tabs__panel" id="1">
+                                        <div>
+
+                                            <h2 class="govuk-heading-l" style="margin-top: 10px;">History</h2>
+
+                                            <table class="govuk-table" style="width:600px; margin-right: 20px;">
+                                                <thead class="govuk-table__head">
+                                                    <tr class="govuk-table__row">
+                                                        <th scope="col" class="govuk-table__header">Event</th>
+                                                        <th scope="col" class="govuk-table__header">Date</th>
+                                                        <th scope="col" class="govuk-table__header">Author</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="govuk-table__body">
+                                                
+                                                    <tr class="govuk-table__row" style="border-left: 4px solid #005ea5; background-color: rgba(0,94,165,0.2); ">
+                                                        <td class="govuk-table__cell">&nbsp;&nbsp;<a href="">Case submitted</a></td>
+                                                        <td class="govuk-table__cell" style="text-decoration: underline;">17 May 2020, 3:49:22 PM</td>
+                                                        <td class="govuk-table__cell">Alex Smith</td>
+                                                    </tr>
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div style="width: 580px; border: 1px solid #bfc1c3; padding:10px; margin-top: 20px;">
+                                            <h2 class="govuk-heading-m  govuk-!-margin-top-3 govuk-!-margin-bottom-4">Details</h2>
+                                            <div style="display: flex;">
+                                                <div style="width: 210px;">
+                                                    <p>Date</p>
+                                                    <p>Author</p>
+                                                    <p>End state</p>
+                                                    <p>Event</p>
+                                                    <p>Summary</p>
+                                                    <p>Comment</p>
+                                                </div>
+                                                
+                                                <div>
+                                                    <p style="text-decoration: underline;">17 May 2020, 3:49:22 PM</p>
+                                                    <p>Alex Smith</p>
+                                                    <p>Solicitor - Awaiting Payment Confirmation</p>
+                                                    <p>Case submission</p>
+                                                    <p>-</p>
+                                                    <p>-</p>
+                                                </div>
+                                                
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+    
+</body>
+
+</html>
+
+{% block footer %}
+  {% include "includes/query_new_footer.html" %}
+{% endblock %}
