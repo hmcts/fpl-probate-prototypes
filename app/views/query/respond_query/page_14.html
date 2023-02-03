@@ -3,145 +3,160 @@
 {% endblock %}
 
 <html lang="en" class="govuk-template ">
-    <div style=" max-width:1300px; margin: 0 auto;">
-        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
-            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
-                <div class="govuk-width-container" style="margin-left: 80px">
-                    <main class="" id="main-content" role="main">
-                        <div class="govuk-grid-row">
-                          <div class="govuk-grid-column-two-thirds">
-                                <div>
-                                    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
-                                    <h1 class="govuk-heading-xl">
-                                      <span class="govuk-caption-l">1234-5678-9012-3456</span>
-                                      Smith v Peterson
-                                    </h1>
-
-                                    <h2 class="govuk-heading-l">Respond to a query</h2>
-                                    <dl class="govuk-summary-list">
-                                      <div class="govuk-summary-list__row">
-                                        <dt class="govuk-summary-list__key">
-                                          Query subject
-                                        </dt>
-                                        <dd class="govuk-summary-list__value">
-                                          Food
-                                        </dd>
-                                      </div>
-                                      <div class="govuk-summary-list__row">
-                                        <dt class="govuk-summary-list__key">
-                                          Query body
-                                        </dt>
-                                        <dd class="govuk-summary-list__value">
-                                          Can I have doughnuts in the hearings?
-                                        </dd>
-                                      </div>
-                                      <div class="govuk-summary-list__row">
-                                        <dt class="govuk-summary-list__key">
-                                          Submission date
-                                        </dt>
-                                        <dd class="govuk-summary-list__value">
-                                          9 Sep 2022
-                                        </dd>
-                                      </div>
-                                      <div class="govuk-summary-list__row">
-                                        <dt class="govuk-summary-list__key">
-                                          Is the query hearing related?
-                                        </dt>
-                                        <dd class="govuk-summary-list__value">
-                                          Yes
-                                        </dd>
-                                      </div>
-                                      <div class="govuk-summary-list__row">
-                                        <dt class="govuk-summary-list__key">
-                                          When is the next hearing?
-                                        </dt>
-                                        <dd class="govuk-summary-list__value">
-                                          18 Nov 2022
-                                        </dd>
-                                      </div>
-                                    </dl>
-
-                                    <h3 class="govuk-heading-m" style="margin-top: 40px;margin-bottom: 20px;">Enter your response</h3>
-
-                                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
-                                      <div class="govuk-form-group">
-                                        <!--
-                                        <div id="with-hint-hint" class="govuk-hint">
-                                          Include as many details as possible.
-                                        </div>
-                                        -->
-                                        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="7" aria-describedby="with-hint-info with-hint-hint"></textarea>
-                                      </div>
-                                      <!--
-                                      <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-                                        You can enter up to 150 characters
-                                      </div>
-                                      -->
-                                    </div>
-
-                                    <h3 class="govuk-heading-m" style="margin-top: 40px;margin-bottom: 20px;">Do you want to attach documents?</h3>
-
-                                    <div class="govuk-form-group">
-                                      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-                                        <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-                                          <div class="govuk-radios__item">
-                                            <input class="govuk-radios__input" id="option1" name="changed-name" type="radio" value="yes">
-                                            <label class="govuk-label govuk-radios__label" for="option1">
-                                              Yes
-                                            </label>
-                                          </div>
-                                          <div class="govuk-radios__item">
-                                            <input class="govuk-radios__input" id="option2" name="changed-name" type="radio" value="no">
-                                            <label class="govuk-label govuk-radios__label" for="option2">
-                                              No
-                                            </label>
-                                          </div>
-                                        </div>
-                                      </fieldset>
-                                    </div>
-
-                                    <div class="govuk-button-group" style="padding-top: 10px;">
-                                      <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
-                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                      <a class="govuk-link" href="page_13.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to case list</a>
-                                    </div>
-
-                                    <p style="padding: 0 0 2em 0;"></p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </main>
-
+  <div style=" max-width:1300px; margin: 0 auto;">
+    <div style="max-width:1300px; min-width: 1300px; margin: 20px 0px 0px 0px">
+      <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 25px;">
+        <div class="govuk-width-container"> 
+          <div class="govuk-grid-row" style="width:1300px; margin-left: -90px;">
+            <h1 class="govuk-heading-xl">
+              <span class="govuk-caption-l">1234-5678-9012-3456</span>
+              Smith v Peterson
+            </h1>
+          </div>
+          <div class="govuk-grid-row" style="width:1300px; margin-left: -90px;">
+            <div class="govuk-tabs" data-module="govuk-tabs">
+            <h2 class="govuk-tabs__title">
+              Contents
+            </h2>
+            <ul class="govuk-tabs__list">
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#0">
+                  History
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#0">
+                  Queries
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#0">
+                  Petition
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#0">
+                  AOS
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#0">
+                  Outcome of Decree Nisi
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#0">
+                  Documents
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#0">
+                  Marriage Certificate
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#0">
+                  Hearings
+                </a>
+              </li>
+              <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#0">
+                  Case file
+                </a>
+              </li>
+            </ul>
+            <div class="govuk-tabs__panel" id="1">
+              <h2 class="govuk-heading-l">Respond to a query</h2>
+              <dl class="govuk-summary-list">
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Query subject
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Food
+                  </dd>
                 </div>
-
-            </main>
-
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Query body
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Can I have doughnuts in the hearings?
+                  </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Submission date
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    9 Sep 2022
+                  </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Is the query hearing related?
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Yes
+                  </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    When is the next hearing?
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    18 Nov 2022
+                  </dd>
+                </div>
+              </dl>
+              <h3 class="govuk-heading-m" style="margin-top: 40px;margin-bottom: 20px;">Enter your response</h3>
+              <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                <div class="govuk-form-group">
+                  <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="7" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                </div>
+              </div>
+              <h3 class="govuk-heading-m" style="margin-top: 40px;margin-bottom: 20px;">Do you want to attach documents?</h3>
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="option1" name="changed-name" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="option1">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="option2" name="changed-name" type="radio" value="no">
+                      <label class="govuk-label govuk-radios__label" for="option2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="govuk-button-group" style="padding-top: 10px;">
+                <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="govuk-link" href="page_13.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to query list</a>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </main>
     </div>
-
   </div>
-
-</body>
-
 </html>
 
 <script>
-    function myFunction() {
-   
-        if(document.getElementById('option1').checked) {
-            document.getElementById('link').href = "page_22.html";
-        }
-        if(document.getElementById('option2').checked) {
-            document.getElementById('link').href = "page_15.html";
-        }
-      }
+  function myFunction() {
+    if(document.getElementById('option1').checked) {
+        document.getElementById('link').href = "page_22.html";
+    }
+    if(document.getElementById('option2').checked) {
+        document.getElementById('link').href = "page_15.html";
+    }
+  }
 </script>
-
 
 {% block footer %}
   {% include "includes/query_new_footer.html" %}
