@@ -37,7 +37,7 @@
     "marked": "^4.0.10",
     "nodemon": "^2.0.15",
     "notifications-node-client": "^5.1.0",
-    "nunjucks": "^3.2.1",
+    "nunjucks": "^3.2.4",
     "portscanner": "^2.1.1",
     "require-dir": "^1.0.0",
     "sass": "^1.49.10",
