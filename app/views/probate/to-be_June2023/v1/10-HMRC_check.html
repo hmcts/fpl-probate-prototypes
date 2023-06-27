@@ -151,20 +151,39 @@
 
                         <!-- Content -->
 
-                        <h1 class="govuk-heading-l">Find out if you need to report the estate value to HMRC</h1>
+                        <div class="govuk-form-group">
+                            <fieldset class="govuk-fieldset" aria-describedby="deathCertificate-hint">
+                                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                                    <h1 class="govuk-fieldset__heading">
+                                      Have you checked whether you need to report the estate value to HMRC?
+                                    </h1>
+                                </legend>
 
-                        <p class="govuk-body">
-                          You can use the <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value#use-the-online-inheritance-tax-checker">Inheritance Tax checker</a> to find out if you need report the value of the estate to HMRC.
-                            <br><br>
-                          If you need to let HMRC know the estate’s value, you must send the relevant form by post to HMRC.
-                        </p>
+                                <div class="govuk-radios govuk-radios--inline">
+                    
+                                    <div class="govuk-radios__item">
+                                      <input class="govuk-radios__input" id="option1" name="deathCertificate" type="radio" value="optionYes">
+                                      <label class="govuk-label govuk-radios__label" for="deathCertificate">
+                                        Yes
+                                      </label>
+                                    </div>
+                        
+                                    <div class="govuk-radios__item">
+                                      <input class="govuk-radios__input" id="option2" name="deathCertificate" type="radio" value="optionNo">
+                                      <label class="govuk-label govuk-radios__label" for="deathCertificate-2">
+                                        No
+                                      </label>
+                                    </div>
+                    
+                                </div>
+              
+                            </fieldset>
+                        </div>
+                        
+                        <div class="govuk-form-group">
+                            <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
+                        </div>
 
-                        {% from "govuk/components/button/macro.njk" import govukButton %}
-
-                            {{ govukButton({
-                              text: "Continue",
-                              href: "/probate/to-be_June2023/v1/page_7.html"
-                            }) }}
 
                         <!-- End content -->
 
@@ -319,6 +338,17 @@
         <script src="https://webchat-client.ctsc.hmcts.net/chat-client/1/app-es5.js" nomodule defer crossorigin="anonymous"></script>
         <script src="/public/javascripts/avaya-webchat-3.js"></script>
 
-    </body>
+        <script>
+            function myFunction() {
+                if(document.getElementById('option1').checked) {
+                    document.getElementById('link').href = "11-IHT_forms.html";
+                }
+                if(document.getElementById('option2').checked) {
+                    document.getElementById('link').href = "10a-checks_needed.html";
+                }
+            }
+        </script>
 
+    </body>
+    
 </html>

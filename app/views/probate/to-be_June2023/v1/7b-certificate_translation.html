@@ -4,6 +4,9 @@
 
     {% include "../../../includes/as_it_is_header.html" %}
 
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -12,62 +15,41 @@
                         
                 <div class="govuk-form-group">
 
-                    <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+                    <fieldset class="govuk-fieldset">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                      
                             <h1 class="govuk-fieldset__heading">
-                              What was their date of birth?
+                                Is the English translation included in the foreign death certificate?
                             </h1>
-                      
                         </legend>
                       
-                        <div id="dob-hint" class="govuk-hint">
-                          For example, 31 03 1945
-                        </div>
+                        <div class="govuk-radios">
 
-                        <div class="govuk-date-input" id="dob">
-                        
-                        <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="dob-day">
-                                Day
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option1" name="foreignDeathCertTranslation" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="foreignDeathCertTranslation">
+                                  Yes
+                                </label>
                             </div>
-                        </div>
-                      
-                        <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="dob-month">
-                                Month
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" pattern="[0-9]*" inputmode="numeric">
+
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option2" name="foreignDeathCertTranslation" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="foreignDeathCertTranslation-2">
+                                  No, it has been translated separately
+                                </label>
                             </div>
+
                         </div>
-                      
-                        <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="dob-year">
-                                Year
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" pattern="[0-9]*" inputmode="numeric">
-                            </div>
-                        </div>
-                      
-                      </div>
                       
                     </fieldset>
 
                 </div>
 
-                <form action="page_18.html">
-                    <div class="govuk-form-group">
-                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
-                        Save and continue
-                        </button>
-                    </div>
-                </form>
+                <div class="govuk-form-group">
+                    <a href="8-certificate_type.html" id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+                </div>
+
+                <br>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -113,17 +95,6 @@
     {% include "../../../includes/as_it_is_footer.html" %}
 
     {% include "../../../includes/as_it_is_scripts.html" %}
-
-    <script>
-        function myFunction() {
-            if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_17.html";
-            }
-            if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_17.html";
-            }
-        }
-    </script>
 
 </body>
 

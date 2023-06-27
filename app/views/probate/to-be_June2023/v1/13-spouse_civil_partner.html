@@ -4,6 +4,9 @@
 
     {% include "../../../includes/as_it_is_header.html" %}
 
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -16,35 +19,26 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                              Do you have a death certificate or an interim death certificate?
+                              Did the deceased have a late spouse or civil partner?
                             </h1>
                         </legend>
-                      
-                        <p class="govuk-body">A death certificate is printed double-sided on green paper and is given to you by a registrar from the births, deaths and marriages registry.</p>
+
+                        <div class="govuk-radios govuk-radios--inline">
+
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option1" name="married" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="married">
+                                  Yes
+                                </label>
+                            </div>
+
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option2" name="married" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="married-2">
+                                  No
+                                </label>
+                            </div>
                         
-                        <p class="govuk-body">An <a target="_blank" rel="external noopener" href="https://www.gov.uk/after-a-death/when-a-death-is-reported-to-a-coroner" class="govuk-link" aria-label="interim death certificate (opens in a new window)">interim death certificate (opens in a new window)</a> is only issued by the coroner if there is an inquest to find out the cause of death.</p>
-
-                        <div class="govuk-form-group">
-
-                            <div class="govuk-radios govuk-radios--inline">
-                            
-                                <div class="govuk-radios__item">
-                                    <input class="govuk-radios__input" id="option1" name="deathCertificate" type="radio" value="optionDeathCertificate">
-                                    <label class="govuk-label govuk-radios__label" for="deathCertificate">
-                                        Death certificate
-                                    </label>
-                                </div>
-                                
-                                <div class="govuk-radios__item">
-                                  <input class="govuk-radios__input" id="option2" name="deathCertificate" type="radio" value="optionInterimCertificate">
-                                  <label class="govuk-label govuk-radios__label" for="deathCertificate-2">
-                                    Interim death certificate
-                                  </label>
-                                      
-                                </div>
-                            
-                            </div>  
-
                         </div>
 
                     </fieldset>
@@ -105,10 +99,10 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_22.html";
+                document.getElementById('link').href = "page_27.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_22.html";
+                document.getElementById('link').href = "page_27.html";
             }
         }
     </script>

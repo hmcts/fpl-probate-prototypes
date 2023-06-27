@@ -4,6 +4,9 @@
 
     {% include "../../../includes/as_it_is_header.html" %}
 
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -16,37 +19,37 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                              Did Peter Coward die in England or Wales?
+                              What’s the full name of the person who died?
                             </h1>
                         </legend>
                       
-                        <div class="govuk-radios govuk-radios--inline">
+                        <p class="govuk-hint">Use the name on the death certificate.</p>
 
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="diedEngOrWales" type="radio" value="optionYes">
-                                <label class="govuk-label govuk-radios__label" for="diedEngOrWales">
-                                  Yes
-                                </label>
-                            </div>
-
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="diedEngOrWales" type="radio" value="optionNo">
-                                <label class="govuk-label govuk-radios__label" for="diedEngOrWales-2">
-                                  No
-                                </label>
-                            </div>
-                            
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="firstName">
+                              First name and any middle names
+                            </label>
+                            <input class="govuk-input govuk-!-width-three-quarters" id="firstName" name="firstName" type="text" value="" maxlength="100">
                         </div>
-                      
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="lastName">
+                              Last name
+                            </label>
+                            <input class="govuk-input govuk-!-width-three-quarters" id="lastName" name="lastName" type="text" value="" maxlength="100">
+                        </div>
+
                     </fieldset>
 
                 </div>
 
-                <div class="govuk-form-group">
-                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
-                </div>
-
-                <br>
+                <form action="4-DOB.html">
+                    <div class="govuk-form-group">
+                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+                        Save and continue
+                        </button>
+                    </div>
+                </form>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -96,10 +99,10 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_21.html";
+                document.getElementById('link').href = "page_17.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_20a.html";
+                document.getElementById('link').href = "page_17.html";
             }
         }
     </script>

@@ -4,6 +4,9 @@
 
     {% include "../../../includes/as_it_is_header.html" %}
 
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -12,41 +15,62 @@
                         
                 <div class="govuk-form-group">
 
-                    <fieldset class="govuk-fieldset">
+                    <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      
                             <h1 class="govuk-fieldset__heading">
-                              Did Peter Coward get married or enter into a civil partnership after the will was signed?
+                              What was the date that they died?
                             </h1>
+                      
                         </legend>
-
-                        <div class="govuk-radios govuk-radios--inline">
-
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="married" type="radio" value="optionYes">
-                                <label class="govuk-label govuk-radios__label" for="married">
-                                  Yes
-                                </label>
-                            </div>
-
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="married" type="radio" value="optionNo">
-                                <label class="govuk-label govuk-radios__label" for="married-2">
-                                  No
-                                </label>
-                            </div>
-                        
+                      
+                        <div id="dob-hint" class="govuk-hint">
+                          Use the date from the death certificate. For example, 30 06 2016
                         </div>
 
+                        <div class="govuk-date-input" id="dob">
+                        
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="dob-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                      
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="dob-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                      
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="dob-year">
+                                Year
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                      
+                      </div>
+                      
                     </fieldset>
 
                 </div>
 
-                <div class="govuk-form-group">
-                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
-                </div>
-
-                <br><br>
+                <form action="6-address.html">
+                    <div class="govuk-form-group">
+                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+                        Save and continue
+                        </button>
+                    </div>
+                </form>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -96,10 +120,10 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_27.html";
+                document.getElementById('link').href = "page_17.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_27.html";
+                document.getElementById('link').href = "page_17.html";
             }
         }
     </script>
