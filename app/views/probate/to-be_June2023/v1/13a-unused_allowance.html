@@ -4,6 +4,9 @@
 
     {% include "../../../includes/as_it_is_header.html" %}
 
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -16,44 +19,39 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                              What are the values of the estate for probate?
+                                Are you claiming the unused Inheritance Tax allowance (known as the ‘nil-rate band’) of the spouse or civil partner of the person who died?
                             </h1>
                         </legend>
 
-                        <p class="govuk-hint"></p>
+                        <p class="govuk-hint">Everyone has a £350,000 tax free allowance before they must pay Inheritance Tax. If you are applying for probate for the estate of someone who did not use any or all of the allowance when their spouse or civil partner died, you can add that remaining allowance to this application.</p>
 
-                        <div class="govuk-form-group">
-                            <label class="govuk-label" for="grossValueField">
-                              Gross value in £<br><br>This is the total value of the deceased’s assets in their sole name.<br>To work this out, subtract the values of any joint assets passing to the other joint owner, foreign assets, all <a target="_blank" rel="external noopener" href="https://www.gov.uk/inheritance-tax/gifts" class="govuk-link" aria-label="gifts">gifts</a> and assets held in trust from the gross value of IHT.
-                            </label>
+                        <div class="govuk-radios govuk-radios--inline">
 
-                            <div class="govuk-input__wrapper">
-                                <div class="govuk-input__prefix" aria-hidden="true">£</div>
-                                <input class="govuk-input govuk-!-width-one-third" id="grossValueField" name="grossValueField" type="text" value="" maxlength="13">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option1" name="married" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="married">
+                                  Yes
+                                </label>
                             </div>
-                        </div>
 
-                        <div class="govuk-form-group">
-                            <label class="govuk-label" for="netValueField">
-                              Net value in £<br><br>To work this out, take the gross value for probate and deduct the total value of the deceased’s debts including funeral expenses and any other debts they owe at the time of their death in their sole name.
-                            </label>
-                            <div class="govuk-input__wrapper">
-                                <div class="govuk-input__prefix" aria-hidden="true">£</div>
-                              <input class="govuk-input govuk-!-width-one-third" id="netValueField" name="netValueField" type="text" value="" maxlength="13">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option2" name="married" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="married-2">
+                                  No
+                                </label>
                             </div>
+                        
                         </div>
 
                     </fieldset>
 
                 </div>
 
-                <form action="page_25.html">
-                    <div class="govuk-form-group">
-                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
-                            Save and continue
-                        </button>
-                    </div>
-                </form>
+                <div class="govuk-form-group">
+                    <a href="14-probate_values.html" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+                </div>
+
+                <br><br>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -103,10 +101,10 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_25.html";
+                document.getElementById('link').href = "page_27.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_25.html";
+                document.getElementById('link').href = "page_27.html";
             }
         }
     </script>
