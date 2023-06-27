@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
+
+    <!--
+
     <head>
         <meta charset="utf-8">
         <title>
@@ -16,8 +19,7 @@
         <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
         <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
-        
-        <!-- Data Layer -->
+
         <script nonce="bd200ca7434241309fdaa26b8e4dd5ae">
           window.dataLayer = window.dataLayer || [];
           const userPreferenceCookie = document.cookie.match(new RegExp('(^| )' + 'cm-user-preferences' + '=([^;]+)'));
@@ -27,17 +29,15 @@
           }
         </script>
 
-        <!-- Google Tag Manager -->
         <script nonce='bd200ca7434241309fdaa26b8e4dd5ae'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
           n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-KG8XT3S');</script>
-        <!-- End Google Tag Manager -->
 
         <link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
-        <!--[if IE 8]><link rel="stylesheet" media="screen" href="/public/stylesheets/application-ie8.css"/><![endif]-->
+
         <title> Probate</title>
 
         <meta property="og:image" content="/assets/images/govuk-opengraph-image.png"></meta>
@@ -52,12 +52,10 @@
         
         <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
-        <!-- Google Tag Manager (noscript) -->
         <noscript>
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG8XT3S" height="0" width="0" style="display:none;visibility:hidden" title="gtm">
             </iframe>
         </noscript>
-        <!-- End Google Tag Manager (noscript) -->
 
         <input type="hidden" id="hdnSecurityCookie" value="__auth-token-4.1.1"/>
 
@@ -117,10 +115,10 @@
                     <a href="../../index_probate.html" class="govuk-header__link govuk-header__link--service-name">Apply for probate - GOV.UK</a>
                     <button type="button" role="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
                     <nav>
-                        <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation" style="text-align: right; margin-top: -40px;">
+                        <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation" style="text-align: right; margin-top: -40px;margin-bottom: 0px;">
                           <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-                            <a class="govuk-header__link" href="#0" style="color:#ffffff">
-                              Sign in
+                            <a class="govuk-header__link" href="#0" style="color:#ffffff; font-weight: 700;font-size: 19px;">
+                              Sign out
                             </a>
                           </li>
                         </ul>
@@ -137,57 +135,151 @@
                     Beta
                     </strong>
                     <span class="govuk-phase-banner__text">
-                    This is a new service – your <a aria-label="feedback (opens in a new window)" href="https://www.smartsurvey.co.uk/s/Probate_Feedback?pageurl=/death-certificate?_ga=2.113997263.955754744.1667480260-232086484.1656238132" class="govuk-link" target="_blank" rel="external noopener noreferrer">feedback (opens in a new window)</a> will help us to improve it.<a href="?lng=cy" class="govuk-link language">Cymraeg</a>
+                    This is a new service – your <a aria-label="feedback (opens in a new window)" href="https://www.smartsurvey.co.uk/s/Probate_Feedback?pageurl=/death-certificate?_ga=2.113997263.955754744.1667480260-232086484.1656238132" class="govuk-link" target="_blank" rel="external noopener noreferrer">feedback (opens in a new window)</a> will help us to improve it.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="?lng=cy" class="govuk-link language">Cymraeg</a>
                     </span>
                 </p>
             </div>
 
-            <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+            -->
+
+            {% include "../../../includes/as_it_is_header.html" %}
+
 
 
             <main class="govuk-main-wrapper " id="main-content" role="main"> 
                 <div class="govuk-grid-row">
-                    <div class="govuk-grid-column-two-thirds">  
+                    <div class="govuk-grid-column-full">  
 
                         <!-- Content -->
+                                
+                        <h1 class="govuk-heading-l" data-gtm-vis-recent-on-screen-30951291_54="161" data-gtm-vis-first-on-screen-30951291_54="161" data-gtm-vis-total-visible-time-30951291_54="100" data-gtm-vis-has-fired-30951291_54="1">Probate applications</h1>
 
-                        <div class="govuk-form-group">
-                            <fieldset class="govuk-fieldset" aria-describedby="deathCertificate-hint">
-                                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                                    <h1 class="govuk-fieldset__heading">
-                                      Have you checked whether you need to report the estate value to HMRC?
-                                    </h1>
-                                </legend>
-
-                                <div class="govuk-radios govuk-radios--inline">
-                    
-                                    <div class="govuk-radios__item">
-                                      <input class="govuk-radios__input" id="option1" name="deathCertificate" type="radio" value="optionYes">
-                                      <label class="govuk-label govuk-radios__label" for="deathCertificate">
-                                        Yes
-                                      </label>
-                                    </div>
-                        
-                                    <div class="govuk-radios__item">
-                                      <input class="govuk-radios__input" id="option2" name="deathCertificate" type="radio" value="optionNo">
-                                      <label class="govuk-label govuk-radios__label" for="deathCertificate-2">
-                                        No
-                                      </label>
-                                    </div>
-                    
-                                </div>
-              
-                            </fieldset>
-                        </div>
-                        
-                        <div class="govuk-form-group">
-                            <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
-                        </div>
+                        <table class="govuk-table dashboard">
+                          <caption class="govuk-table__caption govuk-visually-hidden">Probate applications</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                              <th scope="col" class="govuk-table__header">Case ID</th>
+                              <th scope="col" class="govuk-table__header">Person who died</th>
+                              <th scope="col" class="govuk-table__header" style="text-align: right;">Date created</th>
+                              <th scope="col" class="govuk-table__header">Status</th>
+                              <th scope="col" class="govuk-table__header"><span class="govuk-visually-hidden">Actions</span></th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell  govuk-table__cell--numeric case-id" style="text-align: left;">1659-6112-2910-5925</td>
+                                <td class="govuk-table__cell">Draft (probate)</td>
+                                <td class="govuk-table__cell  govuk-table__cell--numeric">04 August 2022</td>
+                                <td class="govuk-table__cell">In progress</td>
+                                <td class="govuk-table__cell">
+                                    <a href="page_14.html" class="govuk-link">Continue application</a>
+                                </td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell no-bottom-border" style="border-bottom: none;"></td>
+                                <td class="govuk-table__cell no-bottom-border" style="border-bottom: none;"></td>
+                                <td class="govuk-table__cell no-bottom-border" style="border-bottom: none;"></td>
+                                <td class="govuk-table__cell no-bottom-border" style="border-bottom: none;"></td>
+                                <td class="govuk-table__cell no-bottom-border" style="border-bottom: none;">
+                                    <a href="#0" class="govuk-link">Start new application</a>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
 
                         <!-- End content -->
 
-                        <br><br>
+                        <br>
 
+                        <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                            <summary class="govuk-details__summary">
+                              <span class="govuk-details__summary-text">
+                                Contact us for help
+                              </span>
+                            </summary>
+
+                            <div class="govuk-details__text">
+                                <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                                <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                                    <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                                </div>
+
+                                <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                                <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                                <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                                <!--
+                                <web-chat id="avayaWebchatMetric" class="hidden" chat-title="Ask Probate" locale-url="public/locales/avaya-webchat" url="webchat.ctsc.hmcts.net" secure-connections="true" api-version="1.0" metrics-polling-interval="30" language="English" service="Probate" page-name="Apply for Probate" user="Chat" aria-hidden="true" hidden="" _nghost-nhp-c25="" ng-version="12.2.11">
+                                    <div _ngcontent-nhp-c25="" class="chat-header">
+                                        <div _ngcontent-nhp-c25="" class="icon-container">
+                                            <img _ngcontent-nhp-c25="" alt="Web chat icon" src="">
+                                            <h3 _ngcontent-nhp-c25="">Ask Probate</h3>
+                                        </div>
+                                        <button _ngcontent-nhp-c25="" translate="" class="hide-chat">Hide</button>
+                                    </div>
+                                    <div _ngcontent-nhp-c25="" class="container">
+                                        <app-banner _ngcontent-nhp-c25="" _nghost-nhp-c3="">
+                                            <div _ngcontent-nhp-c3="" class="banner collapsed hidden">
+                                                <div _ngcontent-nhp-c3="" class="banner-text"></div>
+                                                <div _ngcontent-nhp-c3="" class="banner-expand"></div>
+                                            </div>
+                                        </app-banner>
+                                        <app-form _ngcontent-nhp-c25="" _nghost-nhp-c21="">
+                                            <form _ngcontent-nhp-c21="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+                                                <strong _ngcontent-nhp-c21="" translate="">Before I transfer you to an adviser, complete the form below</strong>
+                                                <div _ngcontent-nhp-c21="" class="form-field">
+                                                    <label _ngcontent-nhp-c21="" for="name-field" translate="" class="required">Name</label>
+                                                    <input _ngcontent-nhp-c21="" type="text" id="name-field" formcontrolname="name" placeholder="Your name..." class="ng-untouched ng-pristine ng-invalid">
+                                                </div>
+                                                <div _ngcontent-nhp-c21="" class="form-field">
+                                                    <label _ngcontent-nhp-c21="" for="email-field" translate="" class="required">Email</label>
+                                                    <input _ngcontent-nhp-c21="" type="text" id="email-field" formcontrolname="email" email="" placeholder="Your email..." class="ng-untouched ng-pristine ng-invalid">
+                                                </div>
+                                                <div _ngcontent-nhp-c21="" class="form-field">
+                                                    <label _ngcontent-nhp-c21="" for="case-field" translate="">Case Id</label>
+                                                    <input _ngcontent-nhp-c21="" type="text" id="case-field" formcontrolname="caseId" placeholder="Your case Id..." class="ng-untouched ng-pristine ng-valid">
+                                                </div>
+                                                <div _ngcontent-nhp-c21="" class="form-field">
+                                                    <label _ngcontent-nhp-c21="" for="description-field" translate="" class="required">Reason for contact</label>
+                                                    <textarea _ngcontent-nhp-c21="" id="description-field" formcontrolname="description" placeholder="Briefly tell us how we can help you..." class="ng-untouched ng-pristine ng-invalid"></textarea>
+                                                </div>
+                                                <div _ngcontent-nhp-c21="" class="form-field">
+                                                    <input _ngcontent-nhp-c21="" type="checkbox" id="transcript-field" formcontrolname="transcript" class="ng-untouched ng-pristine ng-valid">
+                                                    <label _ngcontent-nhp-c21="" for="transcript-field" translate="">Email the transcript to me</label>
+                                                </div>
+                                                <div _ngcontent-nhp-c21="" class="form-field">
+                                                    <label _ngcontent-nhp-c21="" translate="" class="required">Would you like to take part in an Email survey at the end of your Webchat?</label>
+                                                    <div _ngcontent-nhp-c21="">
+                                                        <input _ngcontent-nhp-c21="" type="radio" name="survey" id="survey-field-yes" value="true" formcontrolname="surveyRequested" class="ng-untouched ng-pristine ng-invalid">
+                                                        <label _ngcontent-nhp-c21="" for="survey-field-yes" translate="">Yes</label>
+                                                    </div>
+                                                    <div _ngcontent-nhp-c21="">
+                                                        <input _ngcontent-nhp-c21="" type="radio" name="survey" id="survey-field-no" value="false" formcontrolname="surveyRequested" class="ng-untouched ng-pristine ng-invalid">
+                                                        <label _ngcontent-nhp-c21="" for="survey-field-no" translate="">No</label>
+                                                    </div>
+                                                </div>
+                                                <button _ngcontent-nhp-c21="" translate="" class="primary" disabled="">Start chat</button>
+                                            </form>
+                                        </app-form>
+                                    </div>
+                                </web-chat>
+                                -->
+
+                                <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                                <p class="govuk-body"> 0300 303 0648</p>
+                                <p class="govuk-heading-s"> Email </p>
+                                <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                                <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                                <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                                <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                            </div>
+
+                        </details>
+
+                        <!--
                         <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
                             <summary class="govuk-details__summary">
                                 <span class="govuk-details__summary-text">
@@ -202,25 +294,6 @@
                                 <p class="govuk-body" id="avaya-webchat-close" hidden> We are sorry, the Contact Centre is now closed. </p>
                                 <p class="govuk-body" id="webchat-agent-busy" hidden> All our advisors are busy. Try again in a few minutes. </p>
                                 <p class="govuk-body" id="webchat-maintenance"> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
-
-                                <!--
-                                <web-chat
-                                    id="avayaWebchatMetric"
-                                    class="hidden"
-                                    chat-title="Ask Probate"
-                                    locale-url="public/locales/avaya-webchat"
-                                    url="webchat.ctsc.hmcts.net"
-                                    secure-connections="true"
-                                    api-version="1.0"
-                                    metrics-polling-interval="30"
-                                    Language="English"
-                                    service="Probate"
-                                    page-name="Apply for Probate"
-                                    User="Chat"
-                                    aria-hidden="true"
-                                    hidden>
-                                </web-chat>
-                                -->
                                   
                                 <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
                                 <p class="govuk-body"> 0300 303 0648</p>
@@ -231,13 +304,18 @@
                                 <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
                             </div>
                         </details>
+                        -->
 
                     </div>
                 </div>
             </main>
 
         </div>
+
+        {% include "../../../includes/as_it_is_footer.html" %}
         
+        <!--
+
         <footer class="govuk-footer " role="contentinfo">
           <div class="govuk-width-container ">
             <div class="govuk-footer__meta">
@@ -303,7 +381,13 @@
             </div>
           </div>
         </footer>
+
+        -->
+
+        {% include "../../../includes/as_it_is_scripts.html" %}
         
+        <!--
+
         <script src="/public/javascripts/jquery/jquery.min.js"></script>
         <script src="/public/javascripts/govuk-frontend/govuk/all.js"></script>
         <script nonce="bd200ca7434241309fdaa26b8e4dd5ae">window.GOVUKFrontend.initAll()</script>
@@ -332,18 +416,20 @@
             };
         </script>
         <script src="/public/javascripts/document-upload.js"></script>
-        <!-- https://www.srihash.org/ creating the integrity from this url wheneverthe file changes -->
         <script src="https://webchat-client.ctsc.hmcts.net/chat-client/1/app-es2015.js" defer type="module" crossorigin="anonymous"></script>
         <script src="https://webchat-client.ctsc.hmcts.net/chat-client/1/app-es5.js" nomodule defer crossorigin="anonymous"></script>
+
+        -->
+
         <script src="/public/javascripts/avaya-webchat-3.js"></script>
 
         <script>
             function myFunction() {
                 if(document.getElementById('option1').checked) {
-                    document.getElementById('link').href = "page_7.html";
+                    document.getElementById('link').href = "page_11.html";
                 }
                 if(document.getElementById('option2').checked) {
-                    document.getElementById('link').href = "page_6a.html";
+                    document.getElementById('link').href = "page_10a.html";
                 }
             }
         </script>

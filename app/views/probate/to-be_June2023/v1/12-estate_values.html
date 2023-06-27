@@ -4,6 +4,9 @@
 
     {% include "../../../includes/as_it_is_header.html" %}
 
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -20,7 +23,17 @@
                             </h1>
                         </legend>
 
-                        <p class="govuk-hint">If you do not have these values, use <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value" rel="external noopener" target="_blank" class="govuk-link" aria-label="the IHT checker">the IHT checker</a> to get them. We collect these values for HMRC so they can check if you need pay inheritance tax.<br><br>The gross, net and net qualifying values must be a whole number and must not include decimals, full stops or commas. For example, 6000</p>
+                        <br>
+
+                        <p class="govuk-body">
+                            If you do not have these values, use <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value" rel="external noopener" target="_blank" class="govuk-link" aria-label="the IHT checker">the IHT checker</a> to get them. We collect these values for HMRC so they can check if you need pay inheritance tax.
+                                <br><br>
+                                The gross, net and net qualifying values can be estimates but must be a whole number and must not include decimals, full stops or commas. For example 6000
+                                <br><br>
+                                If the value of the assets changes before the grant of probate is issued, you must let us know by emailing contact@probate.gov.uk.
+                            </p>
+
+                            <br>
 
                         <div class="govuk-form-group">
                             <label class="govuk-label" for="estateGrossValueField">
@@ -47,8 +60,6 @@
                                 <input class="govuk-input govuk-!-width-one-third" id="estateNetValueField" name="estateNetValueField" type="text" value="" aria-describedby="estateNetValueField-hint" maxlength="13">
                             </div>
                         </div>
-
-                        <br><br>
                             
                         <div class="govuk-form-group">
                             <label class="govuk-label" for="estateNetQualifyingValueField">
@@ -67,7 +78,7 @@
 
                 </div>
 
-                <form action="javascript:validateAmount()">
+                <form action="13-spouse_civil_partner.html">
                     <div class="govuk-form-group">
                         <button data-prevent-double-click="true" id="bigGreen" class="govuk-button" data-module="govuk-button">
                             Save and continue

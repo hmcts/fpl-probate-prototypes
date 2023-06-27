@@ -4,6 +4,9 @@
 
     {% include "../../../includes/as_it_is_header.html" %}
 
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -16,37 +19,49 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                              What’s the full name of the person who died?
+                                Which forms did you submit to HMRC?
                             </h1>
                         </legend>
+
+                        <p class="govuk-body">Using the Inheritance Tax checker is not the same as submitting a form to HMRC. If you have only used the checker, select that you did not have to submit a form.</p>
                       
-                        <p class="govuk-hint">Use the name on the death certificate.</p>
+                        <div class="govuk-radios govuk-radios">
 
-                        <div class="govuk-form-group">
-                            <label class="govuk-label" for="firstName">
-                              First name and any middle names
-                            </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="firstName" name="firstName" type="text" value="" maxlength="100">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option1" name="ihtFormEstateId" type="radio" value="optionIHT400421" aria-describedby="ihtFormEstateId-item-hint">
+                                <label class="govuk-label govuk-radios__label" for="ihtFormEstateId">
+                                    IHT400 only
+                                </label>
+                                
+                            </div>
+
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option2" name="ihtFormEstateId" type="radio" value="optionIHT207" aria-describedby="ihtFormEstateId-2-item-hint">
+                                <label class="govuk-label govuk-radios__label" for="ihtFormEstateId-2">
+                                    IHT400 and IHT421
+                                </label>
+                                
+                            </div>
+
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option3" name="ihtFormEstateId" type="radio" value="optionNONE" aria-describedby="ihtFormEstateId-3-item-hint">
+                                <label class="govuk-label govuk-radios__label" for="ihtFormEstateId-3">
+                                    I did not have to submit any forms to HMRC
+                                </label>
+                                
+                            </div>
+
                         </div>
-
-                        <div class="govuk-form-group">
-                            <label class="govuk-label" for="lastName">
-                              Last name
-                            </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="lastName" name="lastName" type="text" value="" maxlength="100">
-                        </div>
-
+                      
                     </fieldset>
 
                 </div>
 
-                <form action="page_17.html">
-                    <div class="govuk-form-group">
-                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
-                        Save and continue
-                        </button>
-                    </div>
-                </form>
+                <div class="govuk-form-group">
+                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+                </div>
+
+                <br><br>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -96,10 +111,13 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_17.html";
+                document.getElementById('link').href = "page_24.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_17.html";
+                document.getElementById('link').href = "page_23c.html";
+            }
+            if(document.getElementById('option3').checked) {
+                document.getElementById('link').href = "12-estate_values.html";
             }
         }
     </script>

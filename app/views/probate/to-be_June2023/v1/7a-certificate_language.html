@@ -4,6 +4,9 @@
 
     {% include "../../../includes/as_it_is_header.html" %}
 
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -16,24 +19,24 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                                Is the English translation included in the foreign death certificate?
+                             Is the original foreign death certificate in English?
                             </h1>
                         </legend>
-                      
-                        <div class="govuk-radios">
-
+                    
+                        <div class="govuk-radios govuk-radios--inline">
+                        
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="foreignDeathCertTranslation" type="radio" value="optionYes">
-                                <label class="govuk-label govuk-radios__label" for="foreignDeathCertTranslation">
+                                <input class="govuk-radios__input" id="option1" name="englishForeignDeathCert" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="englishForeignDeathCert">
                                   Yes
                                 </label>
                             </div>
-
+                            
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="foreignDeathCertTranslation" type="radio" value="optionNo">
-                                <label class="govuk-label govuk-radios__label" for="foreignDeathCertTranslation-2">
-                                  No, it has been translated separately
-                                </label>
+                                <input class="govuk-radios__input" id="option2" name="englishForeignDeathCert" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="englishForeignDeathCert-2">
+                                  No
+                               </label>
                             </div>
 
                         </div>
@@ -96,10 +99,10 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_22.html";
+                document.getElementById('link').href = "8-certificate_type.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_22.html";
+                document.getElementById('link').href = "7b-certificate_translation.html";
             }
         }
     </script>
