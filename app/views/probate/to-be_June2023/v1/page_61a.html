@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+    {% include "../../../includes/as_it_is_header_payment.html" %}
+
+    <div class="govuk-width-container ">
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-l user-cancel">Your payment has been cancelled</h1>
+                <p class="govuk-body-l lede">No money has been taken from your account.</p>
+                <p class="govuk-body-l lede">
+                  <a id="return-url" role="button" class="govuk-button" href="page_60.html">Continue</a>
+                </p>
+              </div>
+            </div>
+        </main>
+      </div>
+
+    {% include "../../../includes/as_it_is_footer.html" %}
+
+    {% include "../../../includes/as_it_is_scripts.html" %}
+
+    <script>
+        function myFunction() {
+            if(document.getElementById('executorNotified').checked) {
+                document.getElementById('link').href = "page_52.html";
+            }
+            if(document.getElementById('executorNotified-2').checked) {
+                document.getElementById('link').href = "page_52.html";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

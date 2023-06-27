@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+    {% include "../../../includes/as_it_is_header.html" %}
+
+    <main class="govuk-main-wrapper " id="main-content" role="main"> 
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">  
+
+                <!-- Content -->
+                        
+                <form class="form" method="post" autocomplete="off" action="/find-address" novalidate=""§>
+                
+                    <input type="hidden" name="_csrf" value="HInQiHLA-JTksKTJzkJF9DErTsCrfCoutsvM">
+                
+                    <fieldset class="govuk-fieldset">
+
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                            <h1 class="govuk-fieldset__heading">
+                                What is Maria Calas’s permanent address?
+                            </h1>
+                        </legend>
+              
+                        <p class="govuk-hint">This will be printed on the grant of probate.</p>
+                                
+                        <div class="govuk-form-group" style="margin-bottom:0px;">
+                            
+                            <label for="postcode" class="govuk-label">Postcode</label>
+
+                            <input type="text" class="govuk-input govuk-!-width-one-quarter " id="postcode" name="postcode" value="" autocomplete="off">
+                            <input type="hidden" id="referrer" name="referrer" value="ApplicantAddress">
+                            <input type="hidden" id="addressFound" name="addressFound" value="none">
+                            <button type="submit" data-prevent-double-click="true" class="govuk-button govuk-button--secondary find-address-button" id="findAddress">Find UK address</button>
+                        </div>
+
+                        <script nonce="">
+                            (function() {
+                                if (document.getElementById('postcodeAddress')) {
+                                    const addresses = [
+                                        
+                                    ];
+                                    document.getElementById('postcodeAddress').addEventListener('change', function(e) {
+                                        let address = addresses[e.target.value].split('###');
+                                        const city = address[address.length - 2];
+                                        const postcode = address[address.length - 1];
+                                        address.length = address.length - 2;
+                                        if (address[3] !== undefined) {
+                                            address[2] = address[3] + ', ' + address[2];
+                                        }
+                                        document.getElementById('addressLine1').value = address[0];
+                                        document.getElementById('addressLine2').value = address[1] || '';
+                                        document.getElementById('addressLine3').value = address[2] || '';
+                                        document.getElementById('postTown').value = city;
+                                        document.getElementById('newPostCode').value = postcode;
+                                        document.getElementById('country').value = 'United Kingdom';
+                                        document.getElementById('details-panel').setAttribute('open', true);
+                                        document.getElementById('details-panel').getElementsByClassName('govuk-details__text')[0].setAttribute('style', 'display: block');
+                                        document.getElementById('details-panel').getElementsByClassName('govuk-details__summary')[0].setAttribute('aria-expanded', true);
+                                        document.getElementById('details-panel').getElementsByClassName('govuk-details__text')[0].setAttribute('aria-hidden', false);
+                                    });
+                                }
+                            })();
+                        </script>
+                        <script src="/public/javascripts/address-fields-focus.js"></script>
+
+                    </fieldset>
+
+                </form>
+
+                <form class="form" method="post" autocomplete="off" action="page_52" novalidate="">
+
+                    <input type="hidden" name="_csrf" value="S8jK9oB1-eFdSeHvikKD4LJXlL8g7Tg2QMIY">
+
+                    <fieldset class="govuk-fieldset">
+  
+                        <legend class="govuk-fieldset__legend govuk-visually-hidden">
+                          Enter manually (including international addresses)
+                        </legend>
+
+                        <details class="govuk-details" id="details-panel" data-module="govuk-details">
+
+                            <summary class="govuk-details__summary">
+                                <span class="govuk-details__summary-text">Enter manually (including international addresses)</span>
+                            </summary>
+
+                            <div class="govuk-details__text">
+
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="addressLine1">
+                                      Address
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-three-quarters" id="addressLine1" name="addressLine1" type="text" value="" autocomplete="off" maxlength="150">
+                                </div>
+
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="addressLine2">
+                                      Address Line 2 (optional)
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-three-quarters" id="addressLine2" name="addressLine2" type="text" value="" autocomplete="off" maxlength="50">
+                                </div>         
+
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="addressLine3">
+                                      Address Line 3 (optional)
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-three-quarters" id="addressLine3" name="addressLine3" type="text" value="" autocomplete="off" maxlength="50">
+                                </div>                         
+
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="postTown">
+                                      Town or city
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-three-quarters" id="postTown" name="postTown" type="text" value="" autocomplete="off" maxlength="50">
+                                </div>
+
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="newPostCode">
+                                      Postcode
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-one-quarter" id="newPostCode" name="newPostCode" type="text" value="" autocomplete="off" maxlength="14">
+                                </div>
+
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="country">
+                                      Country (optional)
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-three-quarters" id="country" name="country" type="text" value="" autocomplete="off" maxlength="50">
+                                </div>
+
+                            </div>
+
+                        </details>
+
+                        <div class="govuk-form-group">
+                            <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+                                Save and continue
+                            </button>
+                        </div>
+                                                
+                    </fieldset>
+
+                </form>
+
+                <!-- End content -->
+
+                <br><br><br>
+
+                <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Contact us for help
+                      </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                        <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                            <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                        </div>
+
+                        <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                        <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                        <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                        <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                        <p class="govuk-body"> 0300 303 0648</p>
+                        <p class="govuk-heading-s"> Email </p>
+                        <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                        <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                        <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                        <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                    </div>
+
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    </div>
+
+    {% include "../../../includes/as_it_is_footer.html" %}
+
+    {% include "../../../includes/as_it_is_scripts.html" %}
+
+    <script>
+        function myFunction() {
+            if(document.getElementById('option1').checked) {
+                document.getElementById('link').href = "page_52.html";
+            }
+            if(document.getElementById('option2').checked) {
+                document.getElementById('link').href = "page_52.html";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

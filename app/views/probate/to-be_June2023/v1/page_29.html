@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+    {% include "../../../includes/as_it_is_header.html" %}
+
+    <main class="govuk-main-wrapper " id="main-content" role="main"> 
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">  
+
+                <!-- Content -->
+                        
+                <div class="govuk-form-group">
+
+                    <fieldset class="govuk-fieldset">
+  
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                            <h1 class="govuk-fieldset__heading">
+                              Did the person who died leave any other written wishes?
+                            </h1>
+                        </legend>
+
+                        <p class="govuk-body">We’re only interested in written wishes that have details of:</p>
+                        <ul class="govuk-list govuk-list--bullet">
+                            <li>an appointed executor</li>
+                            <li>instructions to sort out the estate</li>
+                            <li>names and signatures of witnesses</li>
+                        </ul>
+
+                        <div class="govuk-form-group">
+
+                            <div class="govuk-radios govuk-radios--inline">
+                            
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="deceasedWrittenWishes" name="deceasedWrittenWishes" type="radio" value="optionYes">
+                                    <label class="govuk-label govuk-radios__label" for="deceasedWrittenWishes">
+                                      Yes
+                                    </label>
+                                </div>
+                                
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="deceasedWrittenWishes-2" name="deceasedWrittenWishes" type="radio" value="optionNo">
+                                    <label class="govuk-label govuk-radios__label" for="deceasedWrittenWishes-2">
+                                      No
+                                    </label>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+                </div>
+
+                <div class="govuk-form-group">
+                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+                </div>
+
+                <br><br>
+
+                <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
+
+                <!-- End content -->
+
+                <br><br>
+
+                <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Contact us for help
+                      </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                        <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                            <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                        </div>
+
+                        <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                        <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                        <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                        <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                        <p class="govuk-body"> 0300 303 0648</p>
+                        <p class="govuk-heading-s"> Email </p>
+                        <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                        <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                        <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                        <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                    </div>
+
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    </div>
+
+    {% include "../../../includes/as_it_is_footer.html" %}
+
+    {% include "../../../includes/as_it_is_scripts.html" %}
+
+    <script>
+        function myFunction() {
+            if(document.getElementById('deceasedWrittenWishes').checked) {
+                document.getElementById('link').href = "page_30.html";
+            }
+            if(document.getElementById('deceasedWrittenWishes-2').checked) {
+                document.getElementById('link').href = "page_30.html";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
