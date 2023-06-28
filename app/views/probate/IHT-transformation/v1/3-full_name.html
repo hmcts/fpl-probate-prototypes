@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 
-    {% include "../../../includes/as_it_is_header.html" %}
+{% include "../../../includes/IHT-transformation_header.html" %}
 
     <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
@@ -15,56 +15,35 @@
                         
                 <div class="govuk-form-group">
 
-                    <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+                    <fieldset class="govuk-fieldset">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                      
                             <h1 class="govuk-fieldset__heading">
-                              What was their date of birth?
+                              What’s the full name of the person who died?
                             </h1>
-                      
                         </legend>
                       
-                        <div id="dob-hint" class="govuk-hint">
-                          For example, 31 03 1945
+                        <p class="govuk-hint">Use the name on the death certificate.</p>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="width-20">
+                              First name and any middle names
+                            </label>
+                            <input class="govuk-input govuk-!-width-three-quarters" id="firstName" name="firstName" type="text" value="{{ data['firstName'] }}" maxlength="100">
                         </div>
 
-                        <div class="govuk-date-input" id="dob">
-                        
-                        <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="dob-day">
-                                Day
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" pattern="[0-9]*" inputmode="numeric">
-                            </div>
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="width-20">
+                              Last name
+                            </label>
+                            <input class="govuk-input govuk-!-width-three-quarters" id="lastName" name="lastName" type="text" value="{{ data['lastName'] }}" maxlength="100">
                         </div>
-                      
-                        <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="dob-month">
-                                Month
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" pattern="[0-9]*" inputmode="numeric">
-                            </div>
-                        </div>
-                      
-                        <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="dob-year">
-                                Year
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" pattern="[0-9]*" inputmode="numeric">
-                            </div>
-                        </div>
-                      
-                      </div>
-                      
+
                     </fieldset>
 
                 </div>
 
-                <form action="5-DOD.html">
+                <form action="4-DOB.html">
                     <div class="govuk-form-group">
                         <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
                         Save and continue

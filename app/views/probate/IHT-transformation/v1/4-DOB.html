@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 
-    {% include "../../../includes/as_it_is_header.html" %}
+{% include "../../../includes/IHT-transformation_header.html" %}
 
     <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
@@ -15,43 +15,62 @@
                         
                 <div class="govuk-form-group">
 
-                    <fieldset class="govuk-fieldset">
+                    <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      
                             <h1 class="govuk-fieldset__heading">
-                                Are you claiming the unused Inheritance Tax allowance (known as the ‘nil-rate band’) of the spouse or civil partner of the person who died?
+                              What was their date of birth?
                             </h1>
+                      
                         </legend>
-
-                        <p class="govuk-hint">Everyone has a £350,000 tax free allowance before they must pay Inheritance Tax. If you are applying for probate for the estate of someone who did not use any or all of the allowance when their spouse or civil partner died, you can add that remaining allowance to this application.</p>
-
-                        <div class="govuk-radios govuk-radios--inline">
-
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="married" type="radio" value="optionYes">
-                                <label class="govuk-label govuk-radios__label" for="married">
-                                  Yes
-                                </label>
-                            </div>
-
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="married" type="radio" value="optionNo">
-                                <label class="govuk-label govuk-radios__label" for="married-2">
-                                  No
-                                </label>
-                            </div>
-                        
+                      
+                        <div id="dob-hint" class="govuk-hint">
+                          For example, 31 03 1945
                         </div>
 
+                        <div class="govuk-date-input" id="dob">
+                        
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="dob-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                      
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="dob-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                      
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="dob-year">
+                                Year
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                      
+                      </div>
+                      
                     </fieldset>
 
                 </div>
 
-                <div class="govuk-form-group">
-                    <a href="14-probate_values.html" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
-                </div>
-
-                <br><br>
+                <form action="5-DOD.html">
+                    <div class="govuk-form-group">
+                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+                        Save and continue
+                        </button>
+                    </div>
+                </form>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -101,10 +120,10 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_27.html";
+                document.getElementById('link').href = "page_17.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_27.html";
+                document.getElementById('link').href = "page_17.html";
             }
         }
     </script>

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 
-    {% include "../../../includes/as_it_is_header.html" %}
+{% include "../../../includes/IHT-transformation_header.html" %}
 
     <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
@@ -19,36 +19,24 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                                Which forms did you submit to HMRC?
+                                Is the English translation included in the foreign death certificate?
                             </h1>
                         </legend>
-
-                        <p class="govuk-body">Using the Inheritance Tax checker is not the same as submitting a form to HMRC. If you have only used the checker, select that you did not have to submit a form.</p>
                       
-                        <div class="govuk-radios govuk-radios">
+                        <div class="govuk-radios">
 
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="ihtFormEstateId" type="radio" value="optionIHT400421" aria-describedby="ihtFormEstateId-item-hint">
-                                <label class="govuk-label govuk-radios__label" for="ihtFormEstateId">
-                                    IHT400 only
+                                <input class="govuk-radios__input" id="option1" name="foreignDeathCertTranslation" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="foreignDeathCertTranslation">
+                                  Yes
                                 </label>
-                                
                             </div>
 
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="ihtFormEstateId" type="radio" value="optionIHT207" aria-describedby="ihtFormEstateId-2-item-hint">
-                                <label class="govuk-label govuk-radios__label" for="ihtFormEstateId-2">
-                                    IHT400 and IHT421
+                                <input class="govuk-radios__input" id="option2" name="foreignDeathCertTranslation" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="foreignDeathCertTranslation-2">
+                                  No, it has been translated separately
                                 </label>
-                                
-                            </div>
-
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option3" name="ihtFormEstateId" type="radio" value="optionNONE" aria-describedby="ihtFormEstateId-3-item-hint">
-                                <label class="govuk-label govuk-radios__label" for="ihtFormEstateId-3">
-                                    I did not have to submit any forms to HMRC
-                                </label>
-                                
                             </div>
 
                         </div>
@@ -58,10 +46,10 @@
                 </div>
 
                 <div class="govuk-form-group">
-                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+                    <a href="8-certificate_type.html" id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
                 </div>
 
-                <br><br>
+                <br>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -107,20 +95,6 @@
     {% include "../../../includes/as_it_is_footer.html" %}
 
     {% include "../../../includes/as_it_is_scripts.html" %}
-
-    <script>
-        function myFunction() {
-            if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_24.html";
-            }
-            if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_23c.html";
-            }
-            if(document.getElementById('option3').checked) {
-                document.getElementById('link').href = "12-estate_values.html";
-            }
-        }
-    </script>
 
 </body>
 

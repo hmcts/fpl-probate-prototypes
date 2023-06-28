@@ -1,8 +1,9 @@
 
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
+    {% include "../../../includes/IHT-transformation_header.html" %}
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
-    {% include "../../../includes/as_it_is_header.html" %}
 
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
@@ -12,33 +13,32 @@
                         
                 <div class="govuk-form-group">
 
-                    <fieldset class="govuk-fieldset" aria-describedby="alias-hint">
+                    <fieldset class="govuk-fieldset">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                              Did Peter Coward have assets in another name?
+                             Is the original foreign death certificate in English?
                             </h1>
                         </legend>
-                      
-                        <div id="alias-hint" class="govuk-hint">
-                            This could be shares or property that they held in their maiden name or nickname. They might also have used a different spelling or missed out some parts of their name.
-                        </div>
-
+                    
                         <div class="govuk-radios govuk-radios--inline">
+                        
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="alias" type="radio" value="optionYes">
-                                <label class="govuk-label govuk-radios__label" for="alias">
+                                <input class="govuk-radios__input" id="option1" name="englishForeignDeathCert" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="englishForeignDeathCert">
                                   Yes
                                 </label>
                             </div>
+                            
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="alias" type="radio" value="optionNo">
-                                <label class="govuk-label govuk-radios__label" for="alias-2">
+                                <input class="govuk-radios__input" id="option2" name="englishForeignDeathCert" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="englishForeignDeathCert-2">
                                   No
-                                </label>
+                               </label>
                             </div>
-                        </div>
 
+                        </div>
+                      
                     </fieldset>
 
                 </div>
@@ -47,7 +47,7 @@
                     <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
                 </div>
 
-                <br><br>
+                <br>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -97,10 +97,10 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_25a.html";
+                document.getElementById('link').href = "8-certificate_type.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_26.html";
+                document.getElementById('link').href = "7b-certificate_translation.html";
             }
         }
     </script>

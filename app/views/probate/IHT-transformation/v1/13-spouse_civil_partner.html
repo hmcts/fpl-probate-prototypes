@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 
-    {% include "../../../includes/as_it_is_header.html" %}
+{% include "../../../includes/IHT-transformation_header.html" %}
 
     <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
@@ -19,37 +19,37 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                              What’s the full name of the person who died?
+                                Did the person who died have a spouse or civil partner who died before them?
                             </h1>
                         </legend>
-                      
-                        <p class="govuk-hint">Use the name on the death certificate.</p>
 
-                        <div class="govuk-form-group">
-                            <label class="govuk-label" for="firstName">
-                              First name and any middle names
-                            </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="firstName" name="firstName" type="text" value="" maxlength="100">
-                        </div>
+                        <div class="govuk-radios govuk-radios--inline">
 
-                        <div class="govuk-form-group">
-                            <label class="govuk-label" for="lastName">
-                              Last name
-                            </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="lastName" name="lastName" type="text" value="" maxlength="100">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option1" name="married" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="married">
+                                  Yes
+                                </label>
+                            </div>
+
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option2" name="married" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="married-2">
+                                  No
+                                </label>
+                            </div>
+                        
                         </div>
 
                     </fieldset>
 
                 </div>
 
-                <form action="4-DOB.html">
-                    <div class="govuk-form-group">
-                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
-                        Save and continue
-                        </button>
-                    </div>
-                </form>
+                <div class="govuk-form-group">
+                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+                </div>
+
+                <br><br>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -99,10 +99,10 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_17.html";
+                document.getElementById('link').href = "13a-unused_allowance.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_17.html";
+                document.getElementById('link').href = "14-probate_values.html";
             }
         }
     </script>

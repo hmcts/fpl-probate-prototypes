@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 
-    {% include "../../../includes/as_it_is_header.html" %}
+{% include "../../../includes/IHT-transformation_header.html" %}
 
     <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
@@ -12,42 +12,44 @@
             <div class="govuk-grid-column-two-thirds">  
 
                 <!-- Content -->
+                        
+                <div class="govuk-form-group">
 
-                
-                            <div class="govuk-form-group">
-                                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-                                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                                    <h1 class="govuk-fieldset__heading">
-                                        Do you require a bilingual grant in English and Welsh?
-                                    </h1>
-                                </legend>
-                                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-                                    <div class="govuk-radios__item">
-                                      <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                                      <label class="govuk-label govuk-radios__label" for="changed-name">
-                                        Yes
-                                      </label>
-                                    </div>
-                                    <div class="govuk-radios__item">
-                                      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                                      <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                                        No
-                                      </label>
-                                    </div>
-                                  </div>
-                                </fieldset>
-                              </div>
+                    <fieldset class="govuk-fieldset">
+  
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                            <h1 class="govuk-fieldset__heading">
+                              Did John Doe die in England or Wales?
+                            </h1>
+                        </legend>
+                      
+                        <div class="govuk-radios govuk-radios--inline">
 
-                
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option1" name="diedEngOrWales" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="diedEngOrWales">
+                                  Yes
+                                </label>
+                            </div>
 
-                              {% from "govuk/components/button/macro.njk" import govukButton %}
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option2" name="diedEngOrWales" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="diedEngOrWales-2">
+                                  No
+                                </label>
+                            </div>
+                            
+                        </div>
+                      
+                    </fieldset>
 
-                              {{ govukButton({
-                                text: "Save and continue",
-                                href:"3-full_name.html"
-                              }) }}
+                </div>
 
-                <br><br>
+                <div class="govuk-form-group">
+                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+                </div>
+
+                <br>
 
                 <p class="govuk-body"><a href="#0" class="govuk-link">Save and close</a></p>
 
@@ -97,10 +99,10 @@
     <script>
         function myFunction() {
             if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_16.html";
+                document.getElementById('link').href = "8-certificate_type.html";
             }
             if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_16.html";
+                document.getElementById('link').href = "7a-certificate_language.html";
             }
         }
     </script>
