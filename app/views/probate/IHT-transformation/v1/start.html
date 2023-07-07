@@ -1,50 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 
-    {% include "../../../includes/as_it_is_header.html" %}
+<head>
+  <meta charset="utf-8">
+  <title>
+Apply for Probate – GOV.UK Prototype Kit
+</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c"> 
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/plugin-assets/govuk-frontend/govuk/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon.png">
 
-{% extends "layout_probate_a.html" %}
+  <link href="/public/stylesheets/application.css" rel="stylesheet" type="text/css" />
+
+<link href="/public/css/accessible-autocomplete.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="govuk-template__body ">
+  <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+  
+    <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+<header class="govuk-header " role="banner" data-module="govuk-header">
+<div class="govuk-header__container govuk-width-container">
+  <div class="govuk-header__logo">
+    <a href="#" class="govuk-header__link govuk-header__link--homepage">
+      <span class="govuk-header__logotype">
+        <svg aria-hidden="true" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 97" height="30" width="36">
+          <path fill="currentColor" fill-rule="evenodd" d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"></path>
+        </svg>
+        <span class="govuk-header__logotype-text">
+          GOV.UK
+        </span>
+      </span>
+    </a>
+  </div>
+</div>
+</header>
+
 {% block content %}
-{# <div class="govuk-width-container"> #}
-  <main class="govuk-main-wrapper" style="padding-top: 0px"> 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <div class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8">
-          <h1 class="gem-c-title__text govuk-heading-xl">Applying for probate</h1>
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 60px"> 
+
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <form action="submit-your-appeal" method="post">
+          
+            <h1 class="govuk-heading-xl">Applying for probate</h1>
+            <p class="govuk-body">Contents</p>
+            <ul class="govuk-list">
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">What is probate</a>
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">If there's a will</a>
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">If there's not a will</a>
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">Before you apply</a>
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">Fees</a>
+              </li>
+              <li>
+                - Apply for probate
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">After you've applied</a>
+              </li>
+            </ul>
         </div>
-        <a class="gem-c-skip-link govuk-skip-link govuk-!-display-none-print" data-module="govuk-skip-link" href="#guide-contents">Skip to contents of guide</a>
-        <aside class="part-navigation-container" role="complementary">
-          <nav class="gem-c-contents-list" aria-label="Pages in this guide" role="navigation" data-module="gem-track-click">
-            <h2 class="gem-c-contents-list__title govuk-heading-m">Contents</h2>
-            <ol class="gem-c-contents-list__list govuk-list govuk-list--dashed">
-              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
-                <a class="gem-c-contents-list__link govuk-link" href="#0">What is probate</a>
-              </li>
-              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
-                <a class="gem-c-contents-list__link govuk-link" href="#0">If there’s a will</a>
-              </li>
-              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
-                <a class="gem-c-contents-list__link govuk-link" href="#0">If there is not a will</a>
-              </li>
-              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
-                <a class="gem-c-contents-list__link govuk-link" href="#0">Before you apply</a>
-              </li>
-              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
-                <a class="gem-c-contents-list__link govuk-link" href="#0">Fees</a>
-              </li>
-              <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__list-item--active" aria-current="true">
-                Apply for probate
-              </li>
-              <li class="contents-list__list-item">
-                <a class="govuk-link" data-track-category="contentsClicked" href="#0">After you've applied</a>
-              </li>
-            </ol>
-          </nav>
-        </aside>
-      </div>
-      <div class="govuk-grid-column-two-thirds" id="guide-contents">
-        <h1 class="part-title govuk-heading-l">Apply for probate</h1>
+        <div class="govuk-grid-column-two-thirds">
+          <hr>
+        <h1 class="part-title govuk-heading-l" style="padding-top: 10px">Apply for probate</h1>
         <div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube" data-module="govspeak">
           <p>You can apply for probate yourself online or by post. This can be cheaper than paying a probate practitioner (such as a solicitor) to apply for you.</p>
           <p>
@@ -58,7 +98,7 @@
           <p>You must have <a href="#0">estimated the value of the estate to find out if there’s Inheritance Tax to pay</a>.</p>
           <p>If there’s Inheritance Tax to pay, you must wait 20 working days after sending the tax forms to HM Revenue and Customs (<abbr title="HM Revenue and Customs">HMRC</abbr>) before applying.</p>
           <p><a class="gem-c-button govuk-button govuk-button--start" role="button" data-module="cross-domain-tracking" data-tracking-code="UA-93598808-2" data-tracking-name="govspeakButtonTracker" draggable="false" href="page_2.html"> Apply for probate <svg class="govuk-button__start-icon govuk-!-display-none-print" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewbox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a></p>
-          <p><a rel="external" href="/sign_in.html">Return to an existing probate application</a>.</p>
+          <p><a  class="govuk-link--no-visited-state" rel="external" href="/probate/IHT-transformation/v1/sign_in.html">Return to an existing probate application</a></p>
           <h2 id="if-you-need-help-applying-online" class="govuk-heading-l">If you need help applying online</h2>
           <p>There are 2 types of help available. You can get help if:</p>
           <ul class="govuk-list govuk-list--bullet"> 
@@ -135,23 +175,21 @@
         </div>
       </div>
       <div class="govuk-grid-column-one-third">
-        <div class="gem-c-contextual-sidebar">
-          <div class="gem-c-related-navigation">
-            <h2 id="related-nav-related_items-f59e6061" class="govuk-heading-l gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">
-              Related content
-            </h2>
-            <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-f59e6061" data-module="gem-toggle">
-              <ul class="govuk-list govuk-list--bullet gem-c-related-navigation__link-list" data-module="gem-track-click">
-                <li class="gem-c-related-navigation__link"><a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar  govuk-link gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.1 Related content" data-track-label="/valuing-estate-of-someone-who-died" data-track-options='{"dimension28":"5","dimension29":"How to value an estate for Inheritance Tax and report its value"}' href="/#0">How to value an estate for Inheritance Tax and report its value</a></li>
-                <li class="gem-c-related-navigation__link"><a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar  govuk-link gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.2 Related content" data-track-label="/inheritance-tax" data-track-options='{"dimension28":"5","dimension29":"How Inheritance Tax works: thresholds, rules and allowances"}' href="/#0">How Inheritance Tax works: thresholds, rules and allowances</a></li>
-                <li class="gem-c-related-navigation__link"><a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar  govuk-link gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.3 Related content" data-track-label="/after-a-death" data-track-options='{"dimension28":"5","dimension29":"What to do after someone dies"}' href="#0">What to do after someone dies</a></li>
-                <li class="gem-c-related-navigation__link"><a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar  govuk-link gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.4 Related content" data-track-label="/search-will-probate" data-track-options='{"dimension28":"5","dimension29":"Search probate records for documents and wills (England and Wales)"}' href="#0">Search probate records for documents and wills (England and Wales)</a></li>
-                <li class="gem-c-related-navigation__link"><a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar govuk-link gem-c-related-navigation__section-link--inline  govuk-link gem-c-related-navigation__section-link--other" data-track-category="relatedLinkClicked" data-track-action="1.5 Related content" data-track-label="/stop-probate-application" data-track-options='{"dimension28":"5","dimension29":"Stopping a probate application"}' href="#0">Stopping a probate application</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
+        <hr class="related-content-line">
+        <h4 class="govuk-heading-s" style="padding-top: 10px;">Part of</h4>
+        <a class="govuk-link govuk-link--no-visited-state govuk-heading-s" href="#">What to do when someone dies: step by step</a>
+        
+       </div>
+
+       <style>
+        .govuk-link-blue {
+          color: #1D70B8;
+        }
+      
+        .related-content-line {
+          border: solid 1px #1D70B8;
+        }
+      </style>
     </div>
 
     <div class="govuk-grid-row">
