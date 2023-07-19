@@ -6,6 +6,7 @@
 
     <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
+
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -18,63 +19,56 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                              What are the values of the estate for probate?
+                                What are the values of the estate for Inheritance Tax?
                             </h1>
                         </legend>
 
+                        <br>
+
                         <p class="govuk-body">
-                            The values of the estate for probate are separate from the Inheritance Tax values, though in some cases the figures may be the same.
+                            You can get these figures by using the <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value" rel="external noopener" target="_blank" class="govuk-link" aria-label="the IHT checker">Inheritance Tax checker</a>.
                                 <br><br>
-                            These figures will be used on the grant of probate when it is issued.
+                                When you use the checker, make sure you save the results – you can copy the figures straight from the checker results onto this page.
                                 <br><br>
                                 The values you enter can be estimates, but must be whole numbers, not including decimals, full stops or commas. For example, 25000, not 25,000.
-                        </p>
+                                </p>
+
+                            <br>
 
                         <div class="govuk-form-group">
-                            <label class="govuk-label" for="grossValueField">
-                                Gross value for probate in £
+                            <label class="govuk-label" for="estateGrossValueField">
+                              Gross value
                             </label>
-                            <br>
-                            <div id="estateGrossValueField-hint" class="govuk-body">
-                                This is the total value of the assets the person who died held in their name, not including assets held jointly with anyone else.
-                                    <br><br>
-                                <p class="govuk-body">To work out the gross value for probate, start with the gross value of the estate for Inheritance Tax then take away the values of any:</p>   
-                                <ul class="govuk-body govuk-list govuk-list--bullet">
-                                        <li>
-                                            joint assets passing to the other joint owner
-                                        </li>
-                                        <li>
-                                            foreign assets
-                                        </li>
-                                        <li>
-                                          <a class="govuk-link" href="#">gifts made in the last 7 years</a>
-                                        </li>
-                                        <li>
-                                            assets held in trust
-                                        </li>
-                                      </ul>                           
-                                </div>
+                            <div id="estateGrossValueField-hint" class="govuk-hint">
+                                This is the value of all assets like property, money, and gifts in the last 7 years [link to gifts or add link below box], before taking off any debts owed by the person who died.                            </div>
                             <div class="govuk-input__wrapper">
                                 <div class="govuk-input__prefix" aria-hidden="true">£</div>
-                                <input class="govuk-input govuk-!-width-one-third" id="grossValueField" name="grossValueField" type="text" value="" maxlength="13">
+                                <input class="govuk-input govuk-!-width-one-third" id="estateGrossValueField" name="estateGrossValueField" type="text" value="" aria-describedby="estateGrossValueField-hint" maxlength="13">
                             </div>
                         </div>
 
-                        <br>
-
                         <div class="govuk-form-group">
-                            <label class="govuk-label" for="grossValueField">
-                                Net value for probate in £
+                            <label class="govuk-label" for="estateNetValueField">
+                                Net value
                             </label>
-                            <br>
-                            <div id="estateGrossValueField-hint" class="govuk-body">
-                                To work this out, start with the gross value for probate you calculated above and take away the total value of any funeral expenses and all debts, owed by the person who died at the time of their death.
-                                <br><br>
-                                Do not include debts owed jointly with other people, such as a mortgage on a jointly owned property.
+                            <div id="estateNetValueField-hint" class="govuk-hint">
+                                Starting with the gross value above, take away any debts like mortgage and credit cards.
                             </div>
                             <div class="govuk-input__wrapper">
                                 <div class="govuk-input__prefix" aria-hidden="true">£</div>
-                                <input class="govuk-input govuk-!-width-one-third" id="grossValueField" name="grossValueField" type="text" value="" maxlength="13">
+                                <input class="govuk-input govuk-!-width-one-third" id="estateNetValueField" name="estateNetValueField" type="text" value="" aria-describedby="estateNetValueField-hint" maxlength="13">
+                            </div>
+                        </div>
+                            
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="estateNetQualifyingValueField">
+                              Net qualifying value
+                            </label>
+                            <div id="estateNetQualifyingValueField-hint" class="govuk-hint">
+                                Starting with the net value above, take away the total value of any assets passed to a spouse or civil partner and any money left to charity.                            </div>
+                            <div class="govuk-input__wrapper">
+                                <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                                <input class="govuk-input govuk-!-width-one-third" id="estateNetQualifyingValueField" name="estateNetQualifyingValueField" type="text" value="" aria-describedby="estateNetQualifyingValueField-hint" maxlength="13">
                             </div>
                         </div>
 
@@ -82,9 +76,9 @@
 
                 </div>
 
-                <form action="15-other_name.html">
+                <form action="13-spouse_civil_partner.html">
                     <div class="govuk-form-group">
-                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
+                        <button data-prevent-double-click="true" id="bigGreen" class="govuk-button" data-module="govuk-button">
                             Save and continue
                         </button>
                     </div>
@@ -136,12 +130,15 @@
     {% include "../../../includes/as_it_is_scripts.html" %}
 
     <script>
-        function myFunction() {
-            if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_25.html";
+        var Base_url = "page_25.html";
+        function validateAmount() {
+            if(document.getElementById('estateNetQualifyingValueField').value > 325000) {
+                var url ="page_67.html";
+                window.location = url;
             }
-            if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_25.html";
+            else {
+                var url ="page_23b.html";
+                window.location = url;
             }
         }
     </script>
