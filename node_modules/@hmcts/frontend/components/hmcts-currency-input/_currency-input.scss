@@ -1,0 +1,24 @@
+.hmcts-currency-input {
+  position: relative;
+}
+
+.hmcts-currency-input__symbol {
+  @include govuk-font(19);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  padding: 8px 10px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: govuk-colour('light-grey', $legacy: 'grey-3');
+  border: 2px solid govuk-colour('black');
+}
+
+.hmcts-currency-input input {
+  padding-left: govuk-spacing(7);
+}
+
+.hmcts-currency-input__input--right-aligned {
+  text-align: right;
+}
