@@ -1,0 +1,18 @@
+{%- from "hmcts-menu/macro.njk" import hmctsMenu %}
+
+<div class="hmcts-page-heading {{- ' ' + params.classes if params.classes}}">
+
+  <div class="hmcts-page-heading__title">
+    {{ params.title.html | safe }}
+  </div>
+
+  {% if params.items %}
+    <div class="hmcts-page-heading__actions">
+      {{hmctsMenu({
+        buttonClasses: 'hmcts-page-heading__action',
+        items: params.items
+      })}}
+    </div>
+  {% endif %}
+
+</div>
