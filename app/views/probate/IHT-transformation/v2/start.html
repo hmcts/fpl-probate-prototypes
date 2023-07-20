@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+Apply for Probate – GOV.UK Prototype Kit
+</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c"> 
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/plugin-assets/govuk-frontend/govuk/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" href="/plugin-assets/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon.png">
+
+  <link href="/public/stylesheets/application.css" rel="stylesheet" type="text/css" />
+
+<link href="/public/css/accessible-autocomplete.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="govuk-template__body ">
+  <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+  
+    <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+<header class="govuk-header " role="banner" data-module="govuk-header">
+<div class="govuk-header__container govuk-width-container">
+  <div class="govuk-header__logo">
+    <a href="#" class="govuk-header__link govuk-header__link--homepage">
+      <span class="govuk-header__logotype">
+        <svg aria-hidden="true" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 97" height="30" width="36">
+          <path fill="currentColor" fill-rule="evenodd" d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"></path>
+        </svg>
+        <span class="govuk-header__logotype-text">
+          GOV.UK
+        </span>
+      </span>
+    </a>
+  </div>
+</div>
+</header>
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" style="padding-top: 60px"> 
+
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <form action="submit-your-appeal" method="post">
+          
+            <h1 class="govuk-heading-xl">Applying for probate</h1>
+            <p class="govuk-body">Contents</p>
+            <ul class="govuk-list">
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">What is probate</a>
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">If there's a will</a>
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">If there's not a will</a>
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">Before you apply</a>
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">Fees</a>
+              </li>
+              <li>
+                - Apply for probate
+              </li>
+              <li>
+                - <a class="govuk-link govuk-link--no-visited-state" href="#">After you've applied</a>
+              </li>
+            </ul>
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+          <hr>
+        <h1 class="part-title govuk-heading-l" style="padding-top: 10px">Apply for probate</h1>
+        <div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube" data-module="govspeak">
+          <p>You can apply for probate yourself online or by post. This can be cheaper than paying a probate practitioner (such as a solicitor) to apply for you.</p>
+          <p>
+            <a rel="external" href="#0">Read guidance from Money Helper about using a probate practitioner</a> for information on hiring a legal professional.
+          </p>
+          <div role="note" aria-label="Information" class="application-notice info-notice">
+            <p>Probate applications are taking up to 8 weeks to process. It’s taking longer to process paper applications than online applications.</p>
+          </div>
+          <p>This guide and the service are also available <a href="#0">in Welsh (Cymraeg)</a>.</p>
+          <h2 id="apply-for-probate-online" class="govuk-heading-l">Apply for probate online</h2>
+          <p>You must have <a href="#0">estimated the value of the estate to find out if there’s Inheritance Tax to pay</a>.</p>
+          <p>If there’s Inheritance Tax to pay, you must wait 20 working days after sending the tax forms to HM Revenue and Customs (<abbr title="HM Revenue and Customs">HMRC</abbr>) before applying.</p>
+          <p><a class="gem-c-button govuk-button govuk-button--start" role="button" data-module="cross-domain-tracking" data-tracking-code="UA-93598808-2" data-tracking-name="govspeakButtonTracker" draggable="false" href="page_2.html"> Apply for probate <svg class="govuk-button__start-icon govuk-!-display-none-print" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewbox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a></p>
+          <p><a  class="govuk-link--no-visited-state" rel="external" href="/probate/IHT-transformation/v1/sign_in.html">Return to an existing probate application</a></p>
+          <h2 id="if-you-need-help-applying-online" class="govuk-heading-l">If you need help applying online</h2>
+          <p>There are 2 types of help available. You can get help if:</p>
+          <ul class="govuk-list govuk-list--bullet"> 
+            <li>you’re able to apply online and there’s a problem - for example a technical issue or you need advice</li>
+            <li>you need support to apply online - for example you’re not confident using the internet</li>
+          </ul>
+          <h3 id="help-if-youre-able-to-apply-online-and-theres-a-problem" class="govuk-heading-m">Help if you’re able to apply online and there’s a problem</h3>
+          <p>You can get help if you:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>are having technical issues with the service</li>
+            <li>need advice about the information you’re providing</li>
+          </ul>
+          <div class="govuk-inset-text">
+            <p>
+              Courts and Tribunals Service Centre<br>
+              Telephone: 0300 303 0648  <br>
+              Monday to Friday, 8am to 6pm<br>
+              Closed on bank holidays<br>
+              <a href="/call-charges">Find out about call charges</a>  <br>
+              <a href="#0">Webchat</a><br>
+              Email: <a href="#0">contactprobate@justice.gov.uk</a>
+            </p>
+          </div>
+          <h3 id="help-if-you-need-support-to-apply-online" class="govuk-heading-m">Help if you need support to apply online</h3>
+          <p>You can phone the Digital Support helpline if you:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>do not feel confident using the internet</li>
+            <li>do not have access to a computer or smartphone</li>
+          </ul>
+          <div class="govuk-inset-text">
+            <p>
+              Digital Support helpline <br>
+              Telephone: 03300 160051 <br>
+              Monday to Friday, 9am to 5pm <br>
+              Closed on bank holidays <br>
+              Text FORM to 60777 and someone will call you back <br>
+              <a href="#0">Find out about call charges</a>
+            </p>
+          </div>
+          <h2 id="apply-for-probate-by-post" class="govuk-heading-l">Apply for probate by post</h2>
+          <p>The form you need to fill in depends on whether the person left a will or not.</p>
+          <p><a href="#0">If there’s a will, fill in application form PA1P</a>.</p>
+          <p><a href="#0">If there’s not a will, fill in application form PA1A</a>.</p>
+          <div role="note" aria-label="Information" class="govuk-inset-text">
+            <p>Because of COVID-19, it’s taking longer to process paper applications than online applications. Use the online service to apply for probate if you can.</p>
+          </div>
+        </div>
+        <nav class="govuk-pagination govuk-pagination--block" role="navigation" aria-label="Pagination">
+          <div class="govuk-pagination__prev">
+            <a class="govuk-link govuk-pagination__link" href="#0" rel="prev" data-track-category="contentsClicked" data-track-action="previous" data-track-label="#0" data-track-dimension="previous" data-track-dimension-index="29">
+              <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewbox="0 0 15 13">
+                <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+              </svg>
+              <span class="govuk-pagination__link-title">Previous</span>
+                <span class="govuk-visually-hidden">:</span>
+                <span class="govuk-pagination__link-label">Fees</span>
+            </a>
+          </div>
+          <div class="govuk-pagination__next">
+            <a class="govuk-link govuk-pagination__link" href="#0" rel="next" data-track-category="contentsClicked" data-track-action="next" data-track-label="#0" data-track-dimension="next" data-track-dimension-index="29">
+              <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewbox="0 0 15 13">
+                <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+              </svg>
+              <span class="govuk-pagination__link-title">Next</span>
+                <span class="govuk-visually-hidden">:</span>
+                <span class="govuk-pagination__link-label">After you've applied</span>
+            </a>
+          </div>
+        </nav>
+        <div class="responsive-bottom-margin">
+          <a href="#0" class="govuk-link govuk-link--no-visited-state govuk-body">
+            View a printable version of the whole guide
+          </a>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <hr class="related-content-line">
+        <h4 class="govuk-heading-s" style="padding-top: 10px;">Part of</h4>
+        <a class="govuk-link govuk-link--no-visited-state govuk-heading-s" href="#">What to do when someone dies: step by step</a>
+        
+       </div>
+
+       <style>
+        .govuk-link-blue {
+          color: #1D70B8;
+        }
+      
+        .related-content-line {
+          border: solid 1px #1D70B8;
+        }
+      </style>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">      
+        <div class="gem-c-contextual-footer">
+          <div class="gem-c-related-navigation">
+            <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-topics-5c017ca3" data-module="gem-toggle">
+              <h2 id="related-nav-topics-5c017ca3" class="govuk-heading-l gem-c-related-navigation__sub-heading gem-c-related-navigation__sub-heading--footer" data-track-count="footerRelatedItemSection">Explore the topic</h2>
+              <ul class="govuk-list govuk-list--bullet gem-c-related-navigation__link-list" data-module="gem-track-click">
+                <li class="gem-c-related-navigation__link"><a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer" data-track-category="relatedLinkClicked" data-track-action="1.1 Explore the topic" data-track-label="/browse/births-deaths-marriages/death" data-track-options='{"dimension28":"3","dimension29":"Death and bereavement"}' href="#0">Death and bereavement</a></li>
+                <li class="gem-c-related-navigation__link"><a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer" data-track-category="relatedLinkClicked" data-track-action="1.2 Explore the topic" data-track-label="/browse/tax/capital-gains" data-track-options='{"dimension28":"3","dimension29":"Capital Gains Tax"}' href="#0">Capital Gains Tax</a></li>
+                <li class="gem-c-related-navigation__link"><a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer" data-track-category="relatedLinkClicked" data-track-action="1.3 Explore the topic" data-track-label="/browse/tax/inheritance-tax" data-track-options='{"dimension28":"3","dimension29":"Inheritance Tax"}' href="#0">Inheritance Tax</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="govuk-width-container">  
+      <div class="gem-c-feedback govuk-!-display-none-print" data-module="feedback ga4-event-tracker">
+        <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+          <div class="gem-c-feedback__prompt-content">
+            <div class="gem-c-feedback__prompt-questions js-prompt-questions" hidden>
+              <div class="gem-c-feedback__prompt-question-answer">
+                <h2 class="govuk-heading-l gem-c-feedback__prompt-question">Is this page useful?</h2>
+                <ul class="govuk-list gem-c-feedback__option-list">
+                  <li class="gem-c-feedback__option-list-item govuk-visually-hidden" style="display: none" hidden>
+                    <a class="gem-c-feedback__prompt-link" data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" role="button" style="display: none" hidden="hidden" aria-hidden="true" href="#0">
+                      Maybe
+                    </a>          
+                  </li>
+                  <li class="gem-c-feedback__option-list-item">
+                    <button class="govuk-button gem-c-feedback__prompt-link js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" data-ga4='{"event_name":"form_submit","type":"feedback","text":"Yes", "section": "Is this page useful?"}'>
+                      Yes <span class="govuk-visually-hidden">this page is useful</span>
+                    </button>
+                  </li>
+                  <li class="gem-c-feedback__option-list-item">
+                    <button class="govuk-button gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" data-ga4='{"event_name":"form_submit","type":"feedback","text":"No", "section": "Is this page useful?"}'>
+                      No <span class="govuk-visually-hidden">this page is not useful</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="gem-c-feedback__prompt-questions gem-c-feedback__prompt-success js-prompt-success" role="alert" hidden>
+              Thank you for your feedback
+            </div>
+
+            <div class="gem-c-feedback__prompt-questions gem-c-feedback__prompt-questions--something-is-wrong js-prompt-questions" hidden>
+              <button class="govuk-button gem-c-feedback__prompt-link js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV-UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" data-ga4='{"event_name":"form_submit","type":"feedback","text":"Report a problem with this page", "section": "Is this page useful?"}'>
+                Report a problem with this page
+              </button>
+            </div>
+          </div>
+        </div>
+        <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post" hidden>
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-errors" tabindex="-1" hidden></div>
+              <input type="hidden" name="url" value="https://www.gov.uk/applying-for-probate/apply-for-probate">
+              <h3 class="govuk-heading-m gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+              <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">
+                Don’t include personal or financial information like your National Insurance number or credit card details.
+              </p>
+              <div class="govuk-visually-hidden" aria-hidden="true">
+                <label for="giraffe">This field is for robots only. Please leave blank</label>
+                <input id="giraffe" name="giraffe" type="text" pattern=".{0}" tabindex="-1" autocomplete="off">
+              </div>      
+              <div class="gem-c-textarea govuk-form-group govuk-!-margin-bottom-6">  
+                <label for="textarea-1cc4e518" class="gem-c-label govuk-label">What were you doing?</label>
+                <textarea name="what_doing" class="govuk-textarea" id="textarea-1cc4e518" rows="3" spellcheck="true" aria-describedby="feedback_explanation"></textarea>
+              </div>
+              <div class="gem-c-textarea govuk-form-group govuk-!-margin-bottom-6">
+                <label for="textarea-e0c7c4cd" class="gem-c-label govuk-label">What went wrong?</label>
+                <textarea name="what_wrong" class="govuk-textarea" id="textarea-e0c7c4cd" rows="3" spellcheck="true"></textarea>
+              </div>
+              <button class="gem-c-button govuk-button" type="submit" data-ga4='{"event_name":"form_submit","type":"feedback","text":"Send","section":"Help us improve GOV.UK"}'>
+                Send
+              </button>
+              <button class="govuk-button govuk-button--secondary gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </form>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var input = document.querySelector("#giraffe"),
+              form = document.querySelector("#something-is-wrong")
+
+            form.addEventListener("submit", spamCapture);
+
+            function spamCapture(e) {
+              if (input.value.length !== 0) return;
+              e.preventDefault();
+            }
+          });
+        </script>
+        <form action="#0" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds" id="survey-wrapper">
+              <div class="gem-c-feedback__error-summary js-errors" tabindex="-1" hidden></div>
+              <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+              <input name="email_survey_signup[survey_source]" type="hidden" value="/applying-for-probate/apply-for-probate">
+              <h3 class="govuk-heading-m gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+              <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+              <div class="govuk-form-group">       
+                <label for="input-d1b0e355" class="gem-c-label govuk-label">Email address</label>
+                <input aria-describedby="survey_explanation" autocomplete="email" class="gem-c-input govuk-input" id="input-d1b0e355" name="email_survey_signup[email_address]" spellcheck="false" type="email">
+              </div>
+              <button class="gem-c-button govuk-button" type="submit" data-ga4='{"event_name":"form_submit","type":"feedback","text":"Send me the survey","section":"Help us improve GOV.UK"}'>
+                Send me the survey
+              </button>
+              <button class="govuk-button govuk-button--secondary gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" hidden>
+                Cancel
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="/assets/static/application-e8afdc3c2f2b49732840f9776a5328172540dcf22ee1d56ba51cb04014429f9c.js"></script>
+<script src="/assets/government-frontend/application-cc1b87cb7f7a7266f46b044ca2fdbe06fe48f196c15b5dbc53f62ca09af57aba.js"></script>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.gov.uk/applying-for-probate/apply-for-probate"
+  },
+  "name": "Applying for probate",
+  "datePublished": "2012-01-09T16:25:23.000+00:00",
+  "dateModified": "2014-12-12T08:00:01.000+00:00",
+  "text": "Find out if you need to apply for probate to deal with the estate of someone who’s died. Discover how to apply for probate or letters of administration and what to do if there’s no will.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "GOV.UK",
+    "url": "https://www.gov.uk",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-logo-73b5a4056ffe9988d02c728b56fe9fe7f90bb822322a5f6183ccbb92a99b019a.png"
+    }
+  },
+  "image": [
+    "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-1x1-bf9e64d759af6dfd93bede8168f3087a329f405b382aff36747db0db4b7b23e9.png",
+    "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-4x3-13093f053c15f613acd827aff27cac83d3fab452947cbcae4c7b706dadf2f7f2.png",
+    "https://www.gov.uk/assets/government-frontend/govuk_publishing_components/govuk-schema-placeholder-16x9-4233cd42671827e266e284c4d5ae68fb600bd9f9e35dda663ccabbc2b6ab7ec3.png"
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "Government Digital Service",
+    "url": "https://www.gov.uk/government/organisations/government-digital-service"
+  },
+  "about": [
+    {
+      "@context": "http://schema.org",
+      "@type": "Thing",
+      "sameAs": "https://www.gov.uk/life-circumstances/death"
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Thing",
+      "sameAs": "https://www.gov.uk/money/personal-tax-inheritance-tax-wills-and-probate"
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Thing",
+      "sameAs": "https://www.gov.uk/money/capital-gains-tax"
+    }
+  ],
+  "headLine": "Applying for probate",
+  "description": "Find out if you need to apply for probate to deal with the estate of someone who’s died. Discover how to apply for probate or letters of administration and what to do if there’s no will.",
+  "articleBody": "\u003cp\u003eYou can apply for probate yourself online or by post. This can be cheaper than paying a probate practitioner (such as a solicitor) to apply for you.\u003c/p\u003e\n\n\u003cp\u003e\u003ca rel=\"external\" href=\"https://www.moneyhelper.org.uk/en/family-and-care/death-and-bereavement/when-to-use-a-probate-specialist\"\u003eRead guidance from Money Helper about using a probate practitioner\u003c/a\u003e for information on hiring a legal professional.\u003c/p\u003e\n\n\u003cdiv role=\"note\" aria-label=\"Information\" class=\"application-notice info-notice\"\u003e\n\u003cp\u003eProbate applications are taking up to 8 weeks to process. It’s taking longer to process paper applications than online applications.\u003c/p\u003e\n\u003c/div\u003e\n\n\u003cp\u003eThis guide and the service are also available \u003ca href=\"/gwneud-cais-am-brofiant/gwneud-cais-am-brofiant\"\u003ein Welsh (Cymraeg)\u003c/a\u003e.\u003c/p\u003e\n\n\u003ch2 id=\"apply-for-probate-online\"\u003eApply for probate online\u003c/h2\u003e\n\n\u003cp\u003eYou must have \u003ca href=\"/applying-for-probate/before-you-apply\"\u003eestimated the value of the estate to find out if there’s Inheritance Tax to pay\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eIf there’s Inheritance Tax to pay, you must wait 20 working days after sending the tax forms to HM Revenue and Customs (\u003cabbr title=\"HM Revenue and Customs\"\u003eHMRC\u003c/abbr\u003e) before applying.\u003c/p\u003e\n\n\u003cp\u003e\u003ca class=\"gem-c-button govuk-button govuk-button--start\" role=\"button\" data-module=\"cross-domain-tracking\" data-tracking-code=\"UA-93598808-2\" data-tracking-name=\"govspeakButtonTracker\" draggable=\"false\" href=\"https://www.apply-for-probate.service.gov.uk/death-certificate\"\u003e Apply for probate \u003csvg class=\"govuk-button__start-icon govuk-!-display-none-print\" xmlns=\"http://www.w3.org/2000/svg\" width=\"17.5\" height=\"19\" viewbox=\"0 0 33 40\" focusable=\"false\" aria-hidden=\"true\"\u003e\u003cpath fill=\"currentColor\" d=\"M0 0h13l20 20-20 20H0l20-20z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003e\u003ca rel=\"external\" href=\"http://www.apply-for-probate.service.gov.uk\"\u003eReturn to an existing probate application\u003c/a\u003e.\u003c/p\u003e\n\n\u003ch2 id=\"if-you-need-help-applying-online\"\u003eIf you need help applying online\u003c/h2\u003e\n\n\u003cp\u003eThere are 2 types of help available. You can get help if:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eyou’re able to apply online and there’s a problem - for example a technical issue or you need advice\u003c/li\u003e\n  \u003cli\u003eyou need support to apply online - for example you’re not confident using the internet\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch3 id=\"help-if-youre-able-to-apply-online-and-theres-a-problem\"\u003eHelp if you’re able to apply online and there’s a problem\u003c/h3\u003e\n\n\u003cp\u003eYou can get help if you:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eare having technical issues with the service\u003c/li\u003e\n  \u003cli\u003eneed advice about the information you’re providing\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cdiv class=\"contact\"\u003e\n\u003cp\u003eCourts and Tribunals Service Centre\u003cbr\u003e\nTelephone: 0300 303 0648  \u003cbr\u003e\nMonday to Friday, 8am to 6pm\u003cbr\u003e\nClosed on bank holidays\u003cbr\u003e\n\u003ca href=\"/call-charges\"\u003eFind out about call charges\u003c/a\u003e  \u003cbr\u003e\n\u003ca href=\"https://www.apply-for-probate.service.gov.uk/contact-us\"\u003eWebchat\u003c/a\u003e\u003cbr\u003e\nEmail: \u003ca href=\"mailto:contactprobate@justice.gov.uk\"\u003econtactprobate@justice.gov.uk\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n\u003ch3 id=\"help-if-you-need-support-to-apply-online\"\u003eHelp if you need support to apply online\u003c/h3\u003e\n\n\u003cp\u003eYou can phone the Digital Support helpline if you:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003edo not feel confident using the internet\u003c/li\u003e\n  \u003cli\u003edo not have access to a computer or smartphone\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cdiv class=\"contact\"\u003e\n\u003cp\u003eDigital Support helpline \u003cbr\u003e\nTelephone: 03300 160051 \u003cbr\u003e\nMonday to Friday, 9am to 5pm \u003cbr\u003e\nClosed on bank holidays \u003cbr\u003e\nText FORM to 60777 and someone will call you back \u003cbr\u003e\n\u003ca href=\"/call-charges\"\u003eFind out about call charges\u003c/a\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n\u003ch2 id=\"apply-for-probate-by-post\"\u003eApply for probate by post\u003c/h2\u003e\n\n\u003cp\u003eThe form you need to fill in depends on whether the person left a will or not.\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"/government/publications/form-pa1p-apply-for-probate-the-deceased-had-a-will\"\u003eIf there’s a will, fill in application form PA1P\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"/government/publications/form-pa1a-apply-for-probate-deceased-did-not-leave-a-will\"\u003eIf there’s not a will, fill in application form PA1A\u003c/a\u003e.\u003c/p\u003e\n\n\u003cdiv role=\"note\" aria-label=\"Information\" class=\"application-notice info-notice\"\u003e\n\u003cp\u003eBecause of COVID-19, it’s taking longer to process paper applications than online applications. Use the online service to apply for probate if you can.\u003c/p\u003e\n\u003c/div\u003e\n\n"
+}
+</script>
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Home",
+        "@id": "#0"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Births, deaths, marriages and care",
+        "@id": "#0"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "name": "Death and bereavement",
+        "@id": "#0"
+      }
+    }
+  ]
+}
+</script>
+
+
+<!-- Body finish here -->
+
+{% endblock %}
