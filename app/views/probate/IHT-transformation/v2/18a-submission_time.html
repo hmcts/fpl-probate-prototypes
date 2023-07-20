@@ -16,16 +16,27 @@
 
                         <p class="govuk-body">
                           The letter from HMRC will be sent out up to 20 working days after you submit your IHT400.
-                            <br><br>
-                          If the letter has still not arrived after 20 working days, contact HMRC by calling 0300 123 1072.
                         </p>
 
-                        {% from "govuk/components/button/macro.njk" import govukButton %}
+                        <h2 class="govuk-heading-m">If you have not received your letter from HMRC after 20 days</h2>
+                        <p class="govuk-body">
+                          Contact HMRC on this number:
+                        </p>
+                          <ul class="govuk-list">
+                            <li>Telephone: 0300 123 1072</li>
+                            <li>Monday to Friday, 9am to 5pm (except public holidays)</li>
+                          </ul>
+                          <p class="govuk-body">
+                            <a class="govuk-link" href="#">Find out about call charges</a>
+                          </p>
 
-                            {{ govukButton({
-                              text: "Continue",
-                              href: "19-letter_code.html"
-                            }) }}
+                          {% from "govuk/components/button/macro.njk" import govukButton %}
+
+                          {{ govukButton({
+                            text: "Save and close your application",
+                            classes: "govuk-button--secondary",
+                            href: "saved_apps.html"
+                          }) }}
 
                             <p class="govuk-body"><a href="/saved-apps.html" class="govuk-link">Save and close</a></p>
 
