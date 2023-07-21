@@ -50,15 +50,14 @@
 
                 </div>
 
-                <form action="15-other_name.html">
-                    <div class="govuk-form-group">
-                        <button data-prevent-double-click="true" class="govuk-button" data-module="govuk-button">
-                            Save and continue
-                        </button>
-                    </div>
-                </form>
+                {% from "govuk/components/button/macro.njk" import govukButton %}
 
-                <p class="govuk-body"><a href="/saved-apps.html" class="govuk-link">Save and close</a></p>
+                {{ govukButton({
+                  text: "Save and continue",
+                  href: "#"
+                }) }}
+
+                <p class="govuk-body"><a href="saved_apps.html" class="govuk-link">Save and close</a></p>
 
                 <!-- End content -->
 
