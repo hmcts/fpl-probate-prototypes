@@ -31,30 +31,43 @@
                       
                         <div class="govuk-radios govuk-radios">
 
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="ihtFormEstateId" type="radio" value="optionIHT400421" aria-describedby="ihtFormEstateId-item-hint">
-                                <label class="govuk-label govuk-radios__label" for="ihtFormEstateId">
-                                    IHT400 only
-                                </label>
-                                
-                            </div>
+                                  <div class="govuk-radios" data-module="govuk-radios">
+                                    <div class="govuk-radios__item">
+                                      <input class="govuk-radios__input" id="option1" name="option" type="radio" data-aria-controls="conditional-option1">
+                                      <label class="govuk-label govuk-radios__label" for="option1">
+                                        IHT400 only
+                                      </label>
+                                    </div>
+                                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-option1">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label" for="option-IHT400">
+                                            Only select this option if you applied after ((date)).
+                                        </label>
+                                      </div>
+                                    </div>
 
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="ihtFormEstateId" type="radio" value="optionIHT207" aria-describedby="ihtFormEstateId-2-item-hint">
-                                <label class="govuk-label govuk-radios__label" for="ihtFormEstateId-2">
-                                    IHT400 and IHT421
-                                </label>
-                            </div>
+                                    <div class="govuk-radios__item">
+                                      <input class="govuk-radios__input" id="option2" name="option" type="radio" data-aria-controls="conditional-option2">
+                                      <label class="govuk-label govuk-radios__label" for="option2">
+                                        IHT400 and IHT421
+                                      </label>
+                                    </div>
+                                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-option2">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label" for="optionIHT400+IHT421">
+                                            Only select this option if you applied before ((date)).
+                                        </label>
+                                      </div>
+                                    </div>
 
-                            <div class="govuk-radios__divider">or</div>
+                                    <div class="govuk-radios__divider">or</div>
 
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option3" name="ihtFormEstateId" type="radio" value="optionNONE" aria-describedby="ihtFormEstateId-3-item-hint">
-                                <label class="govuk-label govuk-radios__label" for="ihtFormEstateId-3">
-                                    I did not have to submit any forms to HMRC
-                                </label>
-                                
-                            </div>
+                                    <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="option3" name="option" type="radio" data-aria-controls="conditional-option3">
+                                            <label class="govuk-label govuk-radios__label" for="option3">
+                                                I did not have to submit any forms to HMRC
+                                            </label>
+                                    </div>
 
                         </div>
                       
