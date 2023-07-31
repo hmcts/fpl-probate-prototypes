@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+{% include "../../../includes/IHT-transformation_header.html" %}
+
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
+    <main class="govuk-main-wrapper " id="main-content" role="main"> 
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">  
+
+                <!-- Content -->
+                        
+                <div class="govuk-form-group">
+
+                    <fieldset class="govuk-fieldset">
+  
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                            <h1 class="govuk-fieldset__heading">
+                                Which forms did you submit to HMRC?
+                            </h1>
+                        </legend>
+
+                        <p class="govuk-body">
+                            Using the Inheritance Tax checker is not the same as submitting a form to HMRC. The checker will give you a result straight away. If you have only used the Inheritance Tax checker, select that you did not have to submit a form.
+                                <br><br>
+                            If you submitted the IHT400 or the IHT400 and IHT421 you will have had to wait for a reply from HMRC.
+                        </p>
+                      
+                        <div class="govuk-radios govuk-radios">
+
+                                    <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="option3" name="option" type="radio" data-aria-controls="conditional-option3">
+                                        <label class="govuk-label govuk-radios__label" for="option3">
+                                        IHT205
+                                        </label>
+                                    </div>
+                                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-option3">
+                                        <div class="govuk-form-group">
+                                        <label class="govuk-label" for="optionIHT205">
+                                            There was no inheritance tax to pay
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="govuk-radios__item">
+                                      <input class="govuk-radios__input" id="option1" name="option" type="radio" value="IHT400 only" data-aria-controls="conditional-option1">
+                                      <label class="govuk-label govuk-radios__label" for="option1">
+                                        IHT400 only
+                                      </label>
+                                    </div>
+                                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-option1">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label" for="option-IHT400">
+                                            Only select this option if you applied after ((date)).
+                                        </label>
+                                      </div>
+                                    </div>
+
+                                    <div class="govuk-radios__item">
+                                      <input class="govuk-radios__input" id="option2" name="option" type="radio" data-aria-controls="conditional-option2">
+                                      <label class="govuk-label govuk-radios__label" for="option2">
+                                        IHT400 and IHT421
+                                      </label>
+                                    </div>
+                                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-option2">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label" for="optionIHT400+IHT421">
+                                            Only select this option if you applied before ((date)).
+                                        </label>
+                                      </div>
+                                    </div>
+
+                        </div>
+                      
+                    </fieldset>
+
+                </div>
+
+                <div class="govuk-form-group">
+                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+                </div>
+
+                <p class="govuk-body"><a href="saved_apps.html" class="govuk-link">Save and close</a></p>
+
+                <!-- End content -->
+
+                <br>
+
+                <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Contact us for help
+                      </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                        <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                            <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                        </div>
+
+                        <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                        <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                        <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                        <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                        <p class="govuk-body"> 0300 303 0648</p>
+                        <p class="govuk-heading-s"> Email </p>
+                        <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                        <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                        <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                        <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                    </div>
+
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    </div>
+
+    {% include "../../../includes/as_it_is_footer.html" %}
+
+    {% include "../../../includes/as_it_is_scripts.html" %}
+
+    <script>
+        function myFunction() {
+            if(document.getElementById('option3').checked) {
+                document.getElementById('link').href = "22-IHT205_values.html";
+            }
+            if(document.getElementById('option1').checked) {
+                document.getElementById('link').href = "18-letter.html";
+            }
+            if(document.getElementById('option2').checked) {
+                document.getElementById('link').href = "21-IHT421_values.html";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
