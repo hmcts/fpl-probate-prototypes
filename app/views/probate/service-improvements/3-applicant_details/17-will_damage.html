@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+{% include "../../../includes/IHT-transformation_header.html" %}
+
+<a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
+    <main class="govuk-main-wrapper " id="main-content" role="main"> 
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">  
+
+                <!-- Content -->
+                        
+                <div class="govuk-form-group">
+
+                    <fieldset class="govuk-fieldset">
+  
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                            <h1 class="govuk-fieldset__heading">
+                                Does the will have any visible damages or marks?
+                            </h1>
+                        </legend>
+                      
+                        <div class="govuk-radios govuk-radios--inline govuk-radios--conditional" data-module="govuk-radios">
+
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="willHasVisibleDamage" name="willHasVisibleDamage" type="radio" value="optionYes" aria-controls="conditional-willHasVisibleDamage" aria-expanded="false">
+                                <label class="govuk-label govuk-radios__label" for="willHasVisibleDamage">
+                                  Yes
+                                </label>
+                            </div>
+                            
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-willHasVisibleDamage">
+                                <div class="govuk-form-group">
+                                    <div id="willDamage-hint" class="govuk-hint">
+                                        Select all that apply.
+                                    </div>
+                                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="willDamage" name="willDamageTypes[]" type="checkbox" value="stapleOrPunchHoles" aria-describedby="willDamage-hint">
+                                            <label class="govuk-label govuk-checkboxes__label" for="willDamage">
+                                                Staple or punch holes
+                                            </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="willDamage-2" name="willDamageTypes[]" type="checkbox" value="rustMarks" aria-describedby="willDamage-hint">
+                                            <label class="govuk-label govuk-checkboxes__label" for="willDamage-2">
+                                              Rust marks
+                                            </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="willDamage-3" name="willDamageTypes[]" type="checkbox" value="paperClipMarks" aria-describedby="willDamage-hint">
+                                            <label class="govuk-label govuk-checkboxes__label" for="willDamage-3">
+                                                Paper clip marks
+                                            </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="willDamage-4" name="willDamageTypes[]" type="checkbox" value="tornEdges" aria-describedby="willDamage-hint">
+                                            <label class="govuk-label govuk-checkboxes__label" for="willDamage-4">
+                                                Torn edges
+                                            </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="willDamage-5" name="willDamageTypes[]" type="checkbox" value="waterDamage" aria-describedby="willDamage-hint">
+                                            <label class="govuk-label govuk-checkboxes__label" for="willDamage-5">
+                                                Water damage
+                                            </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="willDamage-6" name="willDamageTypes[]" type="checkbox" value="otherVisibleDamage" aria-describedby="willDamage-hint" aria-controls="conditional-willDamage-6" aria-expanded="false">
+                                            <label class="govuk-label govuk-checkboxes__label" for="willDamage-6">
+                                                Other
+                                            </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-willDamage-6">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-visually-hidden" for="otherDamageDescription">
+                                                    Describe the damage
+                                                </label>
+                                                <div id="otherDamageDescription-hint" class="govuk-hint">
+                                                    Describe the damage
+                                                </div>
+                                                <textarea class="govuk-textarea" id="otherDamageDescription" name="otherDamageDescription" rows="5" aria-describedby="otherDamageDescription-hint"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="willHasVisibleDamage-2" name="willHasVisibleDamage" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="willHasVisibleDamage-2">
+                                    No
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+                </div>
+
+                <div class="govuk-form-group">
+                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
+                </div>
+
+                <p class="govuk-body"><a href="saved_apps.html" class="govuk-link">Save and close</a></p>
+
+                <!-- End content -->
+
+                <br>
+
+                <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Contact us for help
+                      </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                        <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                            <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                        </div>
+
+                        <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                        <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                        <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                        <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                        <p class="govuk-body"> 0300 303 0648</p>
+                        <p class="govuk-heading-s"> Email </p>
+                        <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                        <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                        <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                        <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                    </div>
+
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    </div>
+
+    {% include "../../../includes/as_it_is_footer.html" %}
+
+    {% include "../../../includes/as_it_is_scripts.html" %}
+
+    <script>
+        function myFunction() {
+            if(document.getElementById('willHasVisibleDamage').checked) {
+                document.getElementById('link').href = "page_27a.html";
+            }
+            if(document.getElementById('willHasVisibleDamage-2').checked) {
+                document.getElementById('link').href = "page_28.html";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

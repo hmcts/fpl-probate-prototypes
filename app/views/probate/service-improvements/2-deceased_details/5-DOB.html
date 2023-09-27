@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+{% include "../../../includes/header-with_nav.html" %}
+
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+    <main class="govuk-main-wrapper " id="main-content" role="main"> 
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">  
+
+                <!-- Content -->
+                        
+                <div class="govuk-form-group">
+
+                    <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+  
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      
+                            <h1 class="govuk-fieldset__heading">
+                              What was their date of birth?
+                            </h1>
+                      
+                        </legend>
+                      
+                        <div class="govuk-hint">
+                          For example, 31 03 1945
+                        </div>
+
+                        <div class="govuk-date-input" id="dob">
+                        
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="dob-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                      
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="dob-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                      
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="dob-year">
+                                Year
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                      
+                      </div>
+                      
+                    </fieldset>
+
+                </div>
+
+                {% from "govuk/components/button/macro.njk" import govukButton %}
+
+                {{ govukButton({
+                  text: "Save and continue",
+                  href:"6-DOD.html"
+                }) }}
+
+                <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
+
+                <!-- End content -->
+
+                <br>
+
+                <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Contact us for help
+                      </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                        <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                            <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                        </div>
+
+                        <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                        <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                        <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                        <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                        <p class="govuk-body"> 0300 303 0648</p>
+                        <p class="govuk-heading-s"> Email </p>
+                        <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                        <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                        <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                        <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                    </div>
+
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    </div>
+
+    {% include "../../../includes/as_it_is_footer.html" %}
+
+</body>
+
+</html>

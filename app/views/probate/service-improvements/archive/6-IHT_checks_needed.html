@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+{% include "../../../includes/header.html" %}
+
+    <main class="govuk-main-wrapper " id="main-content" role="main"> 
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">  
+
+                <!-- Content -->
+                        
+                <div class="govuk-form-group">
+
+                    <fieldset class="govuk-fieldset">
+  
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                            <h1 class="govuk-fieldset__heading">
+                                You need to check if there’s Inheritance Tax to pay
+                            </h1>
+                        </legend>
+                      
+                        <p class="govuk-body">Before applying for probate:</p>
+                
+                        <p class="govuk-body">If the person who died:</p>
+                            <ul class="govuk-list govuk-list--number">
+                                <li><a href="https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value" class="govuk-link govuk-link--no-visited-state">Work out the estate's value</a>. You can <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value" class="govuk-link govuk-link--no-visited-state">use the IHT checker</a> to get the values.</li>
+                                <li>Complete either forms IHT 421 and 400 or IHT 207 if the IHT checker tells you to <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value" class="govuk-link govuk-link--no-visited-state">report the estate's value</a>.</li>
+                            </ul>
+
+                    </fieldset>
+
+                </div>
+
+                <!-- End content -->
+
+                <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Contact us for help
+                      </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                        <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                            <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                        </div>
+
+                        <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                        <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                        <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                        <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                        <p class="govuk-body"> 0300 303 0648</p>
+                        <p class="govuk-heading-s"> Email </p>
+                        <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                        <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                        <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                        <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                    </div>
+
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    </div>
+
+    {% include "../../../includes/as_it_is_footer.html" %}
+
+    {% include "../../../includes/as_it_is_scripts.html" %}
+
+</body>
+
+</html>
