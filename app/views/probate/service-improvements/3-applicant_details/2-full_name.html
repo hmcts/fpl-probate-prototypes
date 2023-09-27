@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 
-{% include "../../../includes/IHT-transformation_header.html" %}
+{% include "../../../includes/header-with_nav.html" %}
 
     <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
@@ -19,39 +19,47 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                                Are you claiming the unused Inheritance Tax allowance (known as the ‘nil-rate band’) of the spouse or civil partner of the person who died?
+                                What is your full name?
                             </h1>
                         </legend>
+                      
+                        <p class="govuk-body">Your full name should match exactly what is written on your passport or other form of authorised ID, such as a driving licence.</p>
 
-                        <p class="govuk-hint">Everyone has a £325,000 tax free allowance before they must pay Inheritance Tax. If you are applying for probate for the estate of someone who did not use some or all of the allowance when their spouse or civil partner died, you can add that remaining allowance to this application.</p>
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="width-20">
+                              First name and any middle names
+                            </label>
+                            <input class="govuk-input govuk-!-width-three-quarters" id="applicant-firstName" name="applicant-firstName" type="text" value="{{ data['applicant-firstName'] }}" maxlength="100">
+                        </div>
 
-                        <div class="govuk-radios govuk-radios--inline">
-
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="married" type="radio" value="optionYes">
-                                <label class="govuk-label govuk-radios__label" for="married">
-                                  Yes
-                                </label>
-                            </div>
-
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="married" type="radio" value="optionNo">
-                                <label class="govuk-label govuk-radios__label" for="married-2">
-                                  No
-                                </label>
-                            </div>
-                        
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="width-20">
+                              Last name
+                            </label>
+                            <input class="govuk-input govuk-!-width-three-quarters" id="applicant-lastName" name="applicant-lastName" type="text" value="{{ data['applicant-lastName'] }}" maxlength="100">
                         </div>
 
                     </fieldset>
 
+                    <br><br>
+
+                    {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+
+                        {{ govukWarningText({
+                        text: "If your full name does not match your ID, you may have difficulties accessing any assets.",
+                        iconFallbackText: "Warning"
+                        }) }}
+
                 </div>
 
-                <div class="govuk-form-group">
-                    <a href="14-probate_values.html" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Save and continue</button></a>
-                </div>
+                {% from "govuk/components/button/macro.njk" import govukButton %}
 
-                <p class="govuk-body"><a href="saved_apps.html" class="govuk-link">Save and close</a></p>
+                    {{ govukButton({
+                    text: "Save and continue",
+                    href:"3-will_name.html"
+                    }) }}
+
+                <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
 
                 <!-- End content -->
 
@@ -93,19 +101,6 @@
     </div>
 
     {% include "../../../includes/as_it_is_footer.html" %}
-
-    {% include "../../../includes/as_it_is_scripts.html" %}
-
-    <script>
-        function myFunction() {
-            if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "page_27.html";
-            }
-            if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "page_27.html";
-            }
-        }
-    </script>
 
 </body>
 
