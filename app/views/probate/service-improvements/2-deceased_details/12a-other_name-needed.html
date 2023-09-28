@@ -6,7 +6,6 @@
 
     <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
-
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">  
@@ -15,49 +14,52 @@
                         
                 <div class="govuk-form-group">
 
+                    <form action="13-married_after_will" method="post">
+
                     <fieldset class="govuk-fieldset">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                                What is your full name?
+                                What other names did {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} use?
                             </h1>
                         </legend>
-                      
-                        <p class="govuk-body">Your full name should match exactly what is written on your passport or other form of authorised ID, such as a driving licence.</p>
 
+                        <br>
+                      
                         <div class="govuk-form-group">
                             <label class="govuk-label" for="width-20">
                               First name and any middle names
                             </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="applicant-firstName" name="applicant-firstName" type="text" value="{{ data['applicant-firstName'] }}" maxlength="100">
+                            <input class="govuk-input govuk-!-width-three-quarters" id="deceased-firstName2" name="deceased-firstName2" type="text" value="{{ data['deceased-firstName2'] }}" maxlength="100">
                         </div>
 
                         <div class="govuk-form-group">
                             <label class="govuk-label" for="width-20">
                               Last name
                             </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="applicant-lastName" name="applicant-lastName" type="text" value="{{ data['applicant-lastName'] }}" maxlength="100">
+                            <input class="govuk-input govuk-!-width-three-quarters" id="deceased-lastName2" name="deceased-lastName2" type="text" value="{{ data['deceased-lastName2'] }}" maxlength="100">
                         </div>
 
                     </fieldset>
-
-                    <br><br>
-
-                    {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
-
-                        {{ govukWarningText({
-                        text: "If your full name does not match your ID, you may have difficulties accessing any assets.",
-                        iconFallbackText: "Warning"
-                        }) }}
 
                 </div>
 
                 {% from "govuk/components/button/macro.njk" import govukButton %}
 
                     {{ govukButton({
-                    text: "Save and continue",
-                    href:"3-will_name.html"
+                    text: "Add another name",
+                    classes: "govuk-button--secondary"
                     }) }}
+
+                <br>
+
+                {% from "govuk/components/button/macro.njk" import govukButton %}
+
+                    {{ govukButton({
+                    text: "Save and continue"
+                    }) }}
+
+                </form>
 
                 <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
 

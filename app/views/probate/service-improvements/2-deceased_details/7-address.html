@@ -13,7 +13,7 @@
           What was the permanent address at the time of their death?
         </h1>
 
-        <form action="7a-address_select.html" method="post">
+        <form action="7a-address_select" method="post">
 
           <div>
             <label class="govuk-label" for="address-postcode">
@@ -84,8 +84,7 @@
     {% from "govuk/components/button/macro.njk" import govukButton %}
 
       {{ govukButton({
-      text: "Save and continue",
-      href:"8-jurisdiction.html"
+      text: "Save and continue"
       }) }}
 
   <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>

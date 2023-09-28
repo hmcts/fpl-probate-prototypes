@@ -16,19 +16,22 @@
                     <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                         <h1 class="govuk-fieldset__heading">
-                            Is {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} exactly how the name is written on the will (or any codicils)?
+                            Is {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} exactly how the name is written on the original will?
                         </h1>
                     </legend>
+
+                    <p class="govuk-body">You should check the original will to make sure the names are exactly the same.</p>
+
                       <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="option1" name="changed-name" type="radio" value="yes">
-                          <label class="govuk-label govuk-radios__label" for="changed-name">
+                          <input class="govuk-radios__input" id="option1" name="will-name" type="radio" value="Yes">
+                          <label class="govuk-label govuk-radios__label" for="will-name">
                             Yes
                           </label>
                         </div>
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="option2" name="changed-name" type="radio" value="no">
-                          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                          <input class="govuk-radios__input" id="option2" name="will-name" type="radio" value="No">
+                          <label class="govuk-label govuk-radios__label" for="will-name-2">
                             No
                           </label>
                         </div>

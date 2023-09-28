@@ -11,14 +11,14 @@
 
     <h1 class="govuk-heading-l">Enter your postal address</h1>
 
-    <form action="8-jurisdiction.html" method="post" novalidate>
+    <form action="8-jurisdiction" method="post" novalidate>
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m"> Postcode
           </legend>
             <div class="govuk-form-group">
-              <label class="govuk-label govuk-!-font-weight-bold" for="change-postcode">{{ data['address-postcode-v2'] }}</label>
+              <label class="govuk-label govuk-!-font-weight-bold" for="change-postcode">{{ data['address-postcode'] }}</label>
               <p class="postcode_change"><a class="govuk-link" href="7-address.html" aria-label="change postcode">Change</a></p>
             </div>
 
@@ -26,19 +26,19 @@
               <label class="govuk-label" for="address-select">
               Select an address
               </label>
-              <select class="govuk-select govuk-!-width-three-quarters" id="address-select" name="address-select">
+              <select class="govuk-select govuk-!-width-three-quarters" id="address-select" name="address-select" vallue="{{ data['address-select'] }}">
                 <option>5 addresses found</option>
-                <option>1 Main Street, London, {{ data['address-postcode-v2'] }} </option>
-                <option>2 Main Street, London, {{ data['address-postcode-v2'] }} </option>
-                <option>3 Main Street, London, {{ data['address-postcode-v2'] }} </option>
-                <option>4 Main Street, London, {{ data['address-postcode-v2'] }} </option>
-                <option>5 Main Street, London, {{ data['address-postcode-v2'] }} </option>
+                <option>1 Main Street, London, {{ data['address-postcode'] }} </option>
+                <option>2 Main Street, London, {{ data['address-postcode'] }} </option>
+                <option>3 Main Street, London, {{ data['address-postcode'] }} </option>
+                <option>4 Main Street, London, {{ data['address-postcode'] }} </option>
+                <option>5 Main Street, London, {{ data['address-postcode'] }} </option>
               </select>
           </div>
 
           <div class="govuk-form-group">
             <p>
-              <a class="govuk-link" href="#">I cannot find the address in the list</a>
+              <a class="govuk-link" href="7-address.html">I cannot find the address in the list</a>
             </p>
           </div>
         </fieldset>

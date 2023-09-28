@@ -4,7 +4,7 @@
 
 {% include "../../../includes/header-with_nav.html" %}
 
-<a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
 
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
@@ -14,60 +14,62 @@
                 <!-- Content -->
                         
                 <div class="govuk-form-group">
+                    <form action="3-will_name" method="post">
 
-                    <fieldset class="govuk-fieldset" aria-describedby="alias-hint">
+                    <fieldset class="govuk-fieldset">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                              Did [dynamic] have assets in another name?
+                                What is your legal name?
                             </h1>
                         </legend>
+
+                        <br>
                       
                         <p class="govuk-body">
-                            The grant of probate will list all names that you give us.
-                                <br><br>
-                            [dynamic] could have used their maiden name, a nickname, or a different spelling of their name for some of their assets. You may find it helpful to check any documents you have from [dynamic], for example, bank statements, property deeds or records of any shares they held, to see if they used a different name.
+                            The name you give us will be listed on the grant of probate.
+                            <br><br>
+                            Your legal name should match exactly what is written on your passport or other form of authorised ID, such as a driving licence.
                         </p>
 
-                        <div class="govuk-radios govuk-radios--inline">
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="alias" type="radio" value="optionYes">
-                                <label class="govuk-label govuk-radios__label" for="alias">
-                                  Yes
-                                </label>
-                            </div>
-                            <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="alias" type="radio" value="optionNo">
-                                <label class="govuk-label govuk-radios__label" for="alias-2">
-                                  No
-                                </label>
-                            </div>
+                        <br>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="width-20">
+                              First name and any middle names
+                            </label>
+                            <input class="govuk-input govuk-!-width-three-quarters" id="applicant-firstName" name="applicant-firstName" type="text" value="{{ data['applicant-firstName'] }}" maxlength="100">
+                        </div>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="width-20">
+                              Last name
+                            </label>
+                            <input class="govuk-input govuk-!-width-three-quarters" id="applicant-lastName" name="applicant-lastName" type="text" value="{{ data['applicant-lastName'] }}" maxlength="100">
                         </div>
 
                     </fieldset>
 
-                    <br>
+                    <br><br>
 
                     {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
 
                         {{ govukWarningText({
-                        text: "If there are any assets held in names that are not listed on the grant of probate, you may have difficulties accessing them.",
+                        text: "If your legal name does not match your ID, you may have difficulties accessing any assets.",
                         iconFallbackText: "Warning"
                         }) }}
 
                 </div>
 
-                <div class="govuk-form-group">
-                                
-                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;">
-                      <button class="govuk-button" data-module="govuk-button">Save and continue</button>
-                    </a>
+                {% from "govuk/components/button/macro.njk" import govukButton %}
 
-                    <p class="govuk-body">
-                      <a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a>
-                    </p>
+                    {{ govukButton({
+                    text: "Save and continue"
+                    }) }}
 
-                </div>
+                </form>
+
+                <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
 
                 <!-- End content -->
 
@@ -109,17 +111,6 @@
     </div>
 
     {% include "../../../includes/as_it_is_footer.html" %}
-
-    <script>
-        function myFunction() {
-            if(document.getElementById('option1').checked) {
-                document.getElementById('link').href = "11a-other_name-needed.html";
-            }
-            if(document.getElementById('option2').checked) {
-                document.getElementById('link').href = "12-married_after_will.html";
-            }
-        }
-    </script>
 
 </body>
 

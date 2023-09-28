@@ -13,12 +13,16 @@
                 <!-- Content -->
                         
                 <div class="govuk-form-group">
+                  <form action="4-contact_number" method="post">
+
                     <fieldset class="govuk-fieldset" aria-describedby="reason-hint">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                         <h1 class="govuk-fieldset__heading">
                           Why is your legal name different to how it is written on the will or any codicils?                        
                         </h1>
                     </legend>
+
+                    <br>
 
                         <p class="govuk-body">
                           You must explain the reason for the difference, for example, you changed your name since the will was written, or your middle name was not included.
@@ -32,7 +36,6 @@
                             </label>
                           </div>
 
-                          <div class="govuk-radios" data-module="govuk-radios">
                             <div class="govuk-radios__item">
                               <input class="govuk-radios__input" id="reason2" name="reason" type="radio" value="divorced">
                               <label class="govuk-label govuk-radios__label" for="reason2">
@@ -62,12 +65,12 @@
                           </div>
                           
                           <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="reason6" name="reason" type="radio" value="text" data-aria-controls="conditional-reason6">
+                            <input class="govuk-radios__input" id="reason6" name="reason" type="radio" value="Other" data-aria-controls="conditional-reason6">
                             <label class="govuk-label govuk-radios__label" for="reason6">
                               Other
                             </label>
                           </div>
-                          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-reason6">
+                          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-reason">
                             <div class="govuk-form-group">
                               <label class="govuk-label" for="other-reason">
                                 Reason for difference
@@ -80,21 +83,22 @@
 
                       </fieldset>
 
+                    </form>
+
                     </div>
 
-                  {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+                    {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
 
-                    {{ govukWarningText({
-                      text: "If you are unable to explain the difference, it may take longer to process your application.",
-                      iconFallbackText: "Warning"
-                    }) }}
+                      {{ govukWarningText({
+                        text: "If you are unable to explain the difference, it may take longer to process your application.",
+                        iconFallbackText: "Warning"
+                      }) }}
 
-                  {% from "govuk/components/button/macro.njk" import govukButton %}
+                    {% from "govuk/components/button/macro.njk" import govukButton %}
 
-                    {{ govukButton({
-                    text: "Save and continue",
-                    href:"4-contact_number.html"
-                    }) }}
+                      {{ govukButton({
+                      text: "Save and continue"
+                      }) }}
 
                 <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
 
