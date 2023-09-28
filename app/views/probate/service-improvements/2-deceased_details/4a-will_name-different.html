@@ -14,11 +14,13 @@
                         
                 <div class="govuk-form-group">
 
+                    <form action="5-DOB" method="post">
+
                     <fieldset class="govuk-fieldset">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                                How is the name written on the will or any codicils?
+                                How is the name written on the original will?
                             </h1>
                         </legend>
 
@@ -28,14 +30,14 @@
                             <label class="govuk-label" for="width-20">
                               First name and any middle names
                             </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="deceased-firstName2" name="deceased-firstName2" type="text" value="{{ data['deceased-firstName2'] }}" maxlength="100">
+                            <input class="govuk-input govuk-!-width-three-quarters" id="will-firstName" name="will-firstName" type="text" value="{{ data['willName-firstName'] }}" maxlength="100">
                         </div>
 
                         <div class="govuk-form-group">
                             <label class="govuk-label" for="width-20">
                               Last name
                             </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="deceased-lastName2" name="deceased-lastName2" type="text" value="{{ data['deceased-lastName2'] }}" maxlength="100">
+                            <input class="govuk-input govuk-!-width-three-quarters" id="will-lastName" name="will-lastName" type="text" value="{{ data['willName-lastName'] }}" maxlength="100">
                         </div>
 
                     </fieldset>
@@ -45,19 +47,10 @@
                 {% from "govuk/components/button/macro.njk" import govukButton %}
 
                     {{ govukButton({
-                    text: "Add another name",
-                    classes: "govuk-button--secondary",
-                    href:"#"
+                    text: "Save and continue"
                     }) }}
 
-                <br>
-
-                {% from "govuk/components/button/macro.njk" import govukButton %}
-
-                    {{ govukButton({
-                    text: "Save and continue",
-                    href:"5-DOB.html"
-                    }) }}
+                </form>
 
                 <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
 

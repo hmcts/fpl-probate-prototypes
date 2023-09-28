@@ -4,7 +4,8 @@
 
 {% include "../../../includes/header-with_nav.html" %}
 
-    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+<a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
 
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
@@ -14,43 +15,59 @@
                         
                 <div class="govuk-form-group">
 
-                    <fieldset class="govuk-fieldset">
+                    <fieldset class="govuk-fieldset" aria-describedby="alias-hint">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                                Did [dynamic] get married or enter into a civil partnership after the will was signed?                            </h1>
+                              Did {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} have assets in another name?
+                            </h1>
                         </legend>
+                      
+                        <p class="govuk-body">
+                            The grant of probate will list all names that you give us.
+                                <br><br>
+                            The person who died could have used their maiden name, a nickname, or a different spelling of their name for some of their assets. You may find it helpful to check any documents you have from the person who died, for example, bank statements, property deeds or records of any shares they held, to see if they used a different name.
+                        </p>
 
                         <div class="govuk-radios govuk-radios--inline">
-
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option1" name="married" type="radio" value="optionYes">
-                                <label class="govuk-label govuk-radios__label" for="married">
+                                <input class="govuk-radios__input" id="option1" name="alias" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="alias">
                                   Yes
                                 </label>
                             </div>
-
                             <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="option2" name="married" type="radio" value="optionNo">
-                                <label class="govuk-label govuk-radios__label" for="married-2">
+                                <input class="govuk-radios__input" id="option2" name="alias" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="alias-2">
                                   No
                                 </label>
                             </div>
-                        
                         </div>
 
                     </fieldset>
 
+                    <br>
+
+                    {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+
+                        {{ govukWarningText({
+                        text: "If there are any assets held in names that are not listed on the grant of probate, you may have difficulties accessing them.",
+                        iconFallbackText: "Warning"
+                        }) }}
+
                 </div>
 
-                {% from "govuk/components/button/macro.njk" import govukButton %}
+                <div class="govuk-form-group">
+                                
+                    <a href="" onclick='myFunction()' id="link" style="text-decoration: none;">
+                      <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+                    </a>
 
-                {{ govukButton({
-                  text: "Save and continue",
-                  href:"check_answers-deceased.html"
-                }) }}
+                    <p class="govuk-body">
+                      <a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a>
+                    </p>
 
-                <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
+                </div>
 
                 <!-- End content -->
 
@@ -92,6 +109,17 @@
     </div>
 
     {% include "../../../includes/as_it_is_footer.html" %}
+
+    <script>
+        function myFunction() {
+            if(document.getElementById('option1').checked) {
+                document.getElementById('link').href = "12a-other_name-needed.html";
+            }
+            if(document.getElementById('option2').checked) {
+                document.getElementById('link').href = "13-married_after_will.html";
+            }
+        }
+    </script>
 
 </body>
 

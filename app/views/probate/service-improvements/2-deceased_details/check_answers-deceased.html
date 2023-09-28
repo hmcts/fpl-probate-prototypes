@@ -39,25 +39,25 @@
 
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
-                                Is [dynamic] exactly how the name is written on the will (or any codicils)?
+                                Is {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} exactly how the name is written on the original will?
                             </dt>
-                            <dd class="govuk-summary-list__value">[dynamic]</dd>
+                            <dd class="govuk-summary-list__value">No</dd>
                             <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="4-will_name.html">Change</a></dd>
                         </div>
 
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
-                                How is the name written on the will or any codicils?
+                                How is the name written on the original will?
                             </dt>
-                            <dd class="govuk-summary-list__value">[dynamic]</dd>
-                            <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="4a-will_name_different.html">Change</a></dd>
+                            <dd class="govuk-summary-list__value">{{ data['will-firstName'] }} {{ data['will-lastName'] }}</dd>
+                            <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="4a-will_name-different.html">Change</a></dd>
                         </div>
 
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
                                 What was their date of birth?
                             </dt>
-                            <dd class="govuk-summary-list__value">[dynamic]</dd>
+                            <dd class="govuk-summary-list__value">{{ data['dob-day'] }}/{{ data['dob-month'] }}/{{ data['dob-year'] }}</dd>
                             <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="5-DOB.html">Change</a></dd>
                         </div>
             
@@ -65,7 +65,7 @@
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
                                 What was the date that they died?
                             </dt>
-                            <dd class="govuk-summary-list__value">[dynamic]</dd>
+                            <dd class="govuk-summary-list__value">{{ data['dod-day'] }}/{{ data['dod-month'] }}/{{ data['dod-year'] }}</dd>
                             <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="6-DOD.html">Change</a></dd>
                         </div>
 
@@ -73,13 +73,13 @@
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
                                 What was the permanent address at the time of their death?
                             </dt>
-                            <dd class="govuk-summary-list__value">[dynamic]</dd>
+                            <dd class="govuk-summary-list__value">{{ data['address-select'] }}</dd>
                             <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="7-address.html">Change</a></dd>
                         </div>
 
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
-                                Did [dynamic] die in England or Wales?
+                                Did {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} die in England or Wales?
                             </dt>
                             <dd class="govuk-summary-list__value">Yes</dd>
                             <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="8-jurisdiction.html">Change</a></dd>
@@ -89,32 +89,40 @@
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
                                 Do you have a death certificate or an interim death certificate?
                             </dt>
-                            <dd class="govuk-summary-list__value">[dynamic]</dd>
+                            <dd class="govuk-summary-list__value">Death certificate</dd>
                             <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="9-certificate_type.html">Change</a></dd>
                         </div>
 
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
-                                Did [dynamic] have assets in another name?
+                                Did {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} have any assets outside of the England or Wales?
                             </dt>
-                            <dd class="govuk-summary-list__value">[dynamic]</dd>
-                            <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="11-other_name.html">Change</a></dd>
+                            <dd class="govuk-summary-list__value">No</dd>
+                            <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="11-assets.html">Change</a></dd>
                         </div>
 
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
-                                What other names did [dynamic] use?
+                                Did {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} have assets in another name?
                             </dt>
-                            <dd class="govuk-summary-list__value">[dynamic]</dd>
-                            <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="11a-other_name-needed.html">Change</a></dd>
+                            <dd class="govuk-summary-list__value">Yes</dd>
+                            <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="12-other_name.html">Change</a></dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key" style="padding-right: 190px;">
+                                What other names did {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} use?
+                            </dt>
+                            <dd class="govuk-summary-list__value">{{ data['deceased-firstName2'] }} {{ data['deceased-lastName2'] }}</dd>
+                            <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="12a-other_name-needed.html">Change</a></dd>
                         </div>
         
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key" style="padding-right: 190px;">
-                                Did [dynamic] get married or enter into a civil partnership after the will was signed?                            </h1>
+                                Did {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} get married or enter into a civil partnership after the will was signed?                            </h1>
                             </dt>
                             <dd class="govuk-summary-list__value">No</dd>
-                            <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="12-married_after_will.html">Change</a></dd>
+                            <dd class="govuk-summary-list__actions"><a class="govuk-link govuk-link--no-visited-state" href="13-married_after_will.html">Change</a></dd>
                         </div>
 
                     </dl>

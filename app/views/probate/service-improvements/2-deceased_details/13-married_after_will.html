@@ -18,24 +18,25 @@
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                             <h1 class="govuk-fieldset__heading">
-                                What other names did [dynamic] use?
-                            </h1>
+                                Did {{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} get married or enter into a civil partnership after the will was signed?                            </h1>
                         </legend>
 
-                        <br>
-                      
-                        <div class="govuk-form-group">
-                            <label class="govuk-label" for="width-20">
-                              First name and any middle names
-                            </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="deceased-firstName2" name="deceased-firstName2" type="text" value="{{ data['deceased-firstName2'] }}" maxlength="100">
-                        </div>
+                        <div class="govuk-radios govuk-radios--inline">
 
-                        <div class="govuk-form-group">
-                            <label class="govuk-label" for="width-20">
-                              Last name
-                            </label>
-                            <input class="govuk-input govuk-!-width-three-quarters" id="deceased-lastName2" name="deceased-lastName2" type="text" value="{{ data['deceased-lastName2'] }}" maxlength="100">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option1" name="married" type="radio" value="optionYes">
+                                <label class="govuk-label govuk-radios__label" for="married">
+                                  Yes
+                                </label>
+                            </div>
+
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="option2" name="married" type="radio" value="optionNo">
+                                <label class="govuk-label govuk-radios__label" for="married-2">
+                                  No
+                                </label>
+                            </div>
+                        
                         </div>
 
                     </fieldset>
@@ -44,20 +45,10 @@
 
                 {% from "govuk/components/button/macro.njk" import govukButton %}
 
-                    {{ govukButton({
-                    text: "Add another name",
-                    classes: "govuk-button--secondary",
-                    href:"#"
-                    }) }}
-
-                <br>
-
-                {% from "govuk/components/button/macro.njk" import govukButton %}
-
-                    {{ govukButton({
-                    text: "Save and continue",
-                    href:"12-married_after_will.html"
-                    }) }}
+                {{ govukButton({
+                  text: "Save and continue",
+                  href:"check_answers-deceased.html"
+                }) }}
 
                 <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
 

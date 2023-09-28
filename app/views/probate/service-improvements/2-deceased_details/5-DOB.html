@@ -14,6 +14,8 @@
                         
                 <div class="govuk-form-group">
 
+                  <form action="6-DOD" method="post">
+
                     <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
   
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -35,7 +37,7 @@
                               <label class="govuk-label govuk-date-input__label" for="dob-day">
                                 Day
                               </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" pattern="[0-9]*" inputmode="numeric" value="{{ data['dob-day'] }}">
                             </div>
                         </div>
                       
@@ -44,7 +46,7 @@
                               <label class="govuk-label govuk-date-input__label" for="dob-month">
                                 Month
                               </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" pattern="[0-9]*" inputmode="numeric" value="{{ data['dob-month'] }}">
                             </div>
                         </div>
                       
@@ -53,7 +55,7 @@
                               <label class="govuk-label govuk-date-input__label" for="dob-year">
                                 Year
                               </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" pattern="[0-9]*" inputmode="numeric" value="{{ data['dob-year'] }}">
                             </div>
                         </div>
                       
@@ -66,9 +68,10 @@
                 {% from "govuk/components/button/macro.njk" import govukButton %}
 
                 {{ govukButton({
-                  text: "Save and continue",
-                  href:"6-DOD.html"
+                  text: "Save and continue"
                 }) }}
+
+              </form>
 
                 <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
 
