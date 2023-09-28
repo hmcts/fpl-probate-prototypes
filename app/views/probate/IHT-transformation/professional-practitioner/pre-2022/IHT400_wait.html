@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+{% include "../../../../includes/IHT-transformation_header.html" %}
+
+    <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+
+    <main class="govuk-main-wrapper " id="main-content" role="main"> 
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">  
+
+                <!-- Content -->
+                        
+                <div class="govuk-form-group">
+
+                    <fieldset class="govuk-fieldset">
+  
+                        <span class="govuk-caption-xl">Deceased details</span>
+                        <h1 class="govuk-heading-xl">Inheritance Tax forms</h1>
+
+                        <h2 class="govuk-heading-m">#1234-1234-1234-1234</h2>
+
+                        <br>
+
+                        <h3 class="govuk-heading-m">Wait 20 working days from when you sent the IHT400 to HMRC</h3>
+
+                        <p class="govuk-body">
+                          The letter from HMRC will be sent out up to 20 working days after you submit the IHT400.
+                        </p>
+
+                        <h2 class="govuk-heading-s">If you have not received a letter from HMRC after 20 days</h2>
+                        <p class="govuk-body">
+                          Contact HMRC on this number:
+                        </p>
+                          <ul class="govuk-list">
+                            <li>Telephone: 0300 123 1072</li>
+                            <li>Monday to Friday, 9am to 5pm (except public holidays)</li>
+                          </ul>
+                          <p class="govuk-body">
+                            <a class="govuk-link" href="#">Find out about call charges</a>
+                          </p>
+
+                          <br>
+
+                          <div class="govuk-button-group">
+                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                                Previous
+                              </button>
+                            <button href="" onclick='myFunction()' class="govuk-button" data-module="govuk-button">
+                              Continue
+                            </button>
+                          </div>
+
+                <p class="govuk-body"><a href="saved_apps.html" class="govuk-link">Cancel</a></p>
+
+                <!-- End content -->
+
+                <br>
+
+                <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Contact us for help
+                      </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                        <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                            <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                        </div>
+
+                        <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                        <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                        <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                        <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                        <p class="govuk-body"> 0300 303 0648</p>
+                        <p class="govuk-heading-s"> Email </p>
+                        <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                        <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                        <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                        <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                    </div>
+
+                </details>
+
+            </div>
+        </div>
+    </main>
+
+    </div>
+
+    {% include "../../../../includes/as_it_is_footer.html" %}
+
+    <script>
+        function myFunction() {
+            if(document.getElementById('option1').checked) {
+                document.getElementById('link').href = "#";
+            }
+            if(document.getElementById('option2').checked) {
+                document.getElementById('link').href = "#";
+            }
+            if(document.getElementById('option3').checked) {
+                document.getElementById('link').href = "#";
+            }
+            if(document.getElementById('option4').checked) {
+                document.getElementById('link').href = "#";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
