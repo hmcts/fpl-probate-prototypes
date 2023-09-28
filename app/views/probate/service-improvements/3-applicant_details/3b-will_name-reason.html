@@ -13,7 +13,6 @@
                 <!-- Content -->
                         
                 <div class="govuk-form-group">
-                  <form action="4-contact_number" method="post">
 
                     <fieldset class="govuk-fieldset" aria-describedby="reason-hint">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -83,8 +82,6 @@
 
                       </fieldset>
 
-                    </form>
-
                     </div>
 
                     {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
@@ -97,7 +94,8 @@
                     {% from "govuk/components/button/macro.njk" import govukButton %}
 
                       {{ govukButton({
-                      text: "Save and continue"
+                      text: "Save and continue",
+                      href: "4-contact_number.html"
                       }) }}
 
                 <p class="govuk-body"><a href="/probate/service-improvements/saved_apps-in_progress.html" class="govuk-link govuk-link--no-visited-state">Save and close</a></p>
