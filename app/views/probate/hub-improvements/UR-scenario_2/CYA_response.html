@@ -144,7 +144,7 @@
 
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <form action="/hub-court_checks-responded" method="post" novalidate>
+      <form action="#" method="post" novalidate>
 
       <h1 class="govuk-heading-l">Review your response before submitting</h1>
 
@@ -154,7 +154,7 @@
             Your response
           </dt>
           <dd class="govuk-summary-list__value">
-            {{ data['text-response'] }} 
+            {{ data['text-response2'] }} - 
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="respond-upload_docs.html" class="govuk-link--no-visited-state">Change<span class="govuk-visually-hidden"> text</span></a>
@@ -202,7 +202,7 @@
 
       {{ govukButton({
         text: "Submit",
-        href: "4-information_received.html"
+        href: "hub-information_received.html"
       }) }}
 
       </form>
