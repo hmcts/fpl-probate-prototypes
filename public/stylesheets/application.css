@@ -10102,6 +10102,11 @@ body {
   border: 4px solid #CECECE;
 }
 
+.hmcts-progress-bar-vertical .hmcts-progress-bar__icon--current {
+  background-color: #1D70B8;
+  border: 4px solid #1D70B8;
+}
+
 .hmcts-progress-bar-vertical .hmcts-progress-bar__icon--complete {
   background-color: #1D70B8;
   border: 4px solid #1D70B8;
