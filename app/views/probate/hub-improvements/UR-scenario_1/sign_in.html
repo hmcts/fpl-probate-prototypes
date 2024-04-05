@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+  {% include "includes/header.html" %}
+
+  <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+
+            <main class="govuk-main-wrapper " id="main-content" role="main"> 
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-full">  
+
+                        <!-- Content -->
+
+                        <div class="govuk-form-group">
+                            <h1 class="govuk-heading-l" id="skiplinktarget">Sign in or create an account</h1>
+                        </div>
+
+                        <div class="grid-row">
+
+                            <div class="govuk-grid-column-one-half" style="border-right: 3px solid #a1acb2;padding-left: 0px;">
+                                <div class="form-section">
+                                    <h2 class="govuk-heading-m" style="margin-top: 20px;">Sign in</h2>
+                                    <div class="govuk-form-group ">
+                                        <label for="username">
+                                            <span class="govuk-label">Email address</span>
+                                        </label>
+                                        <input id="username" name="username" type="text" class="govuk-input govuk-input--width-20" value="" autocomplete="off">
+                                    </div>
+                                    <div class="govuk-form-group ">
+                                        <label for="password">
+                                            <span class="govuk-label">Password</span>
+                                        </label>
+                                        <input id="password" name="password" type="password" class="govuk-input govuk-input--width-20" value="" autocomplete="off">
+                                    </div>
+                                    <div class="govuk-form-group">
+                                        <p><a href="#0">Forgotten password?</a></p>
+                                    </div>
+                                    <form action="hub-information_needed.html">
+                                      <div class="govuk-button-group">
+                                        <button class="govuk-button" data-module="govuk-button">
+                                          Sign in
+                                        </button>
+                                      </div>
+                                    </form>
+                                </div>
+                            </div>
+                                <div class="govuk-grid-column-one-half" style="padding-left: 15px;">
+                                    <h2 class="govuk-heading-m" style="margin-top: 20px;">Create an account</h2>
+                                    <p>You need to <a href="create_account.html">create an account</a> to use this service.</p>
+                                </div>
+
+                        </div>
+
+                        <div>
+                            <input type="hidden" name="_csrf" value="7c9c1bf6-2c6a-48c3-9640-8aface67b621">
+                        </div>
+
+                        <!-- End content -->
+
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+        <footer class="govuk-footer " role="contentinfo">
+            <div class="govuk-width-container ">
+              <div class="govuk-footer__meta">
+                <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+                  <h2 class="govuk-visually-hidden">Support links</h2>
+                  <ul class="govuk-footer__inline-list">
+                    <li class="govuk-footer__inline-list-item">
+                      <a class="govuk-footer__link" href="#1">
+                        Cookies
+                      </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item">
+                      <a class="govuk-footer__link" href="#2">
+                        Cookie preferences
+                      </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item">
+                      <a class="govuk-footer__link" href="#3">
+                        Accessibility statement
+                      </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item">
+                      <a class="govuk-footer__link" href="#4">
+                        Privacy policy
+                      </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item">
+                      <a class="govuk-footer__link" href="#4">
+                        Terms and conditions
+                      </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item">
+                      <a class="govuk-footer__link" href="#4">
+                        Contact us
+                      </a>
+                    </li>
+                  </ul>
+                  <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                    <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+                  </svg>
+                  <span class="govuk-footer__licence-description">
+                    All content is available under the
+                    <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+                  </span>
+                </div>
+                <div class="govuk-footer__meta-item">
+                  <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        
+        <script src="/public/javascripts/jquery/jquery.min.js"></script>
+        <script src="/public/javascripts/govuk-frontend/govuk/all.js"></script>
+        <script nonce="bd200ca7434241309fdaa26b8e4dd5ae">window.GOVUKFrontend.initAll()</script>
+        <script src="/public/javascripts/dropzone.js"></script>
+        <script nonce="bd200ca7434241309fdaa26b8e4dd5ae">
+            const documentUploadConfig = {
+                csrfToken: 'kaZVQ96Y-t2wlLMgnM2bHzlVdZD5TLTXQ8_8',
+                validMimeTypes: 'image/jpeg,image/bmp,image/tiff,image/png,application/pdf',
+                maxFiles: '10',
+                maxSizeBytes: '10485760',
+                timeout: '',
+                content: {
+                    removeFileText: 'Remove',
+                    errorSummaryHeading: 'There is a problem',
+                    invalidFileType: 'Save your file as a jpg, bmp, tiff, png or PDF file and try again',
+                    invalidFileTypeSummary: 'You have used a file type that can&rsquo;t be accepted',
+                    maxFiles: 'You can upload a maximum of 10 files',
+                    maxFilesSummary: 'You have uploaded too many files',
+                    maxSize: 'Use a file that is under 10MB and try again',
+                    maxSizeSummary: 'Your file is too large to upload',
+                    uploadFailed: 'Select your document and try again',
+                    uploadFailedSummary: 'Your document failed to upload',
+                    uploadTimeout: 'The file may be too big, reduce the file size and try again or post the death certificate',
+                    uploadTimeoutSummary: 'The file has taken too long to upload'
+                }
+            };
+        </script>
+        <script src="/public/javascripts/document-upload.js"></script>
+        <!-- https://www.srihash.org/ creating the integrity from this url wheneverthe file changes -->
+        <script src="https://webchat-client.ctsc.hmcts.net/chat-client/1/app-es2015.js" defer type="module" crossorigin="anonymous"></script>
+        <script src="https://webchat-client.ctsc.hmcts.net/chat-client/1/app-es5.js" nomodule defer crossorigin="anonymous"></script>
+        <script src="/public/javascripts/avaya-webchat-3.js"></script>
+
+    </body>
+    
+</html>
+
