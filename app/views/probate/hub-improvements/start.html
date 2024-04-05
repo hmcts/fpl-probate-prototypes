@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+{% include "includes/header.html" %}
+
+      <div class="govuk-width-container">
+
+        <main class="govuk-main-wrapper" style="padding-top: 60px"> 
+
+          <div class="govuk-width-container">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <form action="submit-your-appeal" method="post">
+                
+                  <h1 class="govuk-heading-xl">Applying for probate</h1>
+
+                  <p class="govuk-body-s">Contents</p>
+                  <ul class="govuk-list govuk-body-s">
+                    <li>
+                      - <a class="govuk-link govuk-link--no-visited-state" href="#">What is probate</a>
+                    </li>
+                    <li>
+                      - <a class="govuk-link govuk-link--no-visited-state" href="#">If there's a will</a>
+                    </li>
+                    <li>
+                      - <a class="govuk-link govuk-link--no-visited-state" href="#">If there's not a will</a>
+                    </li>
+                    <li>
+                      - <a class="govuk-link govuk-link--no-visited-state" href="#">Before you apply</a>
+                    </li>
+                    <li>
+                      - <a class="govuk-link govuk-link--no-visited-state" href="#">Fees</a>
+                    </li>
+                    <li>
+                      - Apply for probate
+                    </li>
+                    <li>
+                      - <a class="govuk-link govuk-link--no-visited-state" href="#">After you've applied</a>
+                    </li>
+                  </ul>
+              </div>
+
+              <div class="govuk-grid-column-two-thirds">
+                <hr>
+              <h1 class="part-title govuk-heading-l" style="padding-top: 10px">
+                Apply for probate
+              </h1>
+              <div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube" data-module="govspeak">
+
+                <p>You can apply for probate yourself online or by post. This can be cheaper than paying a probate practitioner (such as a solicitor) to apply for you.</p>
+                
+                <p>
+                  <a rel="external" href="#">Read guidance from Money Helper about using a probate practitioner</a> for information on hiring a legal professional.
+                </p>
+                
+                <div class="govuk-inset-text">
+                  You’ll usually get probate within 16 weeks of submitting your application. It can take longer if you need to provide additional information.
+                </div>
+                
+                <p>This guide and the service are also available <a href="#0">in Welsh (Cymraeg)</a>.</p>
+                
+                <h2 id="apply-for-probate-online" class="govuk-heading-m">
+                  Apply for probate online
+                </h2>
+
+                <p>You must have <a href="#">estimated the value of the estate to find out if there’s Inheritance Tax to pay</a> before you can apply for probate.</p>
+
+                <p class="govuk-body">If you’ve reported the full estate to HM Revenue and Customs (HMRC), before applying you must:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>start paying Inheritance Tax, if there is any</li>
+                    <li>wait 20 working days after sending the tax forms to HMRC</li>
+                  </ul>
+                
+                {% from "govuk/components/button/macro.njk" import govukButton %}
+
+                  {{ govukButton({
+                    text: "Apply for probate",
+                    href: "service-improvements/1-eligibility_criteria/1-death_certificate.html",
+                    isStartButton: true
+                  }) }}
+
+                <h3 id="apply-for-probate-online" class="govuk-heading-s">
+                  Return to or track your application
+                </h3>
+
+                <p class="govuk-body"><a href="sign_in.html" class="govuk-link govuk-link--no-visited-state">Sign in to the probate service</a> to:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>continue an existing application</li>
+                    <li>track the progress of an application</li>
+                    <li>see completed applications</li>
+                  </ul>
+
+                  <h4 id="apply-for-probate-online" class="govuk-heading-m">
+                    If you need help applying online
+                  </h4>
+  
+                  <p class="govuk-body">There are 2 types of help available. You can get help if:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>you’re able to apply online and there’s a problem - for example a technical issue or you need advice</li>
+                      <li>you need support to apply online - for example you’re not confident using the internet</li>
+                    </ul>
+
+                  <h5 id="apply-for-probate-online" class="govuk-heading-s">
+                    Help if you’re able to apply online and there’s a problem
+                  </h5>
+
+                  <p class="govuk-body">You can get help if you:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>are having technical issues with the service</li>
+                      <li>need advice about the information you’re providing</li>
+                    </ul>
+                
+                <div class="govuk-inset-text">
+                  <p>
+                    Courts and Tribunals Service Centre<br>
+                    Telephone: 0300 303 0648  <br>
+                    Monday to Friday, 8am to 6pm<br>
+                    Closed on bank holidays<br>
+                    <a href="/call-charges">Find out about call charges</a>  <br>
+                    <a href="#0">Webchat</a><br>
+                    Email: <a href="#0">contactprobate@justice.gov.uk</a>
+                  </p>
+                </div>
+
+                <h6 id="apply-for-probate-online" class="govuk-heading-s">
+                  Help if you need support to apply online
+                </h6>
+
+                <p class="govuk-body">You can phone the Digital Support helpline if you:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>do not feel confident using the internet</li>
+                    <li>do not have access to a computer or smartphone</li>
+                  </ul>
+
+                <div class="govuk-inset-text">
+                  <p>
+                    Digital Support helpline <br>
+                    Telephone: 03300 160051 <br>
+                    Monday to Friday, 9am to 5pm <br>
+                    Closed on bank holidays <br>
+                    Text FORM to 60777 and someone will call you back <br>
+                    <a href="#0">Find out about call charges</a>
+                  </p>
+                </div>
+
+                <h7 id="apply-for-probate-online" class="govuk-heading-m">
+                  Apply for probate by post
+                </h7>
+
+                <p class="govuk-body">The form you need to fill in depends on whether the person left a will or not.</p>
+                <p class="govuk-body"><a href="#" class="govuk-link govuk-link--no-visited-state">If there’s a will, fill in application form PA1P</a>.</p>
+                <p class="govuk-body"><a href="#" class="govuk-link govuk-link--no-visited-state">If there’s not a will, fill in application form PA1A</a>.</p>
+
+                <p class="govuk-body">If you’ve reported the full estate to HMRC, before applying you must:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>start paying Inheritance Tax, if there is any</li>
+                    <li>wait 20 working days after sending the tax forms to HMRC</li>
+                  </ul>
+
+                  <div class="govuk-inset-text">
+                    It takes longer to process paper applications than online applications. Apply online if you can.
+                  </div>
+                
+                  <nav class="govuk-pagination govuk-pagination--block" role="navigation" aria-label="results">
+                    <div class="govuk-pagination__prev">
+                      <a class="govuk-link govuk-pagination__link" href="#" rel="prev">
+                        <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                          <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+                        </svg>
+                        <span class="govuk-pagination__link-title">Previous:</span><span class="govuk-visually-hidden">:</span>
+                        <span class="govuk-pagination__link-label">Fees</span></a>
+                    </div>
+                    <div class="govuk-pagination__next">
+                      <a class="govuk-link govuk-pagination__link" href="#" rel="next"> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                          <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+                        </svg> <span class="govuk-pagination__link-title">Next:</span><span class="govuk-visually-hidden">:</span>
+                        <span class="govuk-pagination__link-label">After you've applied</span></a>
+                    </div>
+                  </nav>
+
+                  <br><br>
+
+                  <p class="govuk-body"><a href="#" class="govuk-link govuk-link--no-visited-state">View a printable version of the whole guide</a></p>
+                
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+              <hr class="related-content-line">
+              <h4 class="govuk-heading-s" style="padding-top: 10px;">Part of</h4>
+              <a class="govuk-link govuk-link--no-visited-state govuk-heading-s" href="#">What to do when someone dies: step by step</a>
+              
+             </div>
+
+            <style>
+              .govuk-link-blue {
+                color: #1D70B8;
+              }
+            
+              .related-content-line {
+                border: solid 1px #1D70B8;
+              }
+            </style>
+          </div>
+
+        </div> 
+          
+      </main>
+    </div>
+    </div>
+
+    {% include "includes/as_it_is_footer.html" %}
+        
+    </body>
+    
+</html>
