@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+{% include "includes/header-with_nav.html" %}
+
+<a href="start.html" class="govuk-back-link">Back</a>
+
+            <main class="govuk-main-wrapper " id="main-content" role="main"> 
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-full">  
+
+                        <!-- Content -->
+                                
+                        <h1 class="govuk-heading-l" data-gtm-vis-recent-on-screen-30951291_54="161" data-gtm-vis-first-on-screen-30951291_54="161" data-gtm-vis-total-visible-time-30951291_54="100" data-gtm-vis-has-fired-30951291_54="1">Probate applications</h1>
+
+                        <table class="govuk-table dashboard">
+                          <caption class="govuk-table__caption govuk-visually-hidden">Probate applications</caption>
+                          <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                              <th scope="col" class="govuk-table__header govuk-!-width-one-third">Person who died</th>
+                              <th scope="col" class="govuk-table__header">Date created</th>
+                              <th scope="col" class="govuk-table__header">Status</th>
+                              <th scope="col" class="govuk-table__header">Next steps</th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">{{ data['deceased-firstName'] }} {{ data['deceased-lastName'] }} John Doe</td>
+                                <td class="govuk-table__cell">29 March 2024</td>
+                                <td class="govuk-table__cell">
+                                    <strong class="govuk-tag govuk-tag--green">
+                                        SUBMITTED
+                                      </strong>
+                                </td>
+                                <td class="govuk-table__cell"><a href="hub-information_needed.html" class="govuk-link govuk-link--no-visited-state">View application progress</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <p class="govuk-body">
+                          <a href="start.html" class="govuk-link govuk-link--no-visited-state">Start a new application</a>
+                        </p>
+
+                        <!-- End content -->
+
+                        <br>
+
+                        <details class="govuk-details" data-module="govuk-details" id="contact-us-for-help">
+
+                            <summary class="govuk-details__summary">
+                              <span class="govuk-details__summary-text">
+                                Contact us for help
+                              </span>
+                            </summary>
+
+                            <div class="govuk-details__text">
+                                <p class="govuk-heading-s" id="avaya-web-chat-header"> Webchat </p>
+                                <div id="avaya-webchat-open" class="govuk-body" hidden="">
+                                    <a href="#" class="govuk-link" rel="noreferrer noopener" id="avaya-webchat-link">Speak to an advisor online (opens in a new window)</a>
+                                </div>
+
+                                <p class="govuk-body" id="avaya-webchat-close" hidden=""> We are sorry, the Contact Centre is now closed. </p>
+                                <p class="govuk-body" id="webchat-agent-busy"> All our advisors are busy. Try again in a few minutes. </p>
+                                <p class="govuk-body" id="webchat-maintenance" hidden=""> Sorry, we’re having technical difficulties. Try email or telephone instead. </p>
+
+                                <p class="govuk-heading-s govuk-!-padding-top-2"> Telephone</p>
+                                <p class="govuk-body"> 0300 303 0648</p>
+                                <p class="govuk-heading-s"> Email </p>
+                                <p class="govuk-body"> Email us at <a href="mailto:contactprobate@justice.gov.uk" class="govuk-link" tabindex="-1">contactprobate@justice.gov.uk</a>. </p>
+                                <p class="govuk-heading-s"> Opening times (webchat and telephone) </p>
+                                <p class="govuk-body"> Monday to Friday, 8am to 6pm </p>
+                                <p class="govuk-body"> Closed on Saturdays, Sundays and bank holidays </p>
+                            </div>
+
+                        </details>
+
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+        {% include "includes/as_it_is_footer.html" %}
+        
+    </body>
+    
+</html>
