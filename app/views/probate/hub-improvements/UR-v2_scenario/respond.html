@@ -151,8 +151,8 @@
             </h1>
 
            <p class="govuk-body">
-              Read the caseworker’s reasons for stopping the application and provide the requested information.
-            </p>
+            Read the caseworker’s reasons for stopping the application in the email they sent you and provide the information they’ve asked for.
+           </p>
 
             <div class="govuk-form-group">
               <h3 class="govuk-label-wrapper">
@@ -174,11 +174,12 @@
               </h3>
               <br>
               <p class="govuk-body">
-                You can upload documents if the caseworker has asked you to provide any, or if you have any evidence to support your response.
+                Upload documents if the caseworker has asked you to provide any, or if you have any evidence to support your response. You should tell us if you do not have the documents the caseworker has asked for.
               </p>
               <div class="govuk-inset-text">
-                Make sure the photo or scan shows the whole document. Check you can read all the text before uploading it. If court staff cannot read it, the document may be rejected.
+                If you are uploading a photo or scan, make sure it shows the whole document. Check you can read all the text before uploading it. If the caseworker cannot read it, the document may be rejected.
               </div>
+             <!--
               <details class="govuk-details">
                 <summary class="govuk-details__summary">
                   <span class="govuk-details__summary-text">
@@ -197,6 +198,7 @@
               <p class="govuk-body">
                 You should upload at least one clear image which shows the whole document. If you think it will help court staff read the details, you can upload more images. If your document has more than one page, you should upload at least one image of each page.
               </p>
+            -->
               <p class="govuk-body">
                 The file must be in jpg, bmp, tiff, png or pdf format.
                 <br>
@@ -214,7 +216,7 @@
                   {{ govukButton({
                     text: "Upload file",
                     classes: "govuk-button--secondary",
-                    href: "respond-upload_docs.html"
+                    href: "upload_docs-error.html"
                   }) }}
                 </div>
               </div>
@@ -235,7 +237,7 @@
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                   <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    I cannot upload some or all of my documents
+                    I’m having trouble uploading some or all of my documents
                   </label>
                 </div>
             </div>

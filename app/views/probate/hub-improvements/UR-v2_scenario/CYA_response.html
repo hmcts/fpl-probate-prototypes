@@ -140,151 +140,109 @@
 
       <a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
 
-    <main class="govuk-main-wrapper" id="main-content" role="main"> 
+      <main class="govuk-main-wrapper" id="main-content" role="main"> 
 
 <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <form action="#" method="post" novalidate>
+    <div class="govuk-grid-column-full">
+      <form action="#" method="post" novalidate>
 
-            <h1 class="govuk-heading-l">
-              Respond to the caseworker’s comments
-            </h1>
+      <h1 class="govuk-heading-l">Review your response before submitting</h1>
 
-           <p class="govuk-body">
-              Read the caseworker’s reasons for stopping the application and provide the requested information.
-            </p>
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Your response
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ data['text-response'] }}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="respond-upload_docs.html" class="govuk-link govuk-link--no-visited-state">Change<span class="govuk-visually-hidden"> text</span></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Uploaded files
+          </dt>
+          <dd class="govuk-summary-list__value">
+            I’m having trouble uploading some or all of my documents
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="respond-upload_docs.html" class="govuk-link govuk-link--no-visited-state">Change<span class="govuk-visually-hidden"> files</span></a>
+          </dd>
+        </div>
+      </dl>
 
-            <div class="govuk-form-group">
-              <h3 class="govuk-label-wrapper">
-                <label class="govuk-label govuk-label--m" for="text-response">
-                  Enter your response
-                </label>
-              </h3>
-              <div id="text-response-hint" class="govuk-body">
-                Write your response if the caseworker wants you to explain something or provide additional information. If the caseworker has only asked you to upload documents, you do not have to write anything unless you think it’s useful information.
-              </div>
-              <textarea class="govuk-textarea" id="text-repsonse" name="textResponse" value="{{ data['text-response'] }}" rows="5" aria-describedby="text-response-hint"></textarea>            
-              
-              <br>
+    </div>
 
-              <h3 class="govuk-label-wrapper">
-                <label class="govuk-label govuk-label--m" for="text-response">
-                  Upload documents
-                </label>
-              </h3>
-              <br>
-              <p class="govuk-body">
-                You can upload documents if the caseworker has asked you to provide any, or if you have any evidence to support your response.
-              </p>
-              <div class="govuk-inset-text">
-                Make sure the photo or scan shows the whole document. Check you can read all the text before uploading it. If court staff cannot read it, the document may be rejected.
-              </div>
-              <details class="govuk-details">
-                <summary class="govuk-details__summary">
-                  <span class="govuk-details__summary-text">
-                    You can take a picture with your phone and upload it
-                  </span>
-                </summary>
-                <div class="govuk-details__text">
-                  <ol class="govuk-list govuk-list--number">
-                    <li>Place your document on a flat service in a well-lit room. Use a flash if you need to.</li>
-                    <li>Take a picture of the whole document. You should be able to see its edges.</li>
-                    <li>Email or send the photo or scan to the device you are using now.</li>
-                    <li>Upload it using the link below.</li>
-                  </ol>
-                </div>
-              </details>
-              <p class="govuk-body">
-                You should upload at least one clear image which shows the whole document. If you think it will help court staff read the details, you can upload more images. If your document has more than one page, you should upload at least one image of each page.
-              </p>
-              <p class="govuk-body">
-                The file must be in jpg, bmp, tiff, png or pdf format.
-                <br>
-                Maximum file size is 10MB.
-              </p>
-              <div class="govuk-inset-text">
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="file-upload-1">
-                   <b>Upload a file</b>
-                  </label>
-                  <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
-                  <br><br>
-                  {% from "govuk/components/button/macro.njk" import govukButton %}
+        <div class="govuk-grid-column-two-thirds">
 
-                  {{ govukButton({
-                    text: "Upload file",
-                    classes: "govuk-button--secondary",
-                    href: "#"
-                  }) }}
-                </div>
-              </div>
-              <table class="govuk-table">
-                <thead class="govuk-table__head">
-                  <tr class="govuk-table__row">
-                    <th scope="col" class="govuk-table__header">Uploaded files</th>
-                  </tr>
-                </thead>
-                <tbody class="govuk-table__body">
-                  <tr class="govuk-table__row">
-                    <td class="govuk-table__cell"><a href="#" class="govuk-link--no-visited-state">{{ data['file-upload-1'] }} Example-upload.jpg</a></td>
-                  </tr>
-                </tbody>
-              </table>
-              <br>
-              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    I cannot upload some or all of my documents
-                  </label>
-                </div>
-            </div>
-            <br>
+        <h2 class="govuk-heading-m govuk-!-padding-top-4">
+          Legal declaration
+        </h2>
 
-            </div>
+        <p class="govuk-body">
+          By submitting your response, you confirm that the information you have provided is correct to the best of your knowledge and you understand that it will be stored as a public record. 
+            <br><br>
+          You confirm that you understand that proceedings for contempt of court may be brought against the undersigned if it is found that the evidence provided is deliberately untruthful or dishonest, as well as revocation of the grant.
+        </p>
 
-            {% from "govuk/components/button/macro.njk" import govukButton %}
-
-            {{ govukButton({
-              text: "Continue",
-              href: "CYA_response.html"
-            }) }}
-
-        </form>
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste">
+              I confirm that I understand and accept this declaration
+            </label>
+          </div>
       </div>
+
+      <br><br>
+
+      {% from "govuk/components/button/macro.njk" import govukButton %}
+
+      {{ govukButton({
+        text: "Submit",
+        href: "hub-information_received.html"
+      }) }}
+
+      </form>
+
     </div>
+  </div>
 
-<div class="govuk-!-padding-bottom-4"></div>
 
-<details class="govuk-details" data-module="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      Contact us for help
-    </span>
-  </summary>
-    <div class="govuk-details__text">
-        <h2 class="govuk-heading-m">Web chat</h2>
-            <ul class="govuk-list">
-                <li>No agents are available, please try again later.</li>
-            </ul>
-        <h2 class="govuk-heading-m">Send us a message</h2>
-            <ul class="govuk-list">
-                <li><a class="govuk-link" href="#">Send us a message</a></li>
-                <li>We aim to get back to you within 5 working days</li>
-            </ul>
-        <h2 class="govuk-heading-m">Telephone</h2>
-            <ul class="govuk-list">
-                <li>0300 303 0742</li>
-                <li>Monday to Friday, 8am to 8pm, Saturday, 8am to 2pm</li>
-            </ul>
-    </div>
-</details>
+  <div class="govuk-!-padding-bottom-4"></div>
 
-</main>
-</div>
-
-<!-- Body finish here -->
-
-{% include "../../../includes/as_it_is_footer.html" %}
-
-</html>
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Contact us for help
+      </span>
+    </summary>
+      <div class="govuk-details__text">
+          <h2 class="govuk-heading-m">Web chat</h2>
+              <ul class="govuk-list">
+                  <li>No agents are available, please try again later.</li>
+              </ul>
+          <h2 class="govuk-heading-m">Send us a message</h2>
+              <ul class="govuk-list">
+                  <li><a class="govuk-link" href="#">Send us a message</a></li>
+                  <li>We aim to get back to you within 5 working days</li>
+              </ul>
+          <h2 class="govuk-heading-m">Telephone</h2>
+              <ul class="govuk-list">
+                  <li>0300 303 0742</li>
+                  <li>Monday to Friday, 8am to 8pm, Saturday, 8am to 2pm</li>
+              </ul>
+      </div>
+  </details>
+  
+  </main>
+  </div>
+  
+  <!-- Body finish here -->
+  
+  {% include "../../../includes/as_it_is_footer.html" %}
+  
+  </html>
+  
