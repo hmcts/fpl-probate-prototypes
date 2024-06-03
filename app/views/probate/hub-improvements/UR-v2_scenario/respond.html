@@ -233,7 +233,29 @@
                 </tbody>
               </table>
               <br>
-              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
+                      <label class="govuk-label govuk-checkboxes__label" for="contact">
+                        I’m having trouble uploading some or all of my documents
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="contact-by-email">
+                          If you are unable to upload your documents due to a technical issue, you can post or email your documents instead. You will receive details on how to send them after you have submitted your response.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+             <!--
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                   <label class="govuk-label govuk-checkboxes__label" for="waste">
@@ -241,6 +263,8 @@
                   </label>
                 </div>
             </div>
+             -->
+             
             <br>
 
             </div>
