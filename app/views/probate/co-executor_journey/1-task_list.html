@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 
-    {% include "../../../includes/header-with_nav.html" %}
+    {% include "../../includes/header-with_nav.html" %}
 
     <main class="govuk-main-wrapper " id="main-content" role="main"> 
         <div class="govuk-grid-row">
@@ -21,6 +21,74 @@
                 </p>
 
                 <br><br>
+
+                {% from "govuk/components/task-list/macro.njk" import govukTaskList %}
+
+{{ govukTaskList({
+  idPrefix: "company-details",
+  items: [
+    {
+      title: {
+        text: "Company Directors"
+      },
+      href: "#",
+      status: {
+        text: "Completed"
+      }
+    },
+    {
+      title: {
+        text: "Registered company details"
+      },
+      href: "#",
+      status: {
+        tag: {
+          text: "Incomplete",
+          classes: "govuk-tag--blue"
+        }
+      }
+    },
+    {
+      title: {
+        text: "Financial history"
+      },
+      hint: {
+        text: "Include 5 years of the company’s relevant financial information."
+      },
+      href: "#",
+      status: {
+        tag: {
+          text: "Incomplete",
+          classes: "govuk-tag--blue"
+        }
+      }
+    },
+    {
+      title: {
+        text: "Business plan"
+      },
+      href: "#",
+      status: {
+        tag: {
+          text: "Incomplete",
+          classes: "govuk-tag--blue"
+        }
+      }
+    },
+    {
+      title: {
+        text: "References"
+      },
+      href: "#",
+      status: {
+        tag: {
+          text: "Incomplete",
+          classes: "govuk-tag--blue"
+        }
+      }
+    }
+  ]
+}) }}
 
                 <ol class="task-list" style="list-style-type: none;padding-left: 0;margin-top: 0;margin-bottom: 40px;">
                 
@@ -180,7 +248,7 @@
 
     </style>
 
-    {% include "../../../includes/as_it_is_footer.html" %}
+    {% include "../../includes/as_it_is_footer.html" %}
 
 </body>
 

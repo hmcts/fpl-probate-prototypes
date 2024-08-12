@@ -1,4 +1,14 @@
 /* eslint-disable */
+
+/**
+ * NOTE
+ * 
+ * These polyfills were generated using polyfill.io, which has been compromised.
+ * 
+ * We generated this code well before the compromise, and it is free of malicious code.
+ * However, we recommend checking any polyfills you have generated in a similar way.
+ */
+
 /**
  * classList polyfill
  * https://github.com/alphagov/govuk-frontend/blob/main/package/govuk/vendor/polyfills/Element/prototype/classList.js
@@ -28,7 +38,6 @@ var detect = (
 
 if (detect) return
 
-// Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Object.defineProperty&flags=always
 (function (nativeDefineProperty) {
 
 	var supportsAccessors = Object.prototype.hasOwnProperty('__defineGetter__');
@@ -368,7 +377,6 @@ var detect = ("Document" in this);
 
 if (detect) return
 
-// Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Document&flags=always
 if ((typeof WorkerGlobalScope === "undefined") && (typeof importScripts !== "function")) {
 
 	if (this.HTMLDocument) { // IE8
@@ -395,7 +403,6 @@ var detect = ('Element' in this && 'HTMLElement' in this);
 
 if (detect) return
 
-// Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Element&flags=always
 (function () {
 
 	// IE8
@@ -514,7 +521,6 @@ if (detect) return
 
     if (detect) return
 
-    // Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Element.prototype.classList&flags=always
     (function (global) {
       var dpSupport = true;
       var defineGetter = function (object, name, fn, configurable) {
